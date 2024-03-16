@@ -1,0 +1,14 @@
+C:\Users\Student\Desktop\grafycsharp\bin\Debug\net8.0\grafycsharp.exe
+c:\Users\Student\Desktop\grafycsharp\bin\Debug\net8.0\grafycsharp.deps.json
+c:\Users\Student\Desktop\grafycsharp\bin\Debug\net8.0\grafycsharp.runtimeconfig.json
+C:\Users\Student\Desktop\grafycsharp\bin\Debug\net8.0\grafycsharp.dll
+C:\Users\Student\Desktop\grafycsharp\bin\Debug\net8.0\grafycsharp.pdb
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.AssemblyInfo.cs
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.dll
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\refint\grafycsharp.dll
+C:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.pdb
+c:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\grafycsharp.genruntimeconfig.cache
+c:\Users\Student\Desktop\grafycsharp\obj\Debug\net8.0\ref\grafycsharp.dll

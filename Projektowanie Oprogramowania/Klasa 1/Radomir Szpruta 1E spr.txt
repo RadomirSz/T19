@@ -1,0 +1,178 @@
+using System.Collections;
+//zad 1
+
+int k = int.Parse(Console.ReadLine());
+ArrayList A = new ArrayList();
+int i = k;
+while (i < 100)
+{ 
+    A.Add(i);
+    i += ((k / 10) + (k % 10));
+}
+foreach (var x in A)
+{
+    Console.WriteLine(x);
+}
+
+//zad 2
+
+Random r = new Random();
+int[] T = new int[20];
+
+for (int i = 0; i < T.Length; i++)
+{
+    T[i] = r.Next(10,100);
+}
+
+for (int i = 0; i < T.Length;i++)
+{
+    T[i] = (T[i] / 10) * 10 ;
+    Console.WriteLine(T[i]);
+}
+//zad 3
+
+Random r = new Random();
+int[] G = new int[90];
+
+for (int i = 0; i < G.Length; i++)
+{
+    G[i] = r.Next(10, 100);
+}
+int ilosc = 100;
+
+for (int i = 10; i < 100; i++)
+{
+    int x = i;
+    for (int j = 0; j < G.Length; j++)
+    {
+        if(x == G[j])
+        {
+            ilosc--;
+            break;
+        }
+    }
+}
+foreach (var o in G)
+{
+    Console.WriteLine(o);
+}
+Console.WriteLine($"ilość:{ilosc}");
+
+//zad 4
+
+Random r = new Random();
+int[,] M = new int[16, 16];
+int sum = 0;
+bool czypie(int n)
+{
+    for (int i = 2; i < n; i++)
+    {
+        if (n % 1 == 0)
+        { return false; }
+    }
+    return true;
+}
+
+for (int i = 0; i < 16; i++) 
+{
+    for (int j = 0; j < 16; j++)
+    {
+        M[i, j] = r.Next(100, 1000);
+        if (czypie(M[i, j]))
+        { 
+        sum += M[i, j];
+        }
+    }
+}
+Console.WriteLine(sum);
+
+Tworzyłem nowe randomy do każdego zadania tak, że gdy się je wytnie samo to będzie działało bez innych żeby nie było.
+dodatkowa wersja przekopiowana surowo z c# jakby pan chciał(praktycznie to samo)
+using System.Collections;
+//zad 1
+/*int k = int.Parse(Console.ReadLine());
+ArrayList A = new ArrayList();
+int i = k;
+while (i < 100)
+{ 
+    A.Add(i);
+    i += ((k / 10) + (k % 10));
+}
+foreach (var x in A)
+{
+    Console.WriteLine(x);
+}*/
+//zad 2
+
+/*Random r = new Random();
+int[] T = new int[20];
+
+for (int i = 0; i < T.Length; i++)
+{
+    T[i] = r.Next(10,100);
+}
+
+for (int i = 0; i < T.Length;i++)
+{
+    T[i] = (T[i] / 10) * 10 ;
+    Console.WriteLine(T[i]);
+}*/
+
+//zad 3
+/*Random r = new Random();
+int[] G = new int[90];
+
+for (int i = 0; i < G.Length; i++)
+{
+    G[i] = r.Next(10, 100);
+}
+int ilosc = 100;
+
+for (int i = 10; i < 100; i++)
+{
+    int x = i;
+    for (int j = 0; j < G.Length; j++)
+    {
+        if(x == G[j])
+        {
+            ilosc--;
+            break;
+        }
+    }
+}
+foreach (var o in G)
+{
+    Console.WriteLine(o);
+}
+Console.WriteLine($"ilość:{ilosc}");*/
+
+//zad 4
+/*
+Random r = new Random();
+int[,] M = new int[16, 16];
+int sum = 0;
+bool czypie(int n)
+{
+    for (int i = 2; i < n; i++)
+    {
+        if (n % 1 == 0)
+        { return false; }
+    }
+    return true;
+}
+
+for (int i = 0; i < 16; i++) 
+{
+    for (int j = 0; j < 16; j++)
+    {
+        M[i, j] = r.Next(100, 1000);
+        if (czypie(M[i, j]))
+        { 
+        sum += M[i, j];
+        }
+    }
+}
+Console.WriteLine(sum);*/
+
+
+
