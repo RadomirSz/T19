@@ -1,0 +1,32 @@
+// Zagadnienia na sprawdzian
+
+// 1. Funkcje
+
+// 1.1 - Napisz funkcje która zwraca sume cyfr podaniej liczby
+
+// 1.2 - Napisz funkcje, która zwraca odwrócony do wprowadzonego napis
+
+// 1.3 - Napisz funkcje, która wypisuje łańcuch połówek wpisanej liczby, aż do 1. Np po wpisaniu 30 otrzymujemy 30-15-7-3-1. Rozumiecie? :)
+
+
+// 2. Ciągi Belgijskie
+
+// 2.1 - Napisz rekurencyjnie n liczb: 3,5,7,9,11...
+
+// 2.2 - Napisz rekurencyjnie n liczb: 6, 12, 24, 48, 96...
+
+// 2.3 - Napisz rekurencyjnie n liczb: 1,1,3,5,11,21...
+
+// 2.4 - Napisz rekurencyjnie n liczb: 1,2,-1,3,-4,7,-11,18...
+
+// 2.5 - Napisz rekurencyjnie n liczb: 1,2,3,0,6,3,-3,21...
+
+
+// 3. Kto gra w pliki ma wyniki
+
+// 3.1 Stwórz plik z dzisiejszą datą
+
+// 3.2 Zapisz do pliku 10 losowych liczb dwucyfrowych. Odczytaj ten plik i wypisz największą z liczb
+
+// 3.3 Zapisz do pliku 100 losowych liczb trzycyfrowych. Odczytaj ten plik i wypisz wszystkie liczby-palindromy, np 242 itp.
+

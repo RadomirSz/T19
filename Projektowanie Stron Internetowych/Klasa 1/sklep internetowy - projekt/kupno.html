@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potwierdzenie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body onload="OdczytajDane()" class="text-center overflow-x-hidden">
+    <h1 class="mt-5 mb-5">Formularz konfiguracji</h1>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-12"><img class="image w-75 mb-4" id="img"></div>
+        <div class="col-lg-2 mt-5">
+            <h3>Informacje:</h3>
+            <p class="mb-0">Marka:</p><p class="info" id="marka"></p>
+            <p class="mb-0">Model:</p><p class="info" id="model"></p>
+            <p class="mb-0">Rok wyprodukowania:</p><p class="info" id="rokProdukcji"></p>
+            <p class="mb-0">Konie Mechaniczne:</p><p class="info" id="konieMech"></p>
+            <p class="mb-0">Przebieg:</p><p class="info" id="przebieg"></p>
+            <p class="mb-0">Cena:</p><p class="info" id="cena"></p>
+        </div>
+            <div class="col-lg-4 mt-5">
+                    <label for="financing">Finansowanie:</label><br>
+                    <input type="radio" name="formaPlatnosci" id="leasing" onchange="formaplatnosci()"><label for="formaPlatnosci">W leasingu</label><br>
+                    <input type="radio" name="formaPlatnosci" id="gotowka" onchange="formaplatnosci()"><label for="formaPlatnosci">Gotówką</label><br>
+                <br>
+            
+                <p>Dodatki:</p>
+                <input type="checkbox" name="dodatki" value="2000"><label for="dodatki">Zestaw opon (+2000zł)</label>
+                <br>
+                <input type="checkbox" name="dodatki" value="1000"><label for="dodatki">Ubezpieczenie Szyb (+1000zł)</label>
+                <br>
+                <input type="checkbox" name="dodatki" value="15"><label for="dodatki">Choinka zapachowa Wunderbaum (+15zł)</label>
+                <br>
+                <input type="checkbox" name="dodatki" value="300"><label for="dodatki">Zestaw środków czyszczących (+300zł)</label>
+                <br>
+                <input type="checkbox" name="dodatki" value="300"><label for="dodatki">Płyn hamulcowy, płyn chłodniczy, olej silnikowy (+300zł)</label>
+                <br>
+                <label for="dane">Imie</label><br><input type="text" name="dane"> 
+                <br>
+                <label for="dane">Nazwisko</label><br><input type="text" name="dane">
+                <br>
+                <label for="dane">Adres email</label><br><input type="text" name="dane">
+                <br>
+                <label for="dane">Adres</label><br><input type="text" name="dane">
+            </div>
+    </div>
+            <div class="mb-5 mt-4">
+            <input type="button" value="powrót do strony głównej" onclick="powrot()"></input>
+            <input class="ms-2" type="button" onclick="dokonca()" value="Zakup"></input>
+            </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <footer class="text-center mt-5">Strona jest projektem szkolnym/funkcjonuje w celach edukacyjnych.<br>Radomir Szpruta 1E</footer>
+</body>
+</html>
+

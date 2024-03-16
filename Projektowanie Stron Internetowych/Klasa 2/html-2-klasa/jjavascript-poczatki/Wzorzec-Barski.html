@@ -1,0 +1,71 @@
+</html>
+<head>
+    <style>
+        div {height: 100vh;
+                width: 50%;}
+
+        content {display: flex;
+                height: auto;
+                width: auto;
+                flex-direction: column;}
+
+        body {margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: row;}
+
+        div:nth-of-type(1) {display: flex;
+                            align-items: center;
+                            justify-content: center;}
+
+        button {align-self: flex-end;}
+
+        #cent {display: flex;
+                justify-content: center;
+                align-items: center;}
+    </style>
+</head>
+<body>
+    <div style="background-color:blueviolet;">
+        <content>
+            <input type='number' id="liczba1" placeholder="pierwsza liczba">
+            <input type='number' id="liczba2" placeholder="druga liczba">
+            <button onclick="dodawanie()">OK</button>
+
+            <input type="text" id="kolor123" placeholder="podaj kolor backgroundu">
+            <button onclick="kolorzmiana()">zatwierdź</button>
+
+            <input type="text" id="kolor321" placeholder="podaj kolor trzcionki">
+            <input type="text" id="rozmiar" placeholder="podaj rozmiar trzcionki">
+            <button onclick="kolortrzcionki()">zatwierdź</button>
+        </content>
+            
+    </div>
+    <div style="background-color:chocolate;" id="cent">
+        <p id="lol"></p>
+    </div>
+
+
+    <script>
+        function dodawanie(){
+        
+        x = document.getElementById('liczba1').value;
+        y = document.getElementById('liczba2').value;
+        console.log(x, y);
+
+        document.getElementById('lol').innerHTML = x - - y;
+        }
+        function kolorzmiana()
+        {
+            x = document.getElementById("kolor123");
+            y = document.getElementById("cent");
+            y.style.backgroundColor = x.value;
+        }
+        function kolortrzcionki()
+        {
+            document.getElementById("lol").style.color = document.getElementById("kolor321").value;
+            document.getElementById("lol").style.fontSize = document.getElementById("rozmiar").value;
+        }
+    </script>
+</body>
+</html>

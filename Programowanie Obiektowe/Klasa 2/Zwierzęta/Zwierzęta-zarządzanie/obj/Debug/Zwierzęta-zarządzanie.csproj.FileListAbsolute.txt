@@ -1,0 +1,7 @@
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\obj\Debug\Zwierzęta-zarządzanie.csproj.AssemblyReference.cache
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\obj\Debug\Zwierzęta-zarządzanie.csproj.CoreCompileInputs.cache
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\bin\Debug\Zwierzęta-zarządzanie.exe.config
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\bin\Debug\Zwierzęta-zarządzanie.exe
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\bin\Debug\Zwierzęta-zarządzanie.pdb
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\obj\Debug\Zwierzęta-zarządzanie.exe
+C:\Users\ja\Desktop\Zwierzęta\Zwierzęta-zarządzanie\obj\Debug\Zwierzęta-zarządzanie.pdb

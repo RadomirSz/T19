@@ -1,0 +1,67 @@
+from math import gcd
+#3
+# suma = 0
+# for i in range(100,1000):
+#     if i % 2 == 0:
+#         suma += i
+# print(suma)
+
+#4
+# ilosc = 0
+# for i in range(10,100):
+#     if i % 2 == 0 and i % 13 == 0:
+#         ilosc += 1
+# print(ilosc)
+
+#5
+# suma = 0
+# n = int(input())
+# for i in range(1,n+1):
+#     if n%i==0:
+#         suma+= i
+# print(suma)
+
+#6
+# n = int(input())
+# suma = 0
+# for i in range(1,n):
+#     if n%i==0:
+#         suma+= i
+# if suma > n:
+#     print("jest dzielniko ujemna")
+# else:
+#     print("nie jest dzielniko ujemna")
+#7
+licznik = 0
+g=int(input())#5
+d=int(input())#10
+g2=int(input())#10
+d2=int(input())#20
+x = gcd(d,d2)
+gx=g//(d//x)
+gx2=g2//(d2//x)
+wyn = gx+gx2
+
+print(f"{g}/{d}+{g2}/{d2}={wyn}/{x}")
+if wyn >= x:
+    while wyn >= x:
+        licznik += 1
+        wyn -= x
+
+print(f"wynik po skróceniu:{licznik} {wyn}/{x}")
+#8
+# ile = 0
+# s = input()
+# for i in s:
+#     if ord(i)%2==0:
+#         ile +=1
+# print(ile)
+#9
+# a,b,c=input(),input(),input()
+# x = len(a)+len(b)+len(c)
+# if x > 20:
+#     print("mają ponad 20 liter")
+# else:
+#     print("nie mają przynajmniej 20")
+
+

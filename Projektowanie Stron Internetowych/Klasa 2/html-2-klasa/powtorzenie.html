@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poowtorzenie</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .left{
+            background-color: aqua;
+            width: 50vw;
+            height: 100vh;
+            padding: 0px;
+            text-align: center;
+        }
+        .right{
+            background-color: chartreuse;
+            width: 50vw;
+            height: 100vh;
+            text-align: center;
+        }
+        a{
+            font-size: xx-large;
+            color: rgb(161, 18, 184);
+        }
+    </style>
+</head>
+<body>
+    <div class="left" onmouseover="nie()" id="left">
+        <a>bu</a>
+    </div>
+    <div class="right" onmouse
+    onmouseover="tak()"  id="right">
+        <a>bu</a>
+    </div>
+
+
+    <script>
+        function getRandomInt(max) { return Math.floor(Math.random() * max);}
+        var colors = ['red', 'blue', 'green', 'teal', 'rosybrown', 'tan', 'plum', 'saddlebrown'];
+        function nie()
+        {
+            var x = getRandomInt(8);
+            document.getElementById("right").style.background = colors[x];
+        }
+        function tak()
+        {
+            var x = getRandomInt(8);
+            document.getElementById("left").style.background = colors[x];
+        }
+
+    </script>
+</body>
+</html>

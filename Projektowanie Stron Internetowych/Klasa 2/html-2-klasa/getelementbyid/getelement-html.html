@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getelement</title>
+    <script src="getelement.js"></script>
+    
+    <style>
+        .div2{
+            padding-top: 15vh;
+            height: 90vh;
+            width: 50vw;
+            font-size: 150px;
+            text-align: center;
+            color:aqua;
+            background-color: black;
+        }
+        .div1{
+            background-color: aqua;
+            height: 100vh;
+            width: 50vw;
+            text-align: center;
+            padding-top: 20vh;
+        }
+        body{
+            display: flex;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="text" name="nazwa pola" id="pole1">
+    <input type="button" value="wyślij" onclick="formularz()">  -->
+    
+    
+    <!-- <div class="div1">
+    <p>Daj boki prostokąta:</p>
+    <input type="text" name="nazwa pola" id="bok1"><br>
+    <input type="text" name="nazwa pola" id="bok2"><br>
+    <input type="button" value="wyślij" onclick="oblicz()">
+    </div>
+        <div class="div2" id="div2">
+    </div> -->
+
+    <fieldset>
+        <legend>Wybierz</legend>
+        <input type="radio" value="A" name="radio" checked> A
+        <input type="radio" value="B" name="radio"> B
+        <input type="radio" value="C" name="radio"> C
+        <br>
+        <input type="button" value="wyślij" onclick="wybor()">
+    </fieldset>
+    <br>    
+
+    <fieldset>
+        <legend>Wybierz</legend>
+        <input type="checkbox" value="kos" name="checkbox"> kos 
+        <input type="checkbox" value="gil" name="checkbox"> gil
+        <input type="checkbox" value="paw" name="checkbox"> paw
+        <input type="checkbox" value="emu" name="checkbox"> emu
+        <br>
+        <input type="button" value="wyślij" onclick="wybor2()">
+    </fieldset>
+
+    <fieldset>
+       <legend>wybierz ssaki:</legend>
+       <select id="ssaki">
+            <option value="koń">koń</option>
+            <option value="ryś">ryś</option>
+            <option value="jeż">jeż</option>
+            <option value="koń">koń</option>
+       </select> 
+       <br>
+       <input type="button" value="wyślij" onclick="wybor3()">
+    </fieldset>
+</body>
+</html>

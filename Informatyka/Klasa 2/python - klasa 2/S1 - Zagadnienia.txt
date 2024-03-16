@@ -1,0 +1,8 @@
+Zagadnienia na spr 1:
+
+1. Metody numeryczne - prostokąty i trapezy 
+   (możliwie inne figury - np trójkąty i romby)
+2. Metoda bisekcji (stopowana ilością kroków lub przedziałem)
+3. Alg Newtona - Raphsona (stopowany ilością kroków lub przedziałem)
+4. Wyszukiwanie lidera w liście
+5. Metoda Monte Carlo

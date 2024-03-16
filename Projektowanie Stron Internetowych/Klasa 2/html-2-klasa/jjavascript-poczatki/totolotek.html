@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>docjument</title>
+    <style>
+        table, tr, td
+        {
+            border: blue 1px solid;
+        }
+        table
+        {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let T = [];
+        var i = 1,a;
+        document.write("<table>");
+        do
+        {
+            while(!T.includes(a)){
+            a = parseInt(Math.random()*49+1);
+            }
+            
+            document.write("<tr><td>" + a + "</td></tr>");
+            T.push(a);
+            i++;
+        }while(i <= 6);
+        document.write("</table>");
+    </script>
+</body>
+</html>

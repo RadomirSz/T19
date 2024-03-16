@@ -1,0 +1,26 @@
+Diagnoza INF
+
+- WSTĘP
+1. Oblicz sumę liczb 3-cyfrowych
+2. Oblicz sumę i ilość dwucyfrowych wielokrotności liczby 6
+3. Znajdź największą liczbę wśród 5 wylosowanych przez program liczb 4-cyfrowych
+4. Podaj sumę cyfr w dowolnej liczbie
+5. Znajdź najmniejszą cyfrę we wpisanej przez usera liczbie 3-cyfrowej
+
+- ALGORYTMY
+1. Sprawdź czy wpisana przez usera liczba jest pierwsza
+2. Sprawdź czy wpisana przez usera liczba jest złożona
+3. Sprawdź czy wpisana przez usera liczba jest względnie pierwsza z 24
+4. Zakoduj szyfrem CEZARA i kluczem k słowo s.
+5. Dodaj dwa ułamki a/b + c/d. Zapisz sumę jako ułamek nieskracalny i liczbę mieszaną.
+6. Znajdź NWW dwóch wpisanych przez usera liczb
+
+- KARTKA
+1. Oblicz wartość ONP - 8822+/234*---
+2. Znajdź postać ONP dla pisanego wyrażenia - (3+8)/4-6*(3*4/2)
+3. Napisz na kartce algorytm NWD (obie wersje) i przeprowadz symulacje kroków dla podanych liczb - dowolny i a=35 b=56
+
+- NAPISY
+1. Znajdź ilość liter C we wpisanym napisie
+2. Sprawdź czy literki w napisie są w porządku nierosnącym: np ZOO, WOK, WODA itp
+3. Podaj najdłuższy z 3 wpisanych przez usera wyrazów.

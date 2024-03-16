@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            margin: 0px;
+        }
+        .div1, .div2{
+            width: 50vw;
+            height: 100vh;
+            text-align: center;
+            
+        }
+        .div1{
+            background-color: greenyellow;
+        }
+        .div2{
+            background-color: rgb(15, 214, 15);
+        }
+        #wynik{
+            text-align: center;
+            margin-top: 30vh;
+            font-size: xx-large;
+        }
+        .inputy{
+            margin-top: 50%;
+        }
+        table{
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function potega()
+        {
+            let x = document.getElementById("liczba1").value;
+            let y = document.getElementById("liczba2").value;
+            let a = Math.pow(x,y);
+            document.getElementById("wynik").innerHTML = a;
+        }
+        function zmianakoloru()
+        {
+            document.getElementById("wynik").style.color = document.getElementById("kolor").value;
+        }
+        function lotek(){
+            document.writeln("<table>");
+            let i = 0;
+            let a = 1;
+            
+            for(let i = 0 ; i < 10 ; i++)
+            {
+                a = parseInt(Math.random()*100+1);
+                document.writeln("<tr><td>" + a + "</td></tr>");
+            }
+            
+            document.writeln("</table>");
+        }
+    </script>
+</head>
+<body>
+    <div class="div1">
+        <div class="inputy">
+            Liczba :<input type="text" id="liczba1"><br>
+            Potęga :<input type="text" id="liczba2"><br>
+            <input type="button" onclick="potega()" value="wyślij"><br>
+            <input type="text" id="kolor"><br>
+            <input type="button" onclick="zmianakoloru()" value="wyślij">
+            
+        </div>
+    </div>
+    <div class="div2">
+        <p id="wynik"></p>
+    </div>
+    <input type="button" onclick="lotek()" value="lotek">
+</body>
+</html>

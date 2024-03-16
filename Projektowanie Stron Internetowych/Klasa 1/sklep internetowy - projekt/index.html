@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8">
+    <title>Serwis JARGUM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="overflow-x-hidden w-auto">
+    <div class="row">
+    
+        <div class="col-3">
+            <img src="logo.png" class="w-100 rounded-4">
+        </div>
+                    <div class="container-fluid ms-2 mt-3 col-2">
+                        <div class="row mb-3">
+                            <nav class="navbar navbar-expand-lg bg-body-tertiary p-2">
+                                <div class="form-group">
+                                    <label for="exampleSelect"><p class="fs-2">Wybierz markę:</p></label>
+                                    <select class="form-control" id="exampleSelect">
+                                            <option value="all">Pokaż wszystkie</option>
+                                            <option value="volkswagen">Volkswagen</option>
+                                            <option value="audi">Audi</option>
+                                            <option value="opel">Opel</option>
+                                            <option value="Mercedes">Mercedes</option>
+                                            <option value="toyota">Toyota</option>
+                                    </select>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+         
+        <div class="col-6 fs-1 mt-3 ">
+            <p>Serwis samochodowy "JARGUM"</p>
+        </div>
+        
+        
+
+  
+
+    <div class="container">
+        <div class="row mt-5 gy-4">
+            <div class="col-12 border toyota">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="supragr.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p class="m-0">
+                            <p class="fs-1 m-0">Toyota Supra Gr</p><br>
+                            Cena: 215000 zł<br>
+                            Marka: Toyota<br>
+                            Model: Supra Gr<br>
+                            Rok Produkcji: 2021<br>
+                            Moc Silnika: 340KM<br>
+                            Przebieg: 83124km<br>
+                            </p>
+                            <input  type="button" value="Zakup" onclick="kupno(0)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 border opel">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="opelcorsa.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-2">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0"> Opel Corsa 2019</p><br>
+                            Cena: 57500 zł<br>
+                            Marka: Opel<br>
+                            Model: Corsa<br>
+                            Rok Produkcji: 2022<br>
+                            Moc Silnika: 130KM<br>
+                            Przebieg: 80173km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(1)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border mercedes">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="mercedesklasaa.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-4">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Mercedes-Benz Klasa A</p><br>
+                            Cena: 110000zł<br>
+                            Marka: Mercedes<br>
+                            Model: Klasa A<br>
+                            Rok Produkcji: 2015<br>
+                            Moc Silnika: 360KM<br>
+                            Przebieg: 140934km<br>
+                            </p>
+                            <input  type="button" value="Zakup" onclick="kupno(2)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border audi">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="audir8.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Audi R8 V10</p><br>
+                            Cena: 550000zł<br>
+                            Marka: Audi<br>
+                            Model: R8 V10<br>
+                            Rok Produkcji: 2018<br>
+                            Moc Silnika: 602KM<br>
+                            Przebieg: 63840km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(3)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border volkswagen">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="ArteonR.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Volkswagen Arteon R</p><br>
+                            Cena: 200000zł<br>
+                            Marka: Volkswagen<br>
+                            Model: Arteon R<br>
+                            Rok Produkcji: 2021<br>
+                            Moc Silnika: 320KM<br>
+                            Przebieg: 32045km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(4)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border mercedes">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="mercedesklasac.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Mercedes-Benz Klasa C AMG</p><br>
+                            Cena: 245000zł <br>
+                            Marka: Mercedes-Benz<br>
+                            Model: Klasa C<br>
+                            Rok Produkcji: 2021<br>
+                            Moc Silnika: 204KM<br>
+                            Przebieg: 25000km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(5)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border toyota">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="corolla.jpg" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Toyota Corolla</p><br>
+                            Cena: 95000 zł <br>
+                            Marka: Toyota<br>
+                            Model: Corolla<br>
+                            Rok Produkcji: 2017<br>
+                            Moc Silnika: 140KM<br>
+                            Przebieg: 35120km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(6)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border audi">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="audiq3.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Audi Q3</p><br>
+                            Cena: 110000zł<br>
+                            Marka: Audi<br>
+                            Model: Q3<br>
+                            Rok Produkcji: 2022<br>
+                            Moc Silnika: 150KM<br>
+                            Przebieg: 120673km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(7)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border volkswagen">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="tcross.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Volkswagen T-Cross</p><br>
+                            Cena: 75400zł<br>
+                            Marka: Volkswagen<br>
+                            Model: T-Cross<br>
+                            Rok Produkcji: 2019<br>
+                            Moc Silnika: 115KM<br>
+                            Przebieg: 46732km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(8)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border audi">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="audirs5.png" alt="auto" class="w-50 d-block ms-auto me-auto mt-3">
+                    </div>
+                    <div class="col-6">
+                        <span class="opis">
+                            <p>
+                            <p class="fs-1 m-0">Audi RS 5 Coupé </p><br>
+                            Cena: 225000zł<br>
+                            Marka: Audi<br>
+                            Model: RS 5 Coupé<br>
+                            Rok Produkcji: 2018<br>
+                            Moc Silnika: 450KM<br>
+                            Przebieg: 94623km<br>
+                            </p>
+                            <input type="button" value="Zakup" onclick="kupno(9)">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="plik.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <footer class="text-center mt-5 mb-5">Strona jest projektem szkolnym/funkcjonuje w celach edukacyjnych.<br>Radomir Szpruta 1E</footer>
+</body>
+</html>
