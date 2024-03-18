@@ -1,0 +1,7 @@
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\bin\Debug\Zwierzeta 2.exe.config
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\bin\Debug\Zwierzeta 2.exe
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\bin\Debug\Zwierzeta 2.pdb
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\obj\Debug\Zwierzeta 2.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\obj\Debug\Zwierzeta 2.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\obj\Debug\Zwierzeta 2.exe
+C:\Users\Radomir\Desktop\Zwierzeta 2\Zwierzeta 2\obj\Debug\Zwierzeta 2.pdb
