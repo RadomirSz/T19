@@ -15,7 +15,9 @@ namespace _27_02.NewFolder1
         public int Age { get; set; }
         public float Height { get; set; }
 
-        // konstruktor statyczny jest wywoływany automatycznie, aby zainicjować klasę przed utworzeniem pierwszej instalacji. Jest wywoływany tylko 1 raz, przed pierwszym użyciem typu. Konstruktor statyczny nie może mieć paramentrów ani modyfikatorów dostępu. Służy do inicjowania pól statycznych lub wykonywania innych operacji statycznych. ()
+        // konstruktor statyczny jest wywoływany automatycznie, aby zainicjować klasę przed utworzeniem pierwszej instalacji. 
+        //Jest wywoływany tylko 1 raz, przed pierwszym użyciem typu. Konstruktor statyczny nie może mieć paramentrów ani modyfikatorów dostępu. 
+        //Służy do inicjowania pól statycznych lub wykonywania innych operacji statycznych. ()
 
         static Person()
         {
@@ -23,7 +25,9 @@ namespace _27_02.NewFolder1
             Counter++;
         }
 
-        // Konstruktor domyślny jest bezparametrowym. Jeśli klasa nie ma żadnego konstruktora parametrycznego, to konstruktor domyślny jest wywoływany przy tworzeniu obiektu. Inicjuje on wszystkie pola do ich watrości domyślnych. Jeśli zdefiniujemy jakiś konstruktor paramentryczny, to nie otrzymamy automatycznie konstruktora domyślnego i musimy go samodzielnie zadeklarować.
+        // Konstruktor domyślny jest bezparametrowym. Jeśli klasa nie ma żadnego konstruktora parametrycznego, to konstruktor domyślny jest wywoływany przy tworzeniu obiektu. 
+        //Inicjuje on wszystkie pola do ich watrości domyślnych. Jeśli zdefiniujemy jakiś konstruktor paramentryczny, to nie otrzymamy automatycznie konstruktora domyślnego 
+        //i musimy go samodzielnie zadeklarować.
 
         // Dodać konstuktor domyślny
         public Person() 
@@ -33,7 +37,8 @@ namespace _27_02.NewFolder1
             Surname = "Nieznane";
             Counter++;
         }
-        //Kostruktor parametryczny ma co najmniej 1 parametr.Słyży do inicjowania pól obiektu zgodnie z wartościami podanymi przy tworzeniu obiektu.Możemy mieć wiele konstruktorów parametrycznych, o ile różnią się liczbą lub typem paramemetrów.
+        //Kostruktor parametryczny ma co najmniej 1 parametr.Słyży do inicjowania pól obiektu zgodnie z wartościami podanymi przy tworzeniu obiektu.
+        //Możemy mieć wiele konstruktorów parametrycznych, o ile różnią się liczbą lub typem paramemetrów.
 
         public Person(string name)
         {
@@ -53,7 +58,9 @@ namespace _27_02.NewFolder1
         }
 
         //konstruktor 4 parametry
-        // this służy do wywołania innego konstruktora tej samej klasy, czyli konstruktora parametrycznego z 3 parametrami. Dzięki temu konstruktor z 4 parametrami nie musi inicjowaniać pól Name, Surname, Agem a może skupić się na dodaniu pola Height. Hest to sposób na uniknięcie powtarzanie kodu i zapewnienie spójności danych.
+        //this służy do wywołania innego konstruktora tej samej klasy, czyli konstruktora parametrycznego z 3 parametrami. 
+        //Dzięki temu konstruktor z 4 parametrami nie musi inicjowaniać pól Name, Surname, Age a może skupić się na dodaniu pola Height. 
+        //Jest to sposób na uniknięcie powtarzanie kodu i zapewnienie spójności danych.
         public Person(string name , string surname , int age)
         {
             Name = name;
@@ -72,7 +79,5 @@ namespace _27_02.NewFolder1
         {
             return $"Imię:{Name} {Surname}, wiek: {Age}"; 
         }
-
-
     }
 }
