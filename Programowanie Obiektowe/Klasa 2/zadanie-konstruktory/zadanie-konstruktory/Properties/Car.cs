@@ -15,7 +15,7 @@ namespace zadanie_konstruktory.Properties
 		private bool isDiesel;
 		private DateTime DateOfPurchase;
 		private CarStatus Status;
-		enum CarStatus
+		public enum CarStatus
 		{ 
 			New,
 			Used,

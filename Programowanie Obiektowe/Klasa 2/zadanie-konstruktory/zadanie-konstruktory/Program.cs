@@ -22,6 +22,7 @@ namespace zadanie_konstruktory
 			Car c5 = new Car("Mercedes", "G class", 2001, 3.5, false, new DateTime(2001,3,10), Car.CarStatus.New);
 			c5.DisplayInformation();
 			Console.WriteLine(c5.CalculateAge());
+			Console.ReadKey();
 		}
 	}
 }
