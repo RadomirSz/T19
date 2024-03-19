@@ -1,7 +1,0 @@
-C:\Users\admin1\Nowe projekty\27-02\bin\Debug\27-02.exe.config
-C:\Users\admin1\Nowe projekty\27-02\bin\Debug\27-02.exe
-C:\Users\admin1\Nowe projekty\27-02\bin\Debug\27-02.pdb
-C:\Users\admin1\Nowe projekty\27-02\obj\Debug\27-02.csproj.AssemblyReference.cache
-C:\Users\admin1\Nowe projekty\27-02\obj\Debug\27-02.csproj.CoreCompileInputs.cache
-C:\Users\admin1\Nowe projekty\27-02\obj\Debug\27-02.exe
-C:\Users\admin1\Nowe projekty\27-02\obj\Debug\27-02.pdb

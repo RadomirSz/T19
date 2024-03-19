@@ -1,5 +1,4 @@
-﻿
-namespace Projecto1;
+﻿namespace Projecto1;
 using System;
 class Program
 {
