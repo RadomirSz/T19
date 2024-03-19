@@ -1,0 +1,2 @@
+C:\Users\uczen\Desktop\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.CoreCompileInputs.cache
