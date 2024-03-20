@@ -1,0 +1,18 @@
+1. Wpisz do tablicy T 5 losowych liczb dwucyfrowych. 
+Stwórz tablicę W liczb parzystych znajdujących się między 
+minimalną a maksymalną wartością z tablicy T.
+
+2. Utwórz ArrayListę A zawierającą 10 losowych słów 3-literowych. 
+Wypisz słowo o najwiekszej sumie kodów ASCII jego liter
+
+3. Stwórz listę L składającą się z 10 list 10 losowych cyfr. 
+Oblicz sumę największych cyfr w listach listy L oraz 
+sprawdź czy istnieje taka lista gdzie wylosowano 3 identyczne cyfry.
+
+4. Stwórz słownik D z kluczami i = 1, 2, 3 ... n (user podaje n) 
+oraz wartościami w postaci listy maksymalnie (i-1)-cyfrowych dzielników 
+liczby 10 do potęgi i dla każdego z kluczy.
+
+5. Korzystając ze słownika utwórz graf G zbudowany 
+z n wierzchołków i k krawędzi. 
+Policz wierzchołki nie mające żadnych sąsiadów.
