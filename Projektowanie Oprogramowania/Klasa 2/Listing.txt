@@ -1,0 +1,217 @@
+// Zad 1
+
+/*int[] T = new int[115];
+T[0] = 3;
+for (int i = 1; i < T.Length; i++)
+    T[i] = T[i-1] + 4;
+
+foreach  (int i in T) Console.Write(i + " ");
+Console.WriteLine("\n");*/
+
+// Zad 2
+
+
+/*StreamReader sr = new StreamReader(@"..\..\..\osoby.txt");
+
+Osoba[] Osoby = new Osoba[5];
+int licznik = 0;
+string[] linia = new string[3];
+while (!sr.EndOfStream)
+{
+    linia = sr.ReadLine().Split(";");
+    Osoba os;
+    os.imie = linia[0];
+    os.nazwisko = linia[1];
+    os.wiek = int.Parse(linia[2]);
+    Osoby[licznik] = os;
+    licznik++;
+}
+sr.Close();
+
+foreach (var item in Osoby)
+{
+    Console.Write(item.imie + " " + item.nazwisko + "\n");
+}
+
+struct Osoba
+{
+    public string imie;
+    public string nazwisko;
+    public int wiek;
+}
+*/
+
+
+// Zad 3
+
+/*List<char> LS = new List<char> {'a', 'e', 'i', 'o', 'u', 'y' };
+List<string> S =  new List<string>();
+List<char> LSC = new List<char>();
+
+Random r = new Random();
+string słowo;
+int numer;
+for (int i = 0; i < 6; i++)
+{
+    LSC = LS.ToList();
+    słowo = "";
+    for (int j = 0; j < 3; j++)
+    {
+        numer = r.Next(0, LSC.Count);
+        słowo = słowo + LSC[numer];
+        LSC.RemoveAt(numer);
+    }
+    S.Add(słowo);
+}
+foreach (var item in S)
+{
+    Console.Write(item + "\n");
+}*/
+
+// Zad 4
+
+using System.Collections;
+
+// 1 1 2 3 5 8 13 21 34 55 89 .....
+
+int fibo(int n)
+{
+    if (n == 1) return 1;
+    if (n == 2) return 1;
+    return fibo(n - 1) + fibo(n - 2);
+}
+
+ArrayList FIBO = new ArrayList();
+
+int i = 1;
+while(fibo(i) < 100)
+{
+    FIBO.Add(fibo(i));
+    i++;
+}
+
+foreach (var item in FIBO)
+{
+    Console.WriteLine(item);
+}
+
+Random r = new Random();
+Queue q = new Queue();
+
+for (int j = 0; j < 4; j++)
+{
+    q.Enqueue(FIBO[r.Next(0, FIBO.Count)]);
+}
+
+foreach (var item in q)
+{
+    Console.Write(item + " ");
+}
+Console.WriteLine("\n");
+q.Dequeue();
+q.Dequeue();
+foreach (var item in q)
+{
+    Console.Write(item + " ");
+}
+
+// Zadanie 5 STOS
+// Stworz stos 5 najwiekszych trzycyfrowych liczb pierwszych.
+// Wyswietl stos, usun 3 wyrazy i zwow wyswietl stos.
+
+bool ifPrime(int x)
+{
+    for (int i = 2; i < Math.Sqrt(x) + 1; i++)
+        if (x % i == 0)
+            return false;
+    return true;
+}
+
+List<int> PrimeNumbers = new List<int>();
+for (int i = 999; PrimeNumbers.Count < 10; i -= 2)  // Wypelnienie listy PrimeNumbers liczbami perwszymi dwucyfrowymi
+{
+    if (ifPrime(i))
+        PrimeNumbers.Add(i);
+    //if (PrimeNumbers.Count == 10)     // Jesli nie wiadomo, czy bedzie wystarzajaco elementow dodano do listy PrimeNumbers (musi byc 10)
+    //    break;
+}
+
+Stack stos = new Stack();   // LIFO - Last In First Out 
+//stos.Push();  - dodanie elementa do stosu
+//stos.Pop();   - usuwanie ostatniego elementu ze stosu
+foreach (var item in PrimeNumbers)
+{
+    Console.Write(item + " ");
+    stos.Push(item);
+}
+Console.WriteLine("\n");
+foreach (var item in stos) // Wypisywanie stosu. UWAGA: wypisuje elementy w przeciwna strone.
+{
+    Console.Write(item + " ");
+}
+
+
+//Przykłady Dictionary
+
+
+/*Dictionary<string, List<int>> D1 = new Dictionary<string, List<int>>();
+
+D1["Bartek"] = new List<int> { 2, 5, 20, 50};
+D1["Radek"] = new List<int> { 10, 20, 50, 100, 200, 500 };
+D1["Andrzej"] = new List<int> { 100, 200 };
+
+foreach (var item in D1)
+{
+    Console.Write(item.Key + " ");
+}
+Console.WriteLine("\n");
+
+foreach (var item in D1)
+{
+    Console.Write(item.Key + " - ");
+    foreach (var item1 in item.Value)
+    {
+        Console.Write(item1 + " ");
+    }
+    Console.WriteLine();
+}
+Console.WriteLine("\n");
+
+
+Dictionary<int, List<string>> D2 = new Dictionary<int, List<string>>()
+    {
+        { 1 , ["styczeń", "luty"] },
+        { 2 , ["maj", "czerwiec", "lipiec"] }
+    };*/
+
+// Zad 6
+
+Dictionary<int, List<int>> G = new ();
+
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    G.Add(i + 1, new List<int>());
+}
+
+int k = int.Parse(Console.ReadLine());
+
+string[] liczby = new string[2];
+for (int i = 0; i < k; i++)
+{
+    liczby = Console.ReadLine().Split();
+    G[int.Parse(liczby[0])].Add(int.Parse(liczby[1]));
+    G[int.Parse(liczby[1])].Add(int.Parse(liczby[0]));
+}
+
+foreach (var item in G)
+{
+    Console.Write(item.Key + " - ");
+    foreach (var item1 in item.Value)
+    {
+        Console.Write(item1 + " ");
+    }
+    Console.WriteLine();
+}
+
