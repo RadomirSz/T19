@@ -1,0 +1,10 @@
+Wzorzec kompozyt:
+
+1. Zakoduj program na bazie obrazka Composite_UML.png
+
+2. Przykład z życia... Zakoduj Osoby w firmie. Jest Prezes, 
+   który ma pod sobą Dyrektora Finansów i Dyrektor Logistyki.
+   W finansach pracuje księgowa, a w logistyce spedytor, magazynier i kierowca. 
+   Stwórz program na bazie kompozytu.
+
+  (proponuję ustawić kole stanowisko i definiować je jednak w konstruktorze dla wygody)

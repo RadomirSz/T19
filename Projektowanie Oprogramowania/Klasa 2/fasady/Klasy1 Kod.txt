@@ -1,0 +1,105 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp39
+{
+    class Przykład1
+    {
+        //pola
+        private int wiek;
+        public string imię;
+        private int wzrost;
+        // public private protected internal
+        //właściwości
+        public int Wzrost 
+        { get
+            {
+                return wzrost;
+            }
+            set
+            { }
+              
+        } 
+        //metody
+
+        public void metoda1() { }
+        public int getWiek()
+        {
+            return wiek;
+        }
+        public void setWiek(int awiek)
+        {
+            wiek = awiek;
+        }
+
+    }
+
+    class KołoZapas { }
+
+    class Auto
+    {
+        KołoZapas koło;
+        public void setKoło(KołoZapas koło)
+        {
+            this.koło = koło;
+        }
+    }
+
+    class Nauczyciel { }
+    class Szkoła
+    {
+        Nauczyciel nau;
+        void PrzyjmijNauczycielaDoPracy(Nauczyciel n)
+        {
+            nau = n;
+        }
+    }
+
+    class Klient { }
+    class Produkt { }
+    class Dostawa { }
+
+    class Zamówienie
+    {
+        Klient k;
+        Produkt p;
+        Dostawa d;
+
+        public void setKlient(Klient k)
+        { 
+            this.k = k; 
+        }
+        public void setProdukt(Produkt p)
+        {
+            this.p = p;
+        }
+
+        public void PrzypiszDostawę(Dostawa d)
+        {
+            this.d = d;
+        }
+    }
+
+    interface IKomfort
+    {
+        void włączKlimę();
+    }
+
+    class Samochód : IKomfort
+    {
+        public void włączKlimę()
+        {
+            Console.WriteLine("Chłodzę Cię"); ;
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
