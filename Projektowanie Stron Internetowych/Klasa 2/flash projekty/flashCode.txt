@@ -1,0 +1,22 @@
+
+////////////
+onClipEvent(enterFrame){
+	var speed:int = 0;
+	if(!this.hitTest(_root.floor)){
+		this._y += speed;
+	}
+	else
+	{
+		speed = -30;
+		this._y -= 30;
+	}
+	speed += 1;
+}
+////////////
+on (release) {
+	gotoandPlay(2);
+}
+///
+stop();
+
+das it
