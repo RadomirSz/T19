@@ -1,0 +1,7 @@
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\bin\Debug\Destruktory.exe.config
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\bin\Debug\Destruktory.exe
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\bin\Debug\Destruktory.pdb
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\obj\Debug\Destruktory.csproj.AssemblyReference.cache
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\obj\Debug\Destruktory.csproj.CoreCompileInputs.cache
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\obj\Debug\Destruktory.exe
+C:\Users\ja\Desktop\Zwierzęta\Destruktory\obj\Debug\Destruktory.pdb
