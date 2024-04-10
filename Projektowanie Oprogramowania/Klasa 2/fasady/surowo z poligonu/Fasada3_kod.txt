@@ -1,0 +1,31 @@
+namespace Fasada3Cars
+{
+    interface Car
+    {
+        void build();
+    }
+    class Chevrolet : Car
+    {
+        public void build() { }
+    }
+    class BMW : Car
+    {
+        public void build() { }
+    }
+    class Renault : Car
+    {
+        public void build() { }
+    }
+
+    class FacadeForCar
+    {
+        Car chevrolet;
+        Car bmw;
+        Car renault;
+        public FacadeForCar() { }
+
+        public void buildChevy() { }
+        public void buildBMW() { }
+        public void buildRenault() { }
+    }
+}

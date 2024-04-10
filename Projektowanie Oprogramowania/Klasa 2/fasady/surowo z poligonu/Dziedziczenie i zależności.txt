@@ -1,0 +1,49 @@
+using System;
+
+namespace Fasada1
+{
+    class User { }
+    class Aktywność
+    {
+        private string typ;
+        public string czas;
+    }
+
+    class Adres
+    {
+        public string ulica;
+        public string kod;
+        public string miasto;
+    }
+    class Pracownik : User
+    {
+        private string stanowisko;
+        protected string wypłata;
+        Aktywność Aktywność;
+        Adres Adres;
+
+        public void setAktywność(Aktywność aktywność)
+        {
+            Aktywność = aktywność;
+        }
+
+        public void ADodajJakiśTamAdres(Adres adres)
+        {
+            Adres = adres;
+        }
+
+        public void ustawParametry()
+        {
+            Adres a = new Adres();
+            a.miasto = "Poznań";
+            this.Adres = a;
+        }
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
