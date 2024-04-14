@@ -1,0 +1,11 @@
+Napisz wzorzec kompozytu wyświetlający system plików w win:
+
+Dysk
+--Zdjęcia
+----foto1
+----foto2
+--Prace
+----praca1
+--Różne
+----filmik1
+----grafika2

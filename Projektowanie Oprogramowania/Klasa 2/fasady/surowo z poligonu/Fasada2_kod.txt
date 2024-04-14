@@ -1,0 +1,37 @@
+namespace Fasada2WashingMaszinen
+{
+    class Washing
+    {
+        public void wash() { }
+    }
+    class Rinsing
+    {
+        public void rinse() { }
+    }
+    class Spinning
+    {
+        public void spin() { }
+    }
+    class WashingMachine
+    {
+        Washing w;
+        Rinsing r;
+        Spinning s;
+
+        public void StartWashing() { }
+        public void WeźNoToWypierz()
+        {
+            w = new Washing();
+            r = new Rinsing();
+            s = new Spinning();
+        }
+    }
+    class Clinet
+    {
+        WashingMachine wm;
+        public void pierz(WashingMachine wm) 
+        {
+            this.wm = wm;
+        }
+    }
+}

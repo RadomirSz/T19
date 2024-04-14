@@ -1,0 +1,26 @@
+using System.Collections.Generic;
+
+namespace Composite3
+{
+    interface Employee
+    {
+        string Name { get; set; }
+    }
+
+    class Junior : Employee 
+    {
+        public string Name { get; set; }
+    }
+
+    class Manager : Employee
+    {
+        List<Employee> employees = new List<Employee>();
+        public string Name { get; set; }
+        public void addJunior(Junior junior) 
+        {
+            employees.Add(junior);
+        }
+        public void removeJunior(string name) { }
+    }
+
+}

@@ -20,3 +20,38 @@ on (release) {
 stop();
 
 das it
+///
+onClipEvent (enterFrame) {
+	var speed:int;
+	speed = 40;
+	if (Key.isDown(Key.UP)) {
+		this._y -= speed;
+	}
+	if (Key.isDown(Key.DOWN)) {
+		this._y += speed;
+	}
+}
+///
+
+onClipEvent(enterFrame)
+{
+	var speed:int = 0;
+	var flag:int = 0;
+	speed = 40;
+	if(this.hitTest(_root.left))
+	{
+		flag = 1;
+	}
+	else if(this.hitTest(_root.right))
+	{
+		flag = 0;
+	}
+	
+	if(flag == 1){
+	this._x += speed;
+	}
+	else
+	{
+	this._x -= speed;	
+	}
+}
