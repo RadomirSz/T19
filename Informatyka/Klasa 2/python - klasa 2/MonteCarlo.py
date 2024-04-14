@@ -16,10 +16,10 @@ import math
 def montecarlo(n):
     licznik = 0
     for _ in range(n):
-        x = random.uniform(-1,1)
+        x = random.uniform(-1,1) #współrzędne JEDNEGO punktu (x,y)
         y = random.uniform(-1,1)
         if x**2 + y**2 <= 1:
             licznik +=1
-    return 4*licznik/n
+    return 4*licznik/n # stusunek pi/4 mnożymy razy 4 aby otrzymać czyste pi
 
-print(montecarlo(10000000))
+print(montecarlo(1000000000))
