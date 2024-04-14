@@ -103,6 +103,7 @@ def lider(T):
                 ilość += 1
             else:
                 ilość -= 1
+    
     ilość_liderów = 0
     if ilość == 0:
         print("brak lidera")
@@ -115,17 +116,16 @@ def lider(T):
 
 
 # Monte Carlo
-
+import random
 def MonteCarlo(n):
     c = 0
-    import random
-    
     for i in range(n):
         x = random.uniform(-1,1)
         y = random.uniform(-1,1)
         if x**2 + y**2 <= 1:
             c += 1
     return 4 * c / n
+
 
 print(MonteCarlo(10))
 print(MonteCarlo(1000))
