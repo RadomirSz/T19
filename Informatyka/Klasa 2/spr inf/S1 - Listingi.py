@@ -8,22 +8,22 @@ def prostokaty1(a, b, n):
     dx = (b - a) / n
     s = 0
     for i in range(n):
-        s += f(a + i * dx) * dx
-    return s
+        s += f(a + i * dx) 
+    return s * dx
 
 def prostokaty2(a, b, n):
     dx = (b - a) / n
     s = 0
     for i in range(n):
-        s += f(a + dx / 2 + i * dx) * dx
-    return s
+        s += f(a + dx / 2 + i * dx) 
+    return s * dx
 
 def prostokaty3(a, b, n):
     dx = (b - a) / n
     s = 0
     for i in range(n):
-            s += f(a + dx + i * dx) * dx
-    return s
+            s += f(a + dx + i * dx) 
+    return s * dx
 
 
 
@@ -39,6 +39,7 @@ def trapezy(a,b,n):
 def trapezy2(a,b,n):
     dx = (b-a)/n
     suma = f(a) + f(b)
+    
     for i in range(1,n):
         suma += 2*f(a+i*dx)
     suma *= dx/2
@@ -103,7 +104,7 @@ def lider(T):
                 ilość += 1
             else:
                 ilość -= 1
-    
+            
     ilość_liderów = 0
     if ilość == 0:
         print("brak lidera")
