@@ -9,11 +9,11 @@
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 86,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "popr-sprawdzian-tablicelistyitp\\Program.cs",
               "ToolTip": "C:\\Users\\Radomir\\Desktop\\T19\\Projektowanie Oprogramowania\\Klasa 2\\popr-sprawdzian-tablicelistyitp\\popr-sprawdzian-tablicelistyitp\\Program.cs",
               "RelativeToolTip": "popr-sprawdzian-tablicelistyitp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAQwHMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T06:57:26.68Z",
               "EditorCaption": ""
