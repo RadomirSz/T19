@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp50
+{
+
+    abstract class Wierzchołek
+    {
+        public string Nazwa;
+        public abstract void wyświetl();
+    }
+
+    class Plik : Wierzchołek
+    {
+        public Plik(string n)
+        {
+            Nazwa = n;
+        }
+        public override void wyświetl()
+        {
+            Console.Write("--");
+            Console.WriteLine(Nazwa);
+        }
+    }
+
+    class Katalog : Wierzchołek
+    {
+        List<Wierzchołek> Wierzchołki = new List<Wierzchołek>();
+        public Katalog(string n)
+        {
+            Nazwa = n;
+        }
+        public void Dodaj(Wierzchołek w)
+        {
+            Wierzchołki.Add(w);
+        }
+        public override void wyświetl()
+        {
+            Console.WriteLine(Nazwa);
+            foreach (var item in Wierzchołki)
+            {
+                Console.Write("--");
+                item.wyświetl();
+            }
+        }
+    }
+
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Katalog d1 = new Katalog("Dysk");
+            Katalog k1 = new Katalog("Zdjęcia");
+            Katalog k2 = new Katalog("Prace");
+            Katalog k3 = new Katalog("Różne");
+            d1.Dodaj(k1);
+            d1.Dodaj(k2);
+            d1.Dodaj(k3);
+            Plik z1 = new Plik("foto1");
+            Plik z2 = new Plik("foto2");
+            k1.Dodaj(z1);
+            k1.Dodaj(z2);
+            // itd z tą resztą
+
+
+            d1.wyświetl();
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,1 @@
+setter do mediaplayer bo jest agregacja

@@ -1,0 +1,59 @@
+Modyfikatory: określają poziom dostępu do zmiennych i metod
+
+- domyślnie modyfikatory kojarzą się z hermatyzacją
+
+
+PUBLIC - stosowany w OOP, zapewnie nieskrępowany dostęp do składowej 
+         w każdym zasięgu, czyli dostęp mamy z klasy i z obiektu (instancji)
+
+PRIVATE - stosowany w OOP, najmniejszy zasięg, dostęp wyłącznie w klasie,
+          w której zostały zdefiniowane
+
+PROTECTED - stosowany w OOP, inaczej chroniony, dostęp z klasy, ale nie ma
+            dostępu z obiektu
+
+INTERNAL - stosowany w OOP, dostęp ograniczony do zestawu, w którym zostało to 
+           umieszczone (assebmly)
+
+Dodatkowe info: Dostęp złożony np: protected internal
+
+
+Modyfikatory kolejne nie dotyczą tylko OOP...
+
+ABSTRACT - modyfiklator określa to, że dany zasób trzeba jeszcze zaimplementować
+
+ASYNC - później...
+
+CONST - składowe stałe, służą do definiowania stałych, których nie można zmienić
+
+EVENT - później...
+
+EXTERN - umożliwia deklarowanie metod używających zewnętrznych bibliotek dll.
+
+np const int PODATEK = PODATAKI.STAWKA; (STAWKA jest static)
+
+NEW - w OOP pozwala na ukrywanie składowych odziedziczonych po klasie bazowej
+
+OVERRIDE - w OOP umożliwia rozszrzenie abstrakcyjnych lub wirualnych implementacji
+           odziedziczonych składowych
+
+PARTIAL - umożliwia rozdzielanie definicji klasy, interfejsu lub struktury 
+          na kilka plików źródłowych
+
+READONLY - umożliwia stworzenie pola tylko do oczytu. 
+           Wartość takiego pola może być określona w momencie deklaracji lub jako
+           część tej deklaracji
+
+SEALED - w OOP dla danej klasy uniemożliwia dziedziczenie po niej 
+         (klasa jest zapieczętowana)
+
+STATIC - w OOP składowe do używania których nie trzeba tworzyć instancji
+
+UNSAFE - później... albo nigdy
+
+VIRTUAL - umożliwia tworzenie składowych wirtualnych czyli takich,
+          które są przeznaczone do przesłonięcie w klasach pochodnych
+
+
+
+
