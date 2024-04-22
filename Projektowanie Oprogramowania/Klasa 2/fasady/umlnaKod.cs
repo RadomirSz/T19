@@ -6,15 +6,6 @@ using System.Threading.Tasks;
 
 namespace umlNaKod
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-
-        }
-    }
-
     public abstract class Component 
     {
         public abstract void operation();
