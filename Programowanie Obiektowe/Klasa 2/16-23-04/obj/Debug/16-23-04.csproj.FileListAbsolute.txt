@@ -1,0 +1,7 @@
+C:\Users\admin1\source\repos\16-23-04\bin\Debug\16-23-04.exe.config
+C:\Users\admin1\source\repos\16-23-04\bin\Debug\16-23-04.exe
+C:\Users\admin1\source\repos\16-23-04\bin\Debug\16-23-04.pdb
+C:\Users\admin1\source\repos\16-23-04\obj\Debug\16-23-04.csproj.AssemblyReference.cache
+C:\Users\admin1\source\repos\16-23-04\obj\Debug\16-23-04.csproj.CoreCompileInputs.cache
+C:\Users\admin1\source\repos\16-23-04\obj\Debug\16-23-04.exe
+C:\Users\admin1\source\repos\16-23-04\obj\Debug\16-23-04.pdb
