@@ -1,0 +1,7 @@
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\bin\Debug\Sprawdzian-RadomirSz-uml.exe.config
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\bin\Debug\Sprawdzian-RadomirSz-uml.exe
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\bin\Debug\Sprawdzian-RadomirSz-uml.pdb
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\obj\Debug\Sprawdzian-RadomirSz-uml.csproj.AssemblyReference.cache
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\obj\Debug\Sprawdzian-RadomirSz-uml.csproj.CoreCompileInputs.cache
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\obj\Debug\Sprawdzian-RadomirSz-uml.exe
+C:\Users\Uczen\source\repos\Sprawdzian-RadomirSz-uml\Sprawdzian-RadomirSz-uml\obj\Debug\Sprawdzian-RadomirSz-uml.pdb
