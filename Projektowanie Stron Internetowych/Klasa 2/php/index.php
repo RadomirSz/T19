@@ -19,7 +19,7 @@
                 <input type="submit" value="Wyślij">
     </form>
     
-    <?php
+<?php
 error_reporting(0);
 
 $login = $_POST["login"];
@@ -57,12 +57,14 @@ $haslo = $_POST["haslo"];
  print("<br>");
 
  // nl2br daje <br> po każdym bloku tesktu / nie dziala xd / no nie idzie
- print( nl2br('ala kota.ni ma.t am'));
+ print( nl2br('ala kota ni
+  ma t
+   am'));
 
- //wordwrap zawija w kolumny  wordwrap($zmiennaTekst , dlugoscLinii , co potem np. "<br>\n") / też nie działa nwm
+ //wordwrap zawija w kolumny  wordwrap($zmiennaTekst , dlugoscLinii , co potem np. "<br>\n")
  print("<br>");
- $tekst = "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww";
- printf( wordwrap($tekst , 1,'<br>\n'));
+ $tekst = "bbbbbbbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbb bbb bbw ww www wwwwwwwwwwwwwww wwwwwwwwwwww wwwwwwwwwwww";
+ printf( wordwrap($tekst , 10 ,'<br>'));
 
  //trim usuwa spacje z lewej i prawej  / jest jeszcze ltrim i rtrim 
  echo("<br>");
@@ -89,6 +91,7 @@ $haslo = $_POST["haslo"];
 //     $login = $_POST['login'];
 //     if (empty($haslo) || empty($login)) printf("Nie masz imienia");
 //     else printf("<div id='title'>" . "haslo: " . $haslo . " login:" . $login . " </div>");
+
 ?>
 </body>
 </html>
