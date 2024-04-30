@@ -91,7 +91,7 @@ namespace _16_23_04
 			}
             else
             {
-				AnimationHelper.ShowProgress();
+				AnimationHelper.ShowProgress("ładowanie baterii: ", " ukończono:",500,10);
 			}
 		}
 	}
@@ -103,10 +103,11 @@ namespace _16_23_04
 	{
 		public static void ShowProgress(string prefix,string suffix,int delay,int totalSteps)
 		{
-            for (int i = 0; i < totalSteps; i++)
+            for (int i = 0; i < totalSteps+1; i++)
             {
-                Console.WriteLine($"\r{prefix}[{new string('|',i)}{new string('.',totalSteps-1)}]{suffix} {i*100/totalSteps}%");
+                Console.WriteLine($"\r{prefix}[{new string('|',i)}{new string('.',totalSteps-i)}]{suffix} {i*100/totalSteps}%");
 				Thread.Sleep(delay);
+				Console.Clear();
             }
         }
 	}
@@ -146,10 +147,11 @@ namespace _16_23_04
 			BatteryCapacity = 95
 
 
-		};
-		Rimac.StartEngine();
+			};
+			Rimac.StartEngine();
 			Rimac.ChargeBattery(10);
 
+			Console.ReadKey();
 		}
 	}
 }
