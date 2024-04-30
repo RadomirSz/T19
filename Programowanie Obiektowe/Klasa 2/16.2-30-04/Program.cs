@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,7 +46,7 @@ namespace _16_23_04
 		public string Brand { get; set; }
 		public string Model { get; set; }
 		public double Fuel { get; private set; }
-		public FuelType FuelType { get; protected set; }
+		public FuelType FuelType { get; set; }
 		public ushort Speed { get; set; }
 
 		public virtual void StartEngine()
@@ -72,7 +72,7 @@ namespace _16_23_04
 
 
 	}
-	public class ElectricCar : Car 
+	public class ElectricCar : Car
 	{
 		public double BatteryCapacity { get; set; }
 		public override void StartEngine()
@@ -136,19 +136,19 @@ namespace _16_23_04
 
 			Console.ReadKey();*/
 
-			/*ElectricCar Rimac = new ElectricCar {
-				Brand = "Rimac";
-				Model = "Nevera";
-			NumberOfDoors = 4;
-			FuelType = FuelType.Electric;
-			MaxGear = 1;
-			IsAutomatic = true;
-			BatteryCapacity = 95;
+			ElectricCar Rimac = new ElectricCar {
+				Brand = "Rimac",
+			Model = "Nevera",
+			NumberofDoors = 4,
+			FuelType = FuelType.Electric,
+			MaxGear = 1,
+			isAutomatic = true,
+			BatteryCapacity = 95
 
 
-			};
-			Rimac.StartEngine();
-			Rimac.ChargeBattery(10);*/
+		};
+		Rimac.StartEngine();
+			Rimac.ChargeBattery(10);
 
 		}
 	}
