@@ -1,1 +1,0 @@
-System.Console.WriteLine("plik na testowanie");
