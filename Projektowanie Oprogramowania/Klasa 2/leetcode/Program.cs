@@ -27,7 +27,7 @@
 #endregion
 
 #region leet 2
-
+/*
 public string LongestPalindrome(string s) {
     if(s.Length == 1) return s;
     int Lenght = 0;
@@ -59,7 +59,7 @@ public string reverse(string s)
     Array.Reverse(charArray);
     return new string(charArray);
 }
-
+*/
 /*
 pypon
     def longestPalindrome(self, s):
