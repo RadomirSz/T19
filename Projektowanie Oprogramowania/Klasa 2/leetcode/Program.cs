@@ -78,7 +78,38 @@ pypon
 */
 #endregion
 
+#region leet 3
 
+
+// public int AppendCharacters(string s, string t) 
+// {
+//     int slen = s.Length;
+//     int i = 0;
+//     while(true)
+//     {
+//         if(!IsItIn(s,t))
+//         {
+//             s += t[i];
+//             i++;
+//         }
+//         else return s.Length - slen;
+//     }
+// }
+// public bool IsItIn(string s,string t)
+// {
+//     for (int i = 0; i < s.Length; i++)
+//     {
+//         if(s[i] == t[0]) t = t[1..];
+//         if(t == "") return true;
+//     }
+//     return false;
+// }
+//poddaje sie
+
+
+
+
+#endregion
 
 
 
