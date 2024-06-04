@@ -1,6 +1,7 @@
 ﻿
 #region leet 1
 
+using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
 // input [2,3,4,7,4] target 10
@@ -147,7 +148,18 @@ pypon
 
 #endregion
 
+#region leet 5
 
+// public int ScoreOfString(string s) {
+//     int sum = 0; 
+//     for (int i = 0; i < s.Length - 1; i++)
+//     {
+//         sum += Math.Abs(s[i] - s[i + 1]);
+//     }
+//     return sum;
+// }
+
+#endregion
 
 
 
