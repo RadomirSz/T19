@@ -84,27 +84,27 @@ pypon
 // public int AppendCharacters(string s, string t) 
 // {
 //     int slen = s.Length;
-//     int i = 0;
+//     int whatwasin = t.Length - WhatIsIn(s,t).Length;
+
 //     while(true)
 //     {
-//         if(!IsItIn(s,t))
-//         {
-//             s += t[i];
-//             i++;
-//         }
-//         else return s.Length - slen;
+//         t = WhatIsIn(s,t);
+//         if(t!="") s += t[0];
+//         else return s.Length - slen + whatwasin;
 //     }
 // }
-// public bool IsItIn(string s,string t)
+// public string WhatIsIn(string s,string t)
 // {
+//     bool flag = false;
 //     for (int i = 0; i < s.Length; i++)
 //     {
-//         if(s[i] == t[0]) t = t[1..];
-//         if(t == "") return true;
+//         if(s[i] != t[0] && flag) return t;
+//         if(s[i] == t[0]){ t = t[1..]; flag = true;}
+//         if(t == "") return t;
 //     }
-//     return false;
+//     return t;
 // }
-//poddaje sie
+// nadal nie wiem
 
 
 
