@@ -1,6 +1,8 @@
 ﻿
 #region leet 1
 
+using System;
+using System.Collections.Generic;
 // input [2,3,4,7,4] target 10
 // int[] TwoSum(int[] nums, int target) 
 // {
@@ -83,6 +85,7 @@ pypon
 
 // public int AppendCharacters(string s, string t) 
 // {
+//     if(WhatIsIn(s,t).Length == 0) return 0;
 //     int slen = s.Length;
 //     int whatwasin = t.Length - WhatIsIn(s,t).Length;
 
@@ -104,20 +107,45 @@ pypon
 //     }
 //     return t;
 // }
-// nadal nie wiem
-
+//nie wiem no
 
 
 
 #endregion
 
+#region leet 4
 
 
 
 
+// public int LongestPalindrome(string s) 
+// {
+//     int count = 0;
+//     bool temp = false;
+//     Dictionary<char,int> letters = new Dictionary<char,int>();
+    
+//     for (int i = 0; i < s.Length; i++)
+//     {
+//         if(letters.ContainsKey(s[i])) letters[s[i]]++;
+//         else letters.Add(s[i], 1);
+//     }
+//     foreach (var item in letters)
+//     {
+//         if(item.Value % 2 == 0) count += item.Value;
+//         else 
+//         {
+//             count += item.Value - 1;
+//             temp = true;
+//         }
+//     }
+//     if(temp) return count + 1;
+//     return count;
+// }
 
 
 
+
+#endregion
 
 
 
