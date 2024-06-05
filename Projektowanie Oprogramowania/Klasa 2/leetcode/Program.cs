@@ -170,30 +170,30 @@ pypon
 #region leet 6
 
 
-public IList<string> CommonChars(string[] words) 
-{
-    List<string> output = new List<string>();
-    bool flag = true;
-    foreach (var i in words[0])
-    {
-        foreach (var j in words)
-        {
-            if(!IsTheLetterInTheWord(i,j))
-            {
-                flag = false;
-            }
-        }
-        if(flag) output.Add(Char.ToString(i));
-        else flag = true;
-    }
-    return output;
-}
+// public IList<string> CommonChars(string[] words) 
+// {
+//     List<string> output = new List<string>();
+//     bool flag = true;
+//     foreach (var i in words[0])
+//     {
+//         foreach (var j in words)
+//         {
+//             if(!IsTheLetterInTheWord(i,j))
+//             {
+//                 flag = false;
+//             }
+//         }
+//         if(flag) output.Add(Char.ToString(i));
+//         else flag = true;
+//     }
+//     return output;
+// }
 
-public bool IsTheLetterInTheWord(char l, string s)
-{
-    foreach(char i in s) if(i == l) return true;
-    return false;
-}
+// public bool IsTheLetterInTheWord(char l, string s)
+// {
+//     foreach(char i in s) if(i == l) return true;
+//     return false;
+// }
 // jednak nie o to chodziło
 
 
