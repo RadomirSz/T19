@@ -1,9 +1,12 @@
-﻿
-#region leet 1
-
+﻿using System.Collections;
 using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
+
+
+#region leet 1
+
+
 // input [2,3,4,7,4] target 10
 // int[] TwoSum(int[] nums, int target) 
 // {
@@ -27,6 +30,8 @@ using System.Collections.Generic;
 // {
 //     Console.WriteLine(item);
 // }
+
+
 #endregion
 
 #region leet 2
@@ -162,7 +167,42 @@ pypon
 #endregion
 
 
+#region leet 6
 
+
+public IList<string> CommonChars(string[] words) 
+{
+    List<string> output = new List<string>();
+    bool flag = true;
+    foreach (var i in words[0])
+    {
+        foreach (var j in words)
+        {
+            if(!IsTheLetterInTheWord(i,j))
+            {
+                flag = false;
+            }
+        }
+        if(flag) output.Add(Char.ToString(i));
+        else flag = true;
+    }
+    return output;
+}
+
+public bool IsTheLetterInTheWord(char l, string s)
+{
+    foreach(char i in s) if(i == l) return true;
+    return false;
+}
+
+
+
+
+
+
+
+
+#endregion
 
 
 
