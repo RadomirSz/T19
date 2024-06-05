@@ -194,7 +194,7 @@ public bool IsTheLetterInTheWord(char l, string s)
     foreach(char i in s) if(i == l) return true;
     return false;
 }
-
+// jednak nie o to chodziło
 
 
 
