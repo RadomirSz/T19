@@ -206,7 +206,47 @@ pypon
 
 
 
+#region leet 7
 
+
+// public bool IsNStraightHand(int[] hand, int groupSize) 
+// {
+//     if(groupSize == 1) return true;
+//     if(hand.Length % groupSize == 0)
+//     {
+//         List<int> list1 = new List<int>();
+//         foreach (var item in hand) list1.Add(item);
+//         list1.Sort();
+//         int amountOfLists = hand.Length / groupSize;
+//         List<List<int>> list2 = new List<List<int>>();
+//         for (int i = 0; i < amountOfLists; i++)
+//         {
+//             list2.Add(new List<int>());
+//             for (int j = 0; j < groupSize; j++)
+//             {
+//                 list2[i].Add(list1[i*groupSize + j]);
+//             }
+//         }
+//         foreach (var item in list2)
+//         {
+//            if(!IsSortedConsecutively(item)) return false;
+//         } 
+//         return true;
+//     }
+//     else return false;
+// }
+// public bool IsSortedConsecutively(List<int> list)
+// {
+//     for (int i = 0; i < list.Count-1; i++)
+//     {
+//         if(list[i] + 1 != list[i+1] && list[i] != list[i+1]) return false;
+//     }
+//     return true;
+// }
+// nie wiem no
+
+
+#endregion
 
 
 
