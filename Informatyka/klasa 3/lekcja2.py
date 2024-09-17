@@ -1,14 +1,17 @@
+from math import sqrt
 def czy_pierwsza(n):
-    for i in range(2,n):
-        if(n%i==0): return False
+    if n < 2: return False
+    p = int(sqrt(n))
+    for i in range(2,p):
+        if n%i==0: return False
     return True
 
 def czy_liczba_smitha(n):
-    if(czy_pierwsza(n)): return False
+    if czy_pierwsza(n): return False
 
 def suma_cyfr_liczby(r):
     suma = 0
-    while(r>0):
+    while r>0:
         suma += r%10
         r = r//10
     return suma
@@ -25,10 +28,10 @@ n = int(input())
 suma = 0
 array = []
 liczba = 0
-while((n<=1) == False):
+while n>1:
     for i in range(2,n+1):
-        if(n%i==0 and czy_pierwsza(i)):
-            if(i not in array):
+        if n%i==0 and czy_pierwsza(i):
+            if i not in array :
                 array.append(i)
                 liczba += 1
             print(i)
@@ -52,25 +55,16 @@ t = int(input("daj liczbę: "))
 T = t
 suma2 = 0
 
-while((t<=1) == False):
+while t>1:
     for i in range(2,t+1):
-        if(t%i==0 and czy_pierwsza(i)):
+        if t%i==0 and czy_pierwsza(i):
             t = t//i
             suma2 += suma_cyfr_liczby(i)
             break
 
-if(czy_pierwsza(T) == False):
-    sum = suma_cyfr_liczby(T)
-    print(sum)
+if not czy_pierwsza(T):
+    suma1 = suma_cyfr_liczby(T)
+    print(suma1)
     print(suma2)
-    if(sum == suma2):
+    if suma1 == suma2:
         print("liczba ta jest liczbą smitha")
-
-
-
-
-
-
-
-
-
