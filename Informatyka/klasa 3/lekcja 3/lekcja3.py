@@ -13,6 +13,13 @@ def dzielniki_wlasciwe(n):
             ile+=1
     return ile
 
+def suma_dzielnikow_pierwszych(n):
+    suma = 0
+    for i in range(2,n+1):
+        if(n%i==0 and czy_pierwsza(i)):
+            suma += i
+    return suma
+
 def suma_czynników_pierwszych(n):
     czynnik = 2
     suma = 0
@@ -50,14 +57,14 @@ for liczba in tab2:
 
 
 #z4
-#cos zle
-# najwiekszaSuma = 0
-# liczba = 0
-# for i in tab2:
-#     if(suma_dzielnikow_pierwszych(i) > najwiekszaSuma):
-#         najwiekszaSuma = dzielniki_wlasciwe(i)
-#         liczba = i
-# print(liczba)
+
+najwiekszaSuma = 0
+liczba = 0
+for i in tab2:
+    if(suma_dzielnikow_pierwszych(i) > najwiekszaSuma):
+        najwiekszaSuma = suma_dzielnikow_pierwszych(i)
+        liczba = i
+#print(liczba)
 
 #z5
 
@@ -71,7 +78,7 @@ liczby = []
 for i in tab2:
     if(suma_czynników_pierwszych(i) == minimum):
         liczby.append(i)
-print(liczby)
+#print(liczby)
 
 
 
