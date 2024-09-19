@@ -65,7 +65,22 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            int nwd(int a, int b)
+            {
+                while (b > 0)
+                {
+                    int r = a % b;
+                    a = b;
+                    b = r;
+                }
+                return a;
+            }
+            int nww(int a, int b)
+            {
+                return a * b / nwd(a, b);
+            }
+            int o = nww(int.Parse(textBox2.Text), int.Parse(textBox3.Text));
+            MessageBox.Show(o.ToString());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -89,8 +104,9 @@ namespace WindowsFormsApp1
             {
                 return a * b / nwd(a, b);
             }
-
-            label1.Text = 
+            int x = int.Parse(textBox2.Text);
+            int y = int.Parse(textBox3.Text);
+            label1.Text = $"nwd: {nwd(x,y).ToString()} \nnww: {nww(x,y).ToString()}";
         }
     }
 }
