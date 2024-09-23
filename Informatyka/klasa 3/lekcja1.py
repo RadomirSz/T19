@@ -5,7 +5,25 @@ def czyPierwsza(n):
     for i in range(2,n):
         if n%i==0: return False
     return True
-        
+
+def suma_dzielnikow_wlasciwych(n):
+    suma = 0
+    for i in range(1,n):
+        if(n%i==0): suma +=i
+    return suma
+
+def czy_zaprzyjaznione(a,b):
+    if a == b: print("nie")
+    if(suma_dzielnikow_wlasciwych(a) == b and suma_dzielnikow_wlasciwych(b) == a): print("tak")
+    else: print("nie")
+
+def czy_blizniacze(a,b):
+    if czyPierwsza(p) and czyPierwsza(l):
+        if p-l== -2 or p-l==2: return True
+        else: return False
+    else: return False
+
+
 #1
 print("zad 1")
 
@@ -51,14 +69,34 @@ print("zad 6")
 p = int(input())
 l = int(input())
 
-if czyPierwsza(p) and czyPierwsza(l):
-    if p-l== -2 or p-l==2: print("są liczbami bliźniaczymi")
-    else: print("nie są")
+czy_blizniacze(p,l)
     
+#7
+print("zad 7")
+h = int(input())
+
+if(suma_dzielnikow_wlasciwych(h) == h): print("tak")
+else: print("nie")
 
 
+#8
+print("zad 8")
 
+o = int(input())
+g = int(input())
 
+czy_zaprzyjaznione(o,g)
 
+#9
+print("zad 9")
 
-    
+for i in range(1,1001):
+    for j in range(1,1001):
+        if(czy_blizniacze(i,j)):
+            print(f"{i},{j}")
+
+#10
+print("zad 10")
+
+for i in range(1,1001):
+    if(suma_dzielnikow_wlasciwych(i) == i): print(i)
