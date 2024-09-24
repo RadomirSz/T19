@@ -43,8 +43,6 @@ namespace WindowsFormsApp1
         {
             MessageBox.Show(DateTime.Now.ToString("F"));
             MessageBox.Show(DateTime.Now.ToString("t"));
-
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -106,7 +104,7 @@ namespace WindowsFormsApp1
             }
             int x = int.Parse(textBox2.Text);
             int y = int.Parse(textBox3.Text);
-            label1.Text = $"nwd: {nwd(x,y).ToString()} \nnww: {nww(x,y).ToString()}";
+            label1.Text = $"nwd: {nwd(x,y)} \nnww: {nww(x,y)}";
         }
     }
 }
