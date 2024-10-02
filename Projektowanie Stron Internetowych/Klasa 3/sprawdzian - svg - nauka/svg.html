@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body style="text-align: center;">
+    <form action="" method="post" style="font-weight: bold; font-size: 24px;">
+        Stwórz figurę!
+        <br>
+        Wybierz rodzaj figury:
+        <select name="shape" id="Shape">
+            <option value="rect">Prostokąt</option>
+            <option value="circle">Koło</option>
+        </select>
+        <br>
+        Wybierz kolor:
+        <select name="color" id="Color">
+            <option value="white">Biały</option>
+            <option value="red">Czerwony</option>
+            <option value="blue">Niebieski</option>
+            <option value="green">Zielony</option>
+            <option value="yellow">Żółty</option>
+            <option value="black">Czarny</option>
+        </select>
+        <br>
+        Wybierz rozmiar figury:
+        <select name="size" id="Size">
+            <option value="small">Mały</option>
+            <option value="medium">Średni</option>
+            <option value="large">Duży</option>
+        </select>
+        <br>
+        <input type="button" value="Stwórz!" onClick="DrawFigure()">
+    </form>
+    <div id="SVG_Container">
+        
+    </div>
+</body>
+</html>
+
