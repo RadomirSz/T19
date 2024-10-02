@@ -3,33 +3,20 @@ function DrawFigure() {
     var color = document.getElementById("Color").value;
     var size = document.getElementById("Size").value;
 
-    switch (size) {
-        case "small":
-            size = 200;
-            break;
-        case "medium":
-            size = 400;
-            break;
-        case "large":
-            size = 600;
-            break;
-    }
-
     let svg = '';
-
-    if (figure === "rect") {
-        svg = `<svg width="${size * 2}px" height="${size * 2}px">
-            <g id="figura">
-                <rect x="${size / 2}" y="${size / 2}" width="${size}" height="${size}" fill="${color}" stroke="black"></rect>
-            </g>
-        </svg>`;
-    } else if (figure === "circle") {
-        svg = `<svg width="${size}px" height="${size}px">
-            <g id="figura">
-                <circle cx="${size / 2}" cy="${size / 2}" r="${size / 2}" fill="${color}" stroke="black"></circle>
-            </g>
-        </svg>`;
+    switch (figure) {
+        case "rect":
+            svg = `<rect x="50vw" y="10vh" width="${size}" height="${size/2}" fill="${color}" stroke="black" transform="rotate(50,${size/2},${size/2})"></rect>`;
+            break;
+        case "circle":
+            svg = `<circle cx="50vw" cy="10vh" r="${size}" fill="${color}" stroke="black" ></circle>`;
+            break;
+        case "ellipse":
+            svg = `<ellipse cx="50vw" cy="25vh" rx="${size}" ry="${size/2}" fill="${color}"></ellipse>`;
+        default:
+            break;
     }
 
-    document.getElementById("SVG_Container").innerHTML = svg;   
+        
+    document.getElementById("SVG_Container").innerHTML = svg;
 }

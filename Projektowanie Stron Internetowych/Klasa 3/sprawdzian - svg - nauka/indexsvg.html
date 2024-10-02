@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptsvg.js"></script>
+</head>
+<body style="text-align: center;">
+    
+    <form>
+        <select name="Shape" id="Shape">
+            <option value="rect">Prostokąt</option>
+            <option value="circle">Koło</option>
+            <option value="ellipse">Elipsa</option>
+        </select><br>
+        <input type="color" id="Color"><br>
+        <input type="number" min="1" id="Size"><br>
+        <input type="button" onClick="funkcja()" value="przeslij">
+    </form>
+    <svg width="100vw" height="50vh" id="container"></svg>
+</body>
+</html>
