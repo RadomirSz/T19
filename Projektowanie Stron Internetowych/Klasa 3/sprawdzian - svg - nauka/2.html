@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+<body style="text-align: center;">
+    
+    <form>
+        <select id="Shape">
+            <option value="rect">prostokat</option>
+            <option value="circle">kolo</option>
+            <option value="ellipse">elipsa</option>
+        </select><br>
+        
+        <input type="color" id="Color"><br>
+        <input type="number" min="1" id="Size"><br>
+
+        kontur:<br>
+        <input type="radio" id="black" name="rad">czarny<br>
+        <input type="radio" id="blue" name="rad">niebieski<br>
+
+
+        <input type="button" value="przeslij" onclick="funkcja()">
+    </form>
+
+    <svg width="100vw" height="50vh" id="kontener"></svg>
+</body>
+</html>

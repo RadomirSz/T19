@@ -9,15 +9,22 @@
 <body style="text-align: center;">
     
     <form>
-        <select name="Shape" id="Shape">
+        <select id="Shape">
             <option value="rect">Prostokąt</option>
             <option value="circle">Koło</option>
             <option value="ellipse">Elipsa</option>
         </select><br>
+        
         <input type="color" id="Color"><br>
         <input type="number" min="1" id="Size"><br>
-        <input type="button" onClick="funkcja()" value="przeslij">
+
+        kontur:<br>
+        <input type="radio" id="black" name="kolor">czarny<br>
+        <input type="radio" id="blue" name="kolor">niebieski<br>
+        <br>
+        <input type="button" onClick="funkcja()" value="przeslij"><br>
     </form>
+
     <svg width="100vw" height="50vh" id="container"></svg>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scriptsvg.js"></script>
+</head>
+<body style="text-align: center;">
+    
+    <form>
+        <select id="Shape">
+            <option value="rect">Prostokąt</option>
+            <option value="circle">Koło</option>
+            <option value="ellipse">Elipsa</option>
+        </select><br>
+        
+        <input type="color" id="Color"><br>
+        <input type="number" min="1" id="Size"><br>
+
+        <h1>kontur:</h1><br>
+
+        <input type="radio" id="black" name="kolor">czarny<br>
+        <input type="radio" id="blue" name="kolor">niebieski<br>
+        
+        <input type="button" onClick="funkcja()" value="przeslij"><br>
+    </form>
+    
+    <svg width="100vw" height="50vh" id="container"></svg>
+</body>
+</html>
+
+function funkcja() {
+    let shape = document.getElementById("Shape").value;
+    let color = document.getElementById("Color").value;
+    let size = document.getElementById("Size").value;
+    
+    let svg = '';
+    switch (shape) {
+        case "rect":
+            svg = `<rect x="50vw" y="10vh" width="${size}" height="${size/2}" fill="${color}"></rect>`;
+            break;
+        case "circle":
+            svg = `<circle cx="50vw" cy="10vh" r="${size/2}" fill="${color}"></circle>`;
+            break;
+        case "ellipse":
+            svg = `<ellipse cx="50vw" cy="10vh" rx="${size}" ry="${size/2}" fill="${color}"><ellipse>`
+            break;
+    }
+    // if(document.getElementById("black").checked) {
+    //     stroke="black"
+    // }
+    
+    document.getElementById("container").innerHTML = svg;
+}
