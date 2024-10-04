@@ -1,4 +1,4 @@
-def wyszukiwanie_binarne(T, a):
+def binary_search(T, a):
     n = len(T)
     lewy = 0
     prawy = n-1
@@ -23,5 +23,5 @@ for i in range(10):
 
 szukana = int(input("szukana liczba: "))
 
-if wyszukiwanie_binarne(lista,szukana): print("tak")
+if binary_search(lista,szukana): print("tak")
 else: print("nie")

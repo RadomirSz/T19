@@ -1,4 +1,4 @@
-def wyszukiwanie_binarne_reku(T, a):
+def binary_search(T, a):
     n = len(T)
     lewy = 0
     prawy = n-1
@@ -9,22 +9,19 @@ def wyszukiwanie_binarne_reku(T, a):
         else:
             prawy = srodek
     return T[lewy] == a
-def bin_search_recu(T,lewy,prawy,a):
-    srodek = (lewy+prawy)//2
-    if T[srodek] < a: bin_search_recu(T,srodek+1,prawy,a)
-    else: bin_search_recu(T,lewy,srodek,a)
 
-def binary_search(arr, low, high, x): # z neta to
-	if high >= low:
-		mid = (high + low) // 2
-		if arr[mid] == x:
-			return mid
-		elif arr[mid] > x:
-			return binary_search(arr, low, mid - 1, x)
+
+def bin_search_recu(T, lewy, prawy, a):
+	if prawy >= lewy:
+		mid = (prawy + lewy) // 2
+		if T[mid] == a:
+			return True
+		elif T[mid] > a:
+			return bin_search_recu(T, lewy, mid - 1, a)
 		else:
-			return binary_search(arr, mid + 1, high, x)
+			return bin_search_recu(T, mid + 1, prawy, a)
 	else:
-		return -1
+		return False
 
 def czy_niemalejace(T):
     for i in range(1,len(T)+1):
@@ -39,5 +36,5 @@ for i in range(10):
 
 szukana = int(input("szukana liczba: "))
 
-if wyszukiwanie_binarne(lista,szukana): print("tak")
+if bin_search_recu(lista,1,len(lista),szukana): print("tak")
 else: print("nie")
