@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|c:\\users\\radomir\\desktop\\t19\\programowanie aplikacji desktopowych\\klasa 3\\zadanie2\\zadanie2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|solutionrelative:zadanie2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|solutionrelative:zadanie2\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|c:\\users\\radomir\\desktop\\t19\\programowanie aplikacji desktopowych\\klasa 3\\zadanie2\\zadanie2\\sortowanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|solutionrelative:zadanie2\\sortowanie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFC70AA0-A9D4-4150-A7EB-16349E19B6FF}|zadanie2\\zadanie2.csproj|solutionrelative:zadanie2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Sortowanie.cs",
+              "DocumentMoniker": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Sortowanie.cs",
+              "RelativeDocumentMoniker": "zadanie2\\Sortowanie.cs",
+              "ToolTip": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Sortowanie.cs",
+              "RelativeToolTip": "zadanie2\\Sortowanie.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAIwEwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T16:14:04.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Projekt]",
               "DocumentMoniker": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Form1.cs",
               "RelativeDocumentMoniker": "zadanie2\\Form1.cs",
@@ -34,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Form1.cs",
               "RelativeDocumentMoniker": "zadanie2\\Form1.cs",
               "ToolTip": "C:\\Users\\Radomir\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\zadanie2\\zadanie2\\Form1.cs",
               "RelativeToolTip": "zadanie2\\Form1.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAApwFQAAAAaAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAwwGgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T21:36:13.841Z",
               "EditorCaption": ""
