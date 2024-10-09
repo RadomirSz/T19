@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.Form1.resources
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\bin\Debug\zadanie3.exe.config
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\bin\Debug\zadanie3.exe
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\bin\Debug\zadanie3.pdb
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.exe
+C:\Users\3Egr2\source\repos\zadanie3\zadanie3\obj\Debug\zadanie3.pdb
