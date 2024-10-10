@@ -1,10 +1,10 @@
 var zdjecia = Array(
-    Array('obraz1.jpeg', 'obraz1.jpeg', "tytuł", "opisuje jakąś to zdjęcie"),
-    Array('obraz2.webp', 'obraz2.webp', "tytuł", "opisuje jakąś to zdjęcie"),
-    Array('obraz3.jpeg', 'obraz3.jpeg', "tytuł", "opisuje jakąś to zdjęcie"),
-    Array('obraz4.webp', 'obraz4.webp', "tytuł", "opisuje jakąś to zdjęcie"),
-    Array('obraz5.jpeg', 'obraz5.jpeg', "tytuł", "opisuje jakąś to zdjęcie"),
-    Array('obraz6.jpeg', 'obraz6.jpeg', "tytuł", "opisuje jakąś to zdjęcie")
+    Array('obraz1.jpeg', 'obraz1.jpeg', "Góry", "Góry z jeziorami"),
+    Array('obraz2.webp', 'obraz2.webp', "Kot", "kitek"),
+    Array('obraz3.jpeg', 'obraz3.jpeg', "żaglówka", "sobie płyną"),
+    Array('obraz4.webp', 'obraz4.webp', "żaglówka v2", "ale woda spokojna"),
+    Array('obraz5.jpeg', 'obraz5.jpeg', "żaglówka v1.2", "też sobie szybko płyną"),
+    Array('obraz6.jpeg', 'obraz6.jpeg', "wakacje (żaglówka v2.2)", "wypoczynek na żaglówce")
 );
 
 var max_width = 520;
