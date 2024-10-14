@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>: )</title>
+    <script src="script.js"></script>
+</head>
+<body style="text-align: center;
+            background-color: rgb(249, 240, 222);">
+    
+    <form>
+        <b>Wybierz kształt:</b><br>
+        <input type="radio" id="rect" name="shape">Prostokąt<br>
+        <input type="radio" id="circle" name="shape">Koło<br>
+        <input type="radio" id="ellipse" name="shape">Elipsa<br>
+
+        <input type="checkbox" id="stroke"> Kontur<br>  
+        Wybierz kolor: <input type="color" id="Color"><br><br>
+        <input type="number" min="1" id="Size" placeholder="Podaj wielkość figury"><br><br>
+        <input type="button" onClick="funkcja()" value="przeslij"><br>
+    </form>
+    <br>
+    
+    <div id="output">
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+
+body{
+    display:block;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+
+.frame{
+    border: black dashed 2px;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+.buttons{
+    margin: 2%;
+
+}
+.field{
+    margin:2%;
+    border: 1px black solid;
+}
+

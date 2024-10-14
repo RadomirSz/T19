@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body onload="createField()">
+
+    <h1>MINESWEEPER</h1>
+    <select id="fieldSize">     <!-- bomby: small - 10  medium - 20 big - 40 -->
+        <option value="small">SMALL</option>
+        <option value="medium">MEDIUM</option> 
+        <option value="big">BIG</option>
+    </select>
+    <input type="button" value="APPLY" onclick="change()">
+
+    <div class="frame">
+        
+        <div class="buttons">
+            <div class="flags"></div>
+            <input type="button" value="😊" id="startButton" onclick="start()">
+            <div class="timer"></div>
+        </div>
+        
+        <div class="field">
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
