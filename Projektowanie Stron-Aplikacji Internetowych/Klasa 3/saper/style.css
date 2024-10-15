@@ -3,22 +3,53 @@ body{
     display:block;
     text-align: center;
     margin-top: 3vh;
+    background-color: rgb(180,180,180);
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 .frame{
-    border: black dashed 2px;
-    width: 20vw;
+    border-top: rgb(240, 240, 240) solid 4px;
+    border-left: rgb(240, 240, 240) solid 4px;
+    border-right: rgb(123, 123, 123) solid 4px;
+    border-bottom: rgb(123, 123, 123) solid 4px;
+    background-color: rgb(180,180,180);
+    width: 12vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vh;
+    padding: 0.5%;
 }
 .buttons{
-    margin: 2%;
-
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 .field{
-    margin:2%;
-    border: 1px black solid;
+    border-bottom: rgb(240, 240, 240) solid 4px;
+    border-right: rgb(240, 240, 240) solid 4px;
+    border-left: rgb(123, 123, 123) solid 4px;
+    border-top: rgb(123, 123, 123) solid 4px;
+    background-color: rgb(180,180,180);
+    padding: 2%; 
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
-
+.row{
+    display: inline-block;
+}
+.col{
+    border-top: rgb(240, 240, 240) solid 3px;
+    border-left: rgb(240, 240, 240) solid 3px;
+    border-right: rgb(123, 123, 123) solid 3px;
+    border-bottom: rgb(123, 123, 123) solid 3px;
+    background-color: rgb(180,180,180);
+    width: 25px;
+    height: 25px;
+}
+.col:hover{
+    background-color: rgb(161, 161, 161);
+    cursor: pointer;
+}

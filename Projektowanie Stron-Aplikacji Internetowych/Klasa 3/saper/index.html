@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 </head>
-<body onload="createField()">
+<body onload="change()">
 
     <h1>MINESWEEPER</h1>
     <select id="fieldSize">     <!-- bomby: small - 10  medium - 20 big - 40 -->
@@ -18,19 +18,19 @@
     </select>
     <input type="button" value="APPLY" onclick="change()">
 
-    <div class="frame">
+    <div class="frame" id="frame">
         
         <div class="buttons">
             <div class="flags"></div>
-            <input type="button" value="😊" id="startButton" onclick="start()">
+            <input type="button" value="😊" id="startButton" onClick="start()">
             <div class="timer"></div>
         </div>
         
-        <div class="field">
+        <div class="field" id="field">
             
         </div>
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
