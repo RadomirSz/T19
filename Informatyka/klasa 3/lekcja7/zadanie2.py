@@ -1,0 +1,5 @@
+plik = open("dane_osobowe.txt","r")
+imie = plik.readline().rstrip()
+nazwisko = plik.readline()
+a3 = plik.readline()
+print("witaj " + imie +" "+ nazwisko)
