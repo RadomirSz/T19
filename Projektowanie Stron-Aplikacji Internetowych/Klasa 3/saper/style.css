@@ -1,4 +1,3 @@
-
 body{
     display:block;
     text-align: center;
@@ -40,6 +39,7 @@ h1{
 .row{
     display: inline-block;
 }
+
 .col{
     border-top: rgb(240, 240, 240) solid 3px;
     border-left: rgb(240, 240, 240) solid 3px;
@@ -52,4 +52,9 @@ h1{
 .col:hover{
     background-color: rgb(161, 161, 161);
     cursor: pointer;
+}
+.revealed{
+    border: solid 2px rgb(123, 123, 123) !important;
+    padding: 1px;
+    background-color: rgb(189,189,189);
 }

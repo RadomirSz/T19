@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
+    <script src="script.js" async></script>
 </head>
-<body onload="change()">
+<body onload="start()">
 
     <h1>MINESWEEPER</h1>
     <select id="fieldSize">     <!-- bomby: small - 10  medium - 20 big - 40 -->
@@ -16,7 +16,7 @@
         <option value="medium">MEDIUM</option> 
         <option value="big">BIG</option>
     </select>
-    <input type="button" value="APPLY" onclick="change()">
+    <input type="button" value="APPLY" onclick="start()">
 
     <div class="frame" id="frame">
         
@@ -31,6 +31,6 @@
         </div>
 
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>
