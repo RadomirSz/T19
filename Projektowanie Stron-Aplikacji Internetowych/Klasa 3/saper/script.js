@@ -124,46 +124,38 @@ function createField(fieldSize, mineCount)
             {
                 sum++;
             }
-
+            $(currentCell).removeClass("empty");
             switch (sum) 
             {
                 case 1:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("one");
                     $(currentCell).text("1");
                     break;
                 case 2:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("two");
                     $(currentCell).text("2");
                     break;
                 case 3:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("three");
                     $(currentCell).text("3");
                     break;
                 case 4:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("four");
                     $(currentCell).text("4");
                     break;
                 case 5:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("five");
                     $(currentCell).text("5");
                     break;
                 case 6:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("six");
                     $(currentCell).text("6");
                     break;
                 case 7:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("seven");
                     $(currentCell).text("7");
                     break;
                 case 8:
-                    $(currentCell).removeClass("empty");
                     $(currentCell).addClass("eight");
                     $(currentCell).text("8");
                     break;
