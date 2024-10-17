@@ -1,5 +1,5 @@
 
-var emotki = ["😊","🙃","☹️","😎","💣"]; // default - click - lose - win - bomb
+// var emotki = ["😊","🙃","☹️","😎","💣"]; // default - click - lose - win - bomb
 
 function start() {
     
@@ -36,12 +36,13 @@ function createField(fieldSize, mineCount)
         for (var j = 0; j < fieldSize; j++) 
         {
             var col = $('<div>').addClass('col hidden');
-            let number = (i) + "-" + (j);
+            let number = i + "-" + j;
             col.addClass(number);
             col.addClass("empty");
             col.data('mine', false);
             col.data('flagged', false);
-
+            col.text("0");
+            col.data("id", number);
             //col.contextmenu(toggleFlag);
             
             row.append(col);
@@ -60,7 +61,7 @@ function createField(fieldSize, mineCount)
             // if (!randomCell.data('mine')) 
             // { 
             randomCell.data('mine', true);
-            randomCell.css('background-color',"red");
+            //randomCell.css('background-color',"red");
             randomCell.removeClass("empty");
                 //console.log(cell + " got a mine");
                 // flag = false;
@@ -72,12 +73,14 @@ function createField(fieldSize, mineCount)
      // there is a chance of one bomb in the whole field | checking anyways isnt working idk why xd
     
     let sum = 0;
-    for (let a = 0; a < fieldSize; a++) {
-        for (let b = 0; b < fieldSize; b++) {
+    for (let a = 0; a < fieldSize; a++) 
+    {
+        for (let b = 0; b < fieldSize; b++) 
+        {
             // my cell
             let currentCell = "." + (a) + "-" + (b);
             if($(currentCell).data("mine")) continue;
-            console.log(a +" " + b + " " + currentCell);
+            //console.log(a +" " + b + " " + currentCell);
             
             // cells around it
             let leftup = "." + (a-1) + "-" + (b-1);
@@ -121,10 +124,53 @@ function createField(fieldSize, mineCount)
             {
                 sum++;
             }
-            if(sum > 0)
+
+            switch (sum) 
             {
-                $(currentCell).addClass(sum.toString());
-                $(currentCell).removeClass("empty");
+                case 1:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("one");
+                    $(currentCell).text("1");
+                    break;
+                case 2:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("two");
+                    $(currentCell).text("2");
+                    break;
+                case 3:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("three");
+                    $(currentCell).text("3");
+                    break;
+                case 4:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("four");
+                    $(currentCell).text("4");
+                    break;
+                case 5:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("five");
+                    $(currentCell).text("5");
+                    break;
+                case 6:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("six");
+                    $(currentCell).text("6");
+                    break;
+                case 7:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("seven");
+                    $(currentCell).text("7");
+                    break;
+                case 8:
+                    $(currentCell).removeClass("empty");
+                    $(currentCell).addClass("eight");
+                    $(currentCell).text("8");
+                    break;
+            
+                default:
+                    continue;
+                    break;
             }
             sum = 0;
         }  
@@ -164,5 +210,47 @@ function reveal(object) {
     {
         object.removeClass("hidden");
         object.addClass("revealed");
+    }
+    let a = object.data('id').split('-')[0];
+    let b = object.data('id').split("-")[1];
+    let leftup = "." + (a-1) + "-" + (b-1);
+    if(!$(leftup).data('mine'))
+    {
+        reveal($(leftup));
+    }
+    let midup = "." + (a) + "-" + (b-1);
+    if(!$(midup).data('mine'))
+    {
+        reveal($(midup));
+    }
+    let rightup = "." + (a+1) + "-" + (b-1);
+    if(!$(rightup).data('mine'))
+    {
+        reveal($(rightup));
+    }
+    let leftmid = "." + (a-1) + "-" + (b);
+    if(!$(leftmid).data('mine'))
+    {
+        reveal($(leftmid));
+    }
+    let rightmid = "." + (a+1) + "-" + (b);
+    if(!$(rightmid).data('mine'))
+    {
+        reveal($(rightmid));
+    }
+    let leftbottom = "." + (a-1) + "-" + (b+1);
+    if(!$(leftbottom).data('mine'))
+    {
+        reveal($(leftbottom));
+    }
+    let midbottom = "." + (a) + "-" + (b+1);
+    if(!$(midbottom).data('mine'))
+    {
+        reveal($(midbottom));
+    }
+    let rightbottom = "." + (a+1) + "-" + (b+1);
+    if(!$(rightbottom).data('mine'))
+    {
+        reveal($(rightbottom));
     }
 }

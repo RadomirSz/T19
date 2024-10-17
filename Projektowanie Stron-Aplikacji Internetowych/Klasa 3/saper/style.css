@@ -3,6 +3,7 @@ body{
     text-align: center;
     margin-top: 3vh;
     background-color: rgb(180,180,180);
+    user-select: none;
 }
 h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -53,8 +54,39 @@ h1{
     background-color: rgb(161, 161, 161);
     cursor: pointer;
 }
+.hidden{
+    color:rgba(255, 255, 255, 0) !important;
+}
+.empty{
+    color:rgba(255, 255, 255, 0) !important;
+}
 .revealed{
     border: solid 2px rgb(123, 123, 123) !important;
-    padding: 1px;
-    background-color: rgb(189,189,189);
+    padding: 1px !important;
+    background-color: rgb(189,189,189) !important;
+}
+
+.one{
+    color:blue;
+}
+.two{
+    color:green;
+}
+.three{
+    color:red;
+}
+.four{
+    color: darkblue;
+}
+.five{
+    color: darkred;
+}
+.six{
+    color: turquoise;
+}
+.seven{
+    color: black;
+}
+.eight{
+    color: grey;
 }
