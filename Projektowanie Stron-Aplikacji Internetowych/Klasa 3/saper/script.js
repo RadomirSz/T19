@@ -25,106 +25,94 @@ function start() {
 }
 
 var board = $(".field");
+var getFieldSize = 0;
+var getMineCounter = 0;
 function createField(fieldSize, mineCount) 
 {
+    getFieldSize = fieldSize;
+    getMineCounter = mineCount;
+
     board = $(".field");
-    //var arrays = new Array();
     board.empty();
+    
     for (var i = 0; i < fieldSize; i++) 
     {
         var row = $('<div>').addClass('row');
         for (var j = 0; j < fieldSize; j++) 
         {
-            var col = $('<div>').addClass('col hidden');
             let number = i + "-" + j;
-            col.addClass(number);
-            col.addClass("empty");
-            col.data('mine', false);
-            col.data('flagged', false);
-            col.text("0");
-            col.data("id", number);
-            //col.contextmenu(toggleFlag);
+            var col = $('<div>').addClass('col hidden empty');
             
+            col.addClass(number);
+            col.data('flagged', false);
+            col.data("i", i);
+            col.data("j", j);
+            col.text("0");
+            col.attr("data-col",j);
+            col.attr("data-row",i);
+
             row.append(col);
         }
         board.append(row);
     }
 
     for (var k = 0; k < mineCount; k++) {
-        // let flag = true;
-        // do 
-        // {
+        let flag = true;
+        do 
+        {
             var randomRow = Math.floor(Math.random() * fieldSize);
             var randomCol = Math.floor(Math.random() * fieldSize);
             let cell = "." + randomRow + "-" + randomCol;
             var randomCell = $(cell);
-            // if (!randomCell.data('mine')) 
-            // { 
-            randomCell.data('mine', true);
-            //randomCell.css('background-color',"red");
-            randomCell.removeClass("empty");
-                //console.log(cell + " got a mine");
-                // flag = false;
-            // }
-        // } while (flag);
-    }// Honestly i don't think checking if there is already a mine is necessary 
-     // since the chance of it colliding is really low and even if one div got 
-     // a mine 2 times nothing happens, there's just a bomb less. But yes, 
-     // there is a chance of one bomb in the whole field | checking anyways isnt working idk why xd
+            if (!randomCell.hasClass('mine')) 
+            { 
+                randomCell.addClass('mine');
+                //randomCell.css('background-color',"red");
+                randomCell.removeClass("empty");
+                console.log(cell + " got a mine");
+                flag = false;
+            }
+        } while (flag);
+    }
     
     let sum = 0;
     for (let a = 0; a < fieldSize; a++) 
     {
         for (let b = 0; b < fieldSize; b++) 
         {
-            // my cell
+            sum = 0;
+
             let currentCell = "." + (a) + "-" + (b);
-            if($(currentCell).data("mine")) continue;
-            //console.log(a +" " + b + " " + currentCell);
-            
-            // cells around it
+            if($(currentCell).hasClass("mine")) continue;
+
             let leftup = "." + (a-1) + "-" + (b-1);
-            if($(leftup).data('mine'))
-            {
-                sum++;
-            }
             let midup = "." + (a) + "-" + (b-1);
-            
-            if($(midup).data('mine'))
-            {
-                sum++;
-            }
             let rightup = "." + (a+1) + "-" + (b-1);
-            if($(rightup).data('mine'))
-            {
-                sum++;
-            }
             let leftmid = "." + (a-1) + "-" + (b);
-            if($(leftmid).data('mine'))
-            {
-                sum++;
-            }
             let rightmid = "." + (a+1) + "-" + (b);
-            if($(rightmid).data('mine'))
-            {
-                sum++;
-            }
             let leftbottom = "." + (a-1) + "-" + (b+1);
-            if($(leftbottom).data('mine'))
-            {
-                sum++;
-            }
             let midbottom = "." + (a) + "-" + (b+1);
-            if($(midbottom).data('mine'))
-            {
-                sum++;
-            }
             let rightbottom = "." + (a+1) + "-" + (b+1);
-            if($(rightbottom).data('mine'))
-            {
-                sum++;
-            }
-            $(currentCell).removeClass("empty");
+
+
+            if($(leftup).hasClass('mine')) sum++;
+            
+            if($(midup).hasClass('mine')) sum++;
+            
+            if($(rightup).hasClass('mine')) sum++;
+
+            if($(leftmid).hasClass('mine')) sum++;
+         
+            if($(rightmid).hasClass('mine')) sum++;
+        
+            if($(leftbottom).hasClass('mine')) sum++;
+         
+            if($(midbottom).hasClass('mine')) sum++;
+        
+            if($(rightbottom).hasClass('mine')) sum++;
+          
+            if(!(sum === 0)) $(currentCell).removeClass("empty");
+            
             switch (sum) 
             {
                 case 1:
@@ -159,31 +147,30 @@ function createField(fieldSize, mineCount)
                     $(currentCell).addClass("eight");
                     $(currentCell).text("8");
                     break;
-            
                 default:
                     continue;
-                    break;
             }
-            sum = 0;
         }  
     }
-
-
 }
 
 board.on('click', '.col.hidden', function (){
-    if($(this).data('mine'))
+    if($(this).hasClass('mine'))
     {
         gameOver(false);
     }
     else
     {
-        reveal($(this));
+    let i = $(this).data("i");
+    let j = $(this).data("j");
+        reveal(i,j);
+        const isGameOver = $(".col.hidden").length === getMineCounter;
+        if(isGameOver){gameOver(true);}
     }
 })
 
 function gameOver(outcome) {
-    
+    let message = "";
     if(outcome)
     {
         message = "YOU WON!";
@@ -191,58 +178,53 @@ function gameOver(outcome) {
     else
     {
         message = "YOU LOST";
-    }
-        
+    }   
     alert(message)
     start();
 }
 
-function reveal(object) {
-    if(object.hasClass("hidden"))
-    {
-        object.removeClass("hidden");
-        object.addClass("revealed");
+
+function reveal(oi, oj) {
+    const seen = {};
+  
+    function helper(i, j) {
+      if (i >= getFieldSize || j >= getFieldSize || i < 0 || j < 0) return;
+      const key = `${i} ${j}`
+      if (seen[key]) return;
+      const $cell = $(`.col.hidden[data-row=${i}][data-col=${j}]`);
+      const mineCount = getMineCount(i, j);
+      if (
+        !$cell.hasClass('hidden') ||
+        $cell.hasClass('mine')
+      ) {
+        return;
+      }
+
+      $cell.removeClass('hidden');
+      $cell.addClass('revealed');
+      if (mineCount) {
+        return;
+      }
+      
+      for (let di = -1; di <= 1; di++) {
+        for (let dj = -1; dj <= 1; dj++) {
+          helper(i + di, j + dj);
+        }      
+      }
     }
-    let a = object.data('id').split('-')[0];
-    let b = object.data('id').split("-")[1];
-    let leftup = "." + (a-1) + "-" + (b-1);
-    if(!$(leftup).data('mine'))
-    {
-        reveal($(leftup));
-    }
-    let midup = "." + (a) + "-" + (b-1);
-    if(!$(midup).data('mine'))
-    {
-        reveal($(midup));
-    }
-    let rightup = "." + (a+1) + "-" + (b-1);
-    if(!$(rightup).data('mine'))
-    {
-        reveal($(rightup));
-    }
-    let leftmid = "." + (a-1) + "-" + (b);
-    if(!$(leftmid).data('mine'))
-    {
-        reveal($(leftmid));
-    }
-    let rightmid = "." + (a+1) + "-" + (b);
-    if(!$(rightmid).data('mine'))
-    {
-        reveal($(rightmid));
-    }
-    let leftbottom = "." + (a-1) + "-" + (b+1);
-    if(!$(leftbottom).data('mine'))
-    {
-        reveal($(leftbottom));
-    }
-    let midbottom = "." + (a) + "-" + (b+1);
-    if(!$(midbottom).data('mine'))
-    {
-        reveal($(midbottom));
-    }
-    let rightbottom = "." + (a+1) + "-" + (b+1);
-    if(!$(rightbottom).data('mine'))
-    {
-        reveal($(rightbottom));
-    }
+    helper(oi, oj);
+  }
+  
+  function getMineCount(i, j) {
+    let str = "."+ i + "-" + j;
+    let obj = $(str);
+    if(obj.hasClass('one')) return 1;
+    if(obj.hasClass('two')) return 2;
+    if(obj.hasClass('three')) return 3;
+    if(obj.hasClass('four')) return 4;
+    if(obj.hasClass('five')) return 5;
+    if(obj.hasClass('six')) return 6;
+    if(obj.hasClass('seven')) return 7;
+    if(obj.hasClass('eight')) return 8;
+    return 0;
 }

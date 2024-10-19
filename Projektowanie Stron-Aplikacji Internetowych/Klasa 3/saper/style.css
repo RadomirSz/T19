@@ -54,16 +54,14 @@ h1{
     background-color: rgb(161, 161, 161);
     cursor: pointer;
 }
-.hidden{
-    color:rgba(255, 255, 255, 0) !important;
-}
+
 .empty{
     color:rgba(255, 255, 255, 0) !important;
 }
 .revealed{
-    border: solid 2px rgb(123, 123, 123) !important;
-    padding: 1px !important;
-    background-color: rgb(189,189,189) !important;
+    border: solid 2px rgb(123, 123, 123);
+    padding: 1px;
+    background-color: rgb(189,189,189);
 }
 
 .one{
@@ -90,3 +88,10 @@ h1{
 .eight{
     color: grey;
 }
+.hidden{
+    color:rgba(255, 255, 255, 0) !important;
+}
+.mine{
+    color:rgba(255, 255, 255, 0) !important;
+}
+
