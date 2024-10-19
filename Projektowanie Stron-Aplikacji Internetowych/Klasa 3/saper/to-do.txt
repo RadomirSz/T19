@@ -1,0 +1,6 @@
+-flags
+-timer
+-(changing)emote as a button
+
+-scaling
+-?covering classes? so user can't see by clicking f12 or sm

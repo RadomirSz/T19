@@ -186,25 +186,19 @@ function gameOver(outcome) {
 
 function reveal(oi, oj) {
     const seen = {};
-  
+    
     function helper(i, j) {
       if (i >= getFieldSize || j >= getFieldSize || i < 0 || j < 0) return;
       const key = `${i} ${j}`
       if (seen[key]) return;
       const $cell = $(`.col.hidden[data-row=${i}][data-col=${j}]`);
       const mineCount = getMineCount(i, j);
-      if (
-        !$cell.hasClass('hidden') ||
-        $cell.hasClass('mine')
-      ) {
-        return;
-      }
+      if (mineCount) return;
+      
+      if (!$cell.hasClass('hidden') || $cell.hasClass('mine')) return;
 
       $cell.removeClass('hidden');
       $cell.addClass('revealed');
-      if (mineCount) {
-        return;
-      }
       
       for (let di = -1; di <= 1; di++) {
         for (let dj = -1; dj <= 1; dj++) {
