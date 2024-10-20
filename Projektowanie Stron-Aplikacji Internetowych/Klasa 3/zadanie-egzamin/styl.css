@@ -1,0 +1,46 @@
+body{
+    background-color: #EEEEEE;
+    font: helvetica;
+}
+.strona{
+    width: 90%;
+    margin: auto;
+}
+.logo, .menu{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float:left;
+}
+.baner{
+    background-color: #DDDDDD;
+    height: 200px;
+    clear: both;
+}
+.blokglowny{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+.stopka{
+    text-align: right;
+    background-color: lightblue;
+    padding-top: 10px;
+}
+.button{
+    background-color: lightblue;
+    color: navy;
+}
+a{
+    color: navy;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+a:hover{
+    border: solid 1px navy;
+}
