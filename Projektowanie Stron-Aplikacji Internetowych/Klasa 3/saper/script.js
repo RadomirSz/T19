@@ -6,11 +6,11 @@ function start() {
 
     switch (size) {
         case 'small':
-            $('#frame').css('width',"15vw");
+            $('#frame').css('width',"14vw");
             createField(8,12);
             break;
         case 'medium':
-            $('#frame').css('width',"22vw");
+            $('#frame').css('width',"21vw");
             createField(12,22);
             break;
         case 'big':

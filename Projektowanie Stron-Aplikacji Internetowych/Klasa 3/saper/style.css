@@ -9,6 +9,7 @@ h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 .frame{
     border-top: rgb(240, 240, 240) solid 4px;
     border-left: rgb(240, 240, 240) solid 4px;
@@ -38,9 +39,8 @@ h1{
     margin-right: auto !important;
 }
 .row{
-    display: inline-block;
+    display: flex;
 }
-
 .col{
     border-top: rgb(240, 240, 240) solid 3px;
     border-left: rgb(240, 240, 240) solid 3px;
