@@ -1,4 +1,4 @@
 -timer
 -(changing)emote as a button
 
--scaling
+-scaling - 500 - 1000 - 1500 pixeli jakoś
