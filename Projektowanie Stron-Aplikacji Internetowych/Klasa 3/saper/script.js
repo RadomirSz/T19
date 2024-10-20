@@ -144,7 +144,7 @@ function createField(fieldSize, mineCount)
 }
 
 board.on('click', '.col.hidden', function (){
-    if($(this).data('mine'))
+    if($(this).data('mine') && !$(this).hasClass('flagged'))
     {
         gameOver(false);
     }

@@ -88,9 +88,7 @@ h1{
 .hidden{
     color:rgba(255, 255, 255, 0) !important;
 }
-.mine{
-    color:rgba(255, 255, 255, 0) !important;
-}
+
 .flagged{
     background-color: red !important;
 }
