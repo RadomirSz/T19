@@ -1,4 +1,3 @@
--flags
 -timer
 -(changing)emote as a button
 
