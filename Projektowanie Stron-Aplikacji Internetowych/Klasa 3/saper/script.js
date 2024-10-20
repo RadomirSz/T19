@@ -1,5 +1,4 @@
-
-// var emotki = ["😊","🙃","☹️","😎","💣"]; // default - click - lose - win - bomb
+const emojis = ["😊","🙃","☹️","😎","💣"]; // default - click - lose - win - bomb
 
 function start() {
     
@@ -41,12 +40,11 @@ function createField(fieldSize, mineCount)
         for (var j = 0; j < fieldSize; j++) 
         {
             let number = i + "-" + j;
-            var col = $('<div>').addClass('col hidden empty');
-            
+            var col = $('<div>').addClass('col hidden');
             col.addClass(number);
-            col.data('flagged', false);
             col.data("i", i);
             col.data("j", j);
+            col.data('mine', false);
             col.text("0");
             col.attr("data-col",j);
             col.attr("data-row",i);
@@ -64,13 +62,13 @@ function createField(fieldSize, mineCount)
             var randomCol = Math.floor(Math.random() * fieldSize);
             let cell = "." + randomRow + "-" + randomCol;
             var randomCell = $(cell);
-            if (!randomCell.hasClass('mine')) 
+            if (!randomCell.data('mine')) 
             { 
-                randomCell.addClass('mine');
-                //randomCell.css('background-color',"red");
-                randomCell.removeClass("empty");
-                console.log(cell + " got a mine");
+                randomCell.data('mine',true);
                 flag = false;
+
+                //randomCell.css('background-color',"red");
+                //console.log(cell + " got a mine");
             }
         } while (flag);
     }
@@ -83,7 +81,7 @@ function createField(fieldSize, mineCount)
             sum = 0;
 
             let currentCell = "." + (a) + "-" + (b);
-            if($(currentCell).hasClass("mine")) continue;
+            if($(currentCell).data('mine')) continue;
 
             let leftup = "." + (a-1) + "-" + (b-1);
             let midup = "." + (a) + "-" + (b-1);
@@ -95,24 +93,15 @@ function createField(fieldSize, mineCount)
             let rightbottom = "." + (a+1) + "-" + (b+1);
 
 
-            if($(leftup).hasClass('mine')) sum++;
-            
-            if($(midup).hasClass('mine')) sum++;
-            
-            if($(rightup).hasClass('mine')) sum++;
-
-            if($(leftmid).hasClass('mine')) sum++;
-         
-            if($(rightmid).hasClass('mine')) sum++;
-        
-            if($(leftbottom).hasClass('mine')) sum++;
-         
-            if($(midbottom).hasClass('mine')) sum++;
-        
-            if($(rightbottom).hasClass('mine')) sum++;
-          
-            if(!(sum === 0)) $(currentCell).removeClass("empty");
-            
+            if($(leftup).data('mine')) sum++;
+            if($(midup).data('mine')) sum++;
+            if($(rightup).data('mine')) sum++;
+            if($(leftmid).data('mine')) sum++;
+            if($(rightmid).data('mine')) sum++;
+            if($(leftbottom).data('mine')) sum++;
+            if($(midbottom).data('mine')) sum++;
+            if($(rightbottom).data('mine')) sum++;
+                      
             switch (sum) 
             {
                 case 1:
@@ -155,7 +144,7 @@ function createField(fieldSize, mineCount)
 }
 
 board.on('click', '.col.hidden', function (){
-    if($(this).hasClass('mine'))
+    if($(this).data('mine'))
     {
         gameOver(false);
     }
@@ -183,22 +172,33 @@ function gameOver(outcome) {
     start();
 }
 
-
 function reveal(oi, oj) {
     const seen = {};
-    
+  
     function helper(i, j) {
       if (i >= getFieldSize || j >= getFieldSize || i < 0 || j < 0) return;
       const key = `${i} ${j}`
       if (seen[key]) return;
       const $cell = $(`.col.hidden[data-row=${i}][data-col=${j}]`);
+      if ($cell.hasClass('flagged')) return;
       const mineCount = getMineCount(i, j);
-      if (mineCount) return;
-      
-      if (!$cell.hasClass('hidden') || $cell.hasClass('mine')) return;
+      if (
+        !$cell.hasClass('hidden') ||
+        $cell.data('mine')
+      ) {
+        return;
+      }
 
       $cell.removeClass('hidden');
       $cell.addClass('revealed');
+      
+      if (mineCount) {
+        return;
+      }
+      else
+      {
+        $cell.text("");
+      }
       
       for (let di = -1; di <= 1; di++) {
         for (let dj = -1; dj <= 1; dj++) {
@@ -222,3 +222,14 @@ function reveal(oi, oj) {
     if(obj.hasClass('eight')) return 8;
     return 0;
 }
+
+board.on('contextmenu', '.col.hidden', function () {
+    if($(this).hasClass('flagged'))
+    {
+        $(this).removeClass('flagged');
+    }
+    else
+    {
+        $(this).addClass('flagged');
+    }
+})

@@ -55,9 +55,6 @@ h1{
     cursor: pointer;
 }
 
-.empty{
-    color:rgba(255, 255, 255, 0) !important;
-}
 .revealed{
     border: solid 2px rgb(123, 123, 123);
     padding: 1px;
@@ -94,4 +91,6 @@ h1{
 .mine{
     color:rgba(255, 255, 255, 0) !important;
 }
-
+.flagged{
+    background-color: red !important;
+}
