@@ -1,0 +1,7 @@
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\bin\Debug\zadanie-interface.exe.config
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\bin\Debug\zadanie-interface.exe
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\bin\Debug\zadanie-interface.pdb
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\obj\Debug\zadanie-interface.csproj.AssemblyReference.cache
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\obj\Debug\zadanie-interface.csproj.CoreCompileInputs.cache
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\obj\Debug\zadanie-interface.exe
+C:\Users\egzamin\source\repos\zadanie-interface\zadanie-interface\obj\Debug\zadanie-interface.pdb
