@@ -21,6 +21,7 @@ function start() {
             alert('Wybierz rozmiar planszy!');
             break;
     }
+    resetTimer();
 }
 
 var board = $(".field");
@@ -143,7 +144,14 @@ function createField(fieldSize, mineCount)
     }
 }
 
+var gameStarted = false;
+var formattedText = "";
+var seconds = 1;
+var interval;
+
 board.on('click', '.col.hidden', function (){
+    startTimer();
+
     if($(this).data('mine') && !$(this).hasClass('flagged'))
     {
         gameOver(false);
@@ -170,6 +178,7 @@ function gameOver(outcome) {
     }   
     alert(message)
     start();
+    resetTimer();
 }
 
 function reveal(oi, oj) {
@@ -233,3 +242,30 @@ board.on('contextmenu', '.col.hidden', function () {
         $(this).addClass('flagged');
     }
 })
+
+
+function updateTime(){
+    let minutes = Math.floor(seconds / 60);
+    let displaySeconds = seconds % 60;
+    
+    formattedText = minutes + (displaySeconds < 10 ? "0" : "") + displaySeconds;
+    $(".timer").text(formattedText);
+    
+    seconds++;
+}
+
+function startTimer(){
+    if (!gameStarted){
+        gameStarted = true;
+        interval = setInterval(updateTime, 1000);
+    }
+}
+
+function resetTimer()
+{
+    gameStarted = false;
+    clearInterval(interval);
+    seconds = 1;
+    formattedText = "000";
+    $(".timer").text = "000";
+}

@@ -27,6 +27,19 @@ h1{
     margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    
+}
+.flags{
+    width: 33.3%;
+}
+.button{
+    width: 33.3%;
+}
+.timer{
+    width: 33.3%;
+    color: rgb(231, 16, 16);
+    font-family: "Orbitron", sans-serif;
 }
 .field{
     border-bottom: rgb(240, 240, 240) solid 4px;

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> 
 </head>
 <body onload="start()" >
 
@@ -22,8 +23,8 @@
         
         <div class="buttons">
             <div class="flags"></div>
-            <input type="button" value="RESET" id="startButton" onClick="start()">
-            <div class="timer"></div>
+            <input type="button" value="RESET" id="startButton" onclick="start()">
+            <div class="timer">000</div>
         </div>
         
         <div class="field" id="field" oncontextmenu="return false;">
