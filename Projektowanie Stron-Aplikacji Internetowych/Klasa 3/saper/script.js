@@ -8,14 +8,17 @@ function start() {
         case 'small':
             $('#frame').css('width',"14vw");
             createField(8,12);
+            $(".flags").text(12);
             break;
         case 'medium':
             $('#frame').css('width',"21vw");
             createField(12,22);
+            $(".flags").text(22);
             break;
         case 'big':
             $('#frame').css('width',"28vw");
             createField(16,40);
+            $(".flags").text(40);
             break;
         default:
             alert('Wybierz rozmiar planszy!');
@@ -27,10 +30,13 @@ function start() {
 var board = $(".field");
 var getFieldSize = 0;
 var getMineCounter = 0;
+var remainingflags = 0;
+
 function createField(fieldSize, mineCount) 
 {
     getFieldSize = fieldSize;
     getMineCounter = mineCount;
+    remainingflags = mineCount;
 
     board = $(".field");
     board.empty();
@@ -231,26 +237,30 @@ function reveal(oi, oj) {
     if(obj.hasClass('eight')) return 8;
     return 0;
 }
+console.log(getMineCounter);
 
 board.on('contextmenu', '.col.hidden', function () {
+    if(remainingflags === 0 && !($(this).hasClass('flagged'))) return;
     if($(this).hasClass('flagged'))
     {
         $(this).removeClass('flagged');
+        remainingflags++;
     }
     else
     {
         $(this).addClass('flagged');
+        remainingflags--;
     }
+    $(".flags").text(remainingflags);
 })
 
 
 function updateTime(){
-    let minutes = Math.floor(seconds / 60);
-    let displaySeconds = seconds % 60;
+    if(seconds < 10) formattedText = "00" + seconds;
+    else if(seconds > 9 && seconds < 100) formattedText = "0" + seconds;
+    else formattedText = seconds;
     
-    formattedText = minutes + (displaySeconds < 10 ? "0" : "") + displaySeconds;
     $(".timer").text(formattedText);
-    
     seconds++;
 }
 

@@ -4,3 +4,4 @@ bin
 *temp
 *.user
 *.csproj
+.idea
