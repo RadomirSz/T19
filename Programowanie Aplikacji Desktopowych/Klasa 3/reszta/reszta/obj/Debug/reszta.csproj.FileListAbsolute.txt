@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\reszta\reszta\bin\Debug\reszta.exe.config
+C:\Users\3Egr2\source\repos\reszta\reszta\bin\Debug\reszta.exe
+C:\Users\3Egr2\source\repos\reszta\reszta\bin\Debug\reszta.pdb
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.Form1.resources
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.exe
+C:\Users\3Egr2\source\repos\reszta\reszta\obj\Debug\reszta.pdb
