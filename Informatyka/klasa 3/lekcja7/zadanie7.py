@@ -5,7 +5,7 @@ from random import randint
 # spacją (po ostatniej liczbie powinien być znak nowej linii).
 # b. wyświetli liczby, które występują najczęściej
 
-#plik = open("losowe_w_linii.txt","x")
+plik = open("losowe_w_linii.txt","w")
 
 amount = {}
 
@@ -14,14 +14,25 @@ for i in range(1,21):
     if(liczba in amount):
         amount[liczba] += 1
     else:
-        amount[liczba] = 1
-    # if(i==20): plik.write(str(liczba))
-    # else: plik.write(str(liczba) + ' ')
-    print(liczba)
-#plik.write("\n")
+        amount.update({liczba : 1})
+    if(i==20): plik.write(str(liczba) + "\n")
+    else: plik.write(str(liczba) + " ")
+    # print(liczba)
 
-print("w dictie: ")
-for i in amount:
-    print(i)
+# print(amount)
+biggest = {}
+maxkey = 0
+maxvalue = 0
+for i,j in amount.items():
+    if j > maxvalue:
+        biggest.clear()
+        biggest.update({i : j})
+        maxkey , maxvalue = i , j
+    elif j == maxvalue:
+        biggest.update({i : j})
 
-#plik.close()
+
+print("Liczby te wystąpiły najczęściej, czyli" , maxvalue , "razy", end=": ")
+for i in biggest.keys():
+    print(i, end=" ")
+plik.close()

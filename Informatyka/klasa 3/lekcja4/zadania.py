@@ -1,5 +1,5 @@
 n = int(input())
-czy_pierwsza = [True]*(n+1)
+czy_pierwsza = [False]*(n+1)
 for i in range(2,n):
     czy_pierwsza[i] = True
 

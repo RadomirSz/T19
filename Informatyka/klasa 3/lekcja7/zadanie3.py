@@ -1,7 +1,7 @@
 import random
 
 
-plik = open("losowe.txt","x")
+plik = open("losowe.txt","w")
 for i in range(10):
     n = random.randint(1,101)
     plik.write(str(n) + "\n")
