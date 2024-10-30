@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\bin\Debug\SigmaTester.exe.config
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\bin\Debug\SigmaTester.exe
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\bin\Debug\SigmaTester.pdb
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.Form1.resources
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.exe
+C:\Users\3Egr2\source\repos\SigmaTester\SigmaTester\obj\Debug\SigmaTester.pdb
