@@ -18,3 +18,13 @@ C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta
 C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.csproj.CoreCompileInputs.cache
 C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.exe
 C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.pdb
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\bin\Debug\reszta.exe.config
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\bin\Debug\reszta.exe
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\bin\Debug\reszta.pdb
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.csproj.AssemblyReference.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.Form1.resources
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.Properties.Resources.resources
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.csproj.GenerateResource.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.exe
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\reszta\reszta\obj\Debug\reszta.pdb

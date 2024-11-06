@@ -19,7 +19,7 @@ namespace reszta
             InitializeComponent();
             flowLayoutPanel = new FlowLayoutPanel
             {
-                Size = new Size(1000, 500),
+                Size = new Size(500, 500),
                 Location = new Point(10, 150)
             };
             Controls.Add(flowLayoutPanel);
@@ -40,7 +40,7 @@ namespace reszta
             List<int> reszta = new List<int>();
             while (kwota > 0)
             {
-                for (int i = 5; i >= 0; i--)
+                for (int i = 0; i <= 6; i++)
                 {
                     if (kwota >= nominaly[i])
                     {
