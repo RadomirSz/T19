@@ -27,12 +27,9 @@ def mergeSort(T):
         return merge(lewy,prawy)
     return T
 
-#zad 1
 ciag = input()
 
 liczby = list(map(int,ciag.split(" ")))
 
 print(liczby)
 print(mergeSort(liczby))
-
-
