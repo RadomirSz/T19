@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\3Egr2\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\regex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6DBBB-0B15-427D-BC2C-E353A39BAC08}|regex\\regex.csproj|c:\\users\\3egr2\\desktop\\t19\\programowanie aplikacji desktopowych\\klasa 3\\regex\\regex\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{76A6DBBB-0B15-427D-BC2C-E353A39BAC08}|regex\\regex.csproj|solutionrelative:regex\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76A6DBBB-0B15-427D-BC2C-E353A39BAC08}|regex\\regex.csproj|c:\\users\\3egr2\\desktop\\t19\\programowanie aplikacji desktopowych\\klasa 3\\regex\\regex\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76A6DBBB-0B15-427D-BC2C-E353A39BAC08}|regex\\regex.csproj|solutionrelative:regex\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\3Egr2\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\regex\\regex\\Form1.cs",
+              "RelativeDocumentMoniker": "regex\\Form1.cs",
+              "ToolTip": "C:\\Users\\3Egr2\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\regex\\regex\\Form1.cs",
+              "RelativeToolTip": "regex\\Form1.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIAwwCsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T11:50:04.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\3Egr2\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\regex\\regex\\Form1.cs",
+              "RelativeDocumentMoniker": "regex\\Form1.cs",
+              "ToolTip": "C:\\Users\\3Egr2\\Desktop\\T19\\Programowanie Aplikacji Desktopowych\\Klasa 3\\regex\\regex\\Form1.cs [Projekt]",
+              "RelativeToolTip": "regex\\Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T11:49:24.724Z",
+              "EditorCaption": " [Projekt]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

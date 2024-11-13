@@ -1,8 +1,8 @@
-.vscode
-obj
-bin
-*temp
-*.user
-*.csproj
-.idea
-.vs
+# .vscode
+# obj
+# bin
+# *temp
+# *.user
+# *.csproj
+# .idea
+# .vs
