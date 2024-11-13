@@ -78,5 +78,10 @@ namespace todo2
         {
 
         }
+
+        public void clearFields() 
+        {
+
+        }
     }
 }

@@ -8,3 +8,13 @@ C:\Users\3Egr2\source\repos\todo2\todo2\obj\Debug\todo2.csproj.GenerateResource.
 C:\Users\3Egr2\source\repos\todo2\todo2\obj\Debug\todo2.csproj.CoreCompileInputs.cache
 C:\Users\3Egr2\source\repos\todo2\todo2\obj\Debug\todo2.exe
 C:\Users\3Egr2\source\repos\todo2\todo2\obj\Debug\todo2.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\bin\Debug\todo2.exe.config
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\bin\Debug\todo2.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\bin\Debug\todo2.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.Form1.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.Properties.Resources.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.csproj.GenerateResource.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\todo2\todo2\obj\Debug\todo2.pdb
