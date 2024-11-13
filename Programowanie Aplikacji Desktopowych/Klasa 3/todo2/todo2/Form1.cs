@@ -53,7 +53,8 @@ namespace todo2
             writer.WriteLine(description);
             writer.WriteLine();
             writer.Close();
-
+            MessageBox.Show("Zapisano osobę " + name);
+            clearFields();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -81,7 +82,10 @@ namespace todo2
 
         public void clearFields() 
         {
-
+            textBox1.Text = string.Empty;
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            richTextBox1.Text = string.Empty;
         }
     }
 }
