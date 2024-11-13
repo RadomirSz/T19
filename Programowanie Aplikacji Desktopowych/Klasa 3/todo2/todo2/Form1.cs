@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace todo2
 {
@@ -16,6 +17,9 @@ namespace todo2
         public Form1()
         {
             InitializeComponent();
+            StreamWriter writer = new StreamWriter(path);
+            writer.Write("");
+            writer.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -47,13 +51,13 @@ namespace todo2
             else sex = "Null";
             string description = richTextBox1.Text;
 
-            StreamWriter writer = new StreamWriter(path);
+            StreamWriter writer = new StreamWriter(path,true);
             writer.WriteLine(name);
             writer.WriteLine(sex);
             writer.WriteLine(description);
             writer.WriteLine();
             writer.Close();
-            MessageBox.Show("Zapisano osobę " + name);
+            MessageBox.Show("Person saved: " + name);
             clearFields();
         }
 
@@ -66,11 +70,19 @@ namespace todo2
 
         private void button3_Click(object sender, EventArgs e)
         {
+            List<Person> persons = new List<Person>();
             StreamReader reader = new StreamReader(path);
-            string person = "";
+
             while (!reader.EndOfStream)
             {
-                person += reader.ReadLine();
+                Person p = new Person(reader.ReadLine(), reader.ReadLine(),reader.ReadLine());
+                reader.ReadLine();
+                persons.Add(p);
+            }
+
+            foreach (Person person in persons)
+            {
+                MessageBox.Show("Name: " + person.name + " Sex: " + person.sex + " \nDescription: " + person.description);
             }
 
         }
@@ -86,6 +98,18 @@ namespace todo2
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             richTextBox1.Text = string.Empty;
+        }
+    }
+    public class Person
+    {
+        public string name;
+        public string sex;
+        public string description;
+        public Person(string name, string sex, string description) 
+        { 
+            this.name = name;
+            this.sex = sex;
+            this.description = description;
         }
     }
 }
