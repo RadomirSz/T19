@@ -1,0 +1,9 @@
+C:\Users\uczen\Desktop\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.AssemblyReference.cache
+C:\Users\uczen\Desktop\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.CoreCompileInputs.cache
+c:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.AssemblyReference.cache
+c:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\bin\Debug\zadanie-konstruktory.exe.config
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\bin\Debug\zadanie-konstruktory.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\bin\Debug\zadanie-konstruktory.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 2\zadanie-konstruktory\zadanie-konstruktory\obj\Debug\zadanie-konstruktory.pdb

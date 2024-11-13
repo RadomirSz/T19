@@ -1,0 +1,15 @@
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.AssemblyInfoInputs.cache
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.AssemblyInfo.cs
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.csproj.CoreCompileInputs.cache
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.sourcelink.json
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\bin\Debug\net8.0\testy.exe
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\bin\Debug\net8.0\testy.deps.json
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\bin\Debug\net8.0\testy.runtimeconfig.json
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\bin\Debug\net8.0\testy.dll
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\bin\Debug\net8.0\testy.pdb
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.dll
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\refint\testy.dll
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.pdb
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\testy.genruntimeconfig.cache
+c:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\testy\obj\Debug\net8.0\ref\testy.dll

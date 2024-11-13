@@ -1,0 +1,15 @@
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\bin\Debug\net8.0\popr-sprawdzian-tablicelistyitp.exe
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\bin\Debug\net8.0\popr-sprawdzian-tablicelistyitp.deps.json
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\bin\Debug\net8.0\popr-sprawdzian-tablicelistyitp.runtimeconfig.json
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\bin\Debug\net8.0\popr-sprawdzian-tablicelistyitp.dll
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\bin\Debug\net8.0\popr-sprawdzian-tablicelistyitp.pdb
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.AssemblyInfoInputs.cache
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.AssemblyInfo.cs
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.sourcelink.json
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.dll
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\refint\popr-sprawdzian-tablicelistyitp.dll
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.pdb
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\popr-sprawdzian-tablicelistyitp.genruntimeconfig.cache
+C:\Users\Radomir\Desktop\T19\Projektowanie Oprogramowania\Klasa 2\popr-sprawdzian-tablicelistyitp\popr-sprawdzian-tablicelistyitp\obj\Debug\net8.0\ref\popr-sprawdzian-tablicelistyitp.dll

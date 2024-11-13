@@ -1,0 +1,10 @@
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\bin\Debug\zadanie 1.exe.config
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\bin\Debug\zadanie 1.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\bin\Debug\zadanie 1.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie 1.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie_1.Form1.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie_1.Properties.Resources.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie 1.csproj.GenerateResource.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie 1.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie 1.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadanie 1\zadanie 1\obj\Debug\zadanie 1.pdb

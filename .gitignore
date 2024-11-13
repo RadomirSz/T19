@@ -1,6 +1,4 @@
 .vscode
-obj
-bin
 *temp
 *.user
 *.csproj
