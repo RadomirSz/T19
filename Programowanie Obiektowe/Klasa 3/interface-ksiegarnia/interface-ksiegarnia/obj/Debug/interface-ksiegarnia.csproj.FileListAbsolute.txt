@@ -5,3 +5,10 @@ C:\Users\egzamin\source\repos\interface-ksiegarnia\interface-ksiegarnia\bin\Debu
 C:\Users\egzamin\source\repos\interface-ksiegarnia\interface-ksiegarnia\bin\Debug\interface-ksiegarnia.pdb
 C:\Users\egzamin\source\repos\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.exe
 C:\Users\egzamin\source\repos\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\bin\Debug\interface-ksiegarnia.exe.config
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\bin\Debug\interface-ksiegarnia.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\bin\Debug\interface-ksiegarnia.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Obiektowe\Klasa 3\interface-ksiegarnia\interface-ksiegarnia\obj\Debug\interface-ksiegarnia.pdb
