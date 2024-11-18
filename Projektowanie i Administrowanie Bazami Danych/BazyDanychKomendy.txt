@@ -1,0 +1,55 @@
+mysql -u root
+
+create database nazwa;
+show databases
+use nazwa
+
+create table uczniowie  (
+    imie varchar(255),
+    nazwisko varchar(255),
+    data_urodzenia date,
+    id int primary key auto_increment,
+     id_klasy int);
+
+create table klasy (
+     id int primary key auto_increment,
+     klasa varchar(10));
+
+create table nauczyciele (
+ imie varchar(255),
+ nazwisko varchar(255),
+ data_urodzenia date,
+ id int primary key auto_increment,
+id_klasy int);
+
+alter table uczniowie add foreign key (id_klasy) references klasy(id);
+alter table nauczyciele add foreign key (id_klasy) references klasy(id);
+
+
+insert into nauczyciele(imie, nazwisko, data_urodzenia) values
+ ("Bartosz","Nowak", '1970-01-01'),
+ ("Radoslaw","Barski",'1970-01-01'),
+ ("Andrzej","Szulta",'1970-01-01');
+
+insert into uczniowie(imie, nazwisko, data_urodzenia) values
+ ("Bartosz","Perz", '2000-01-01'),
+ ("Radoslaw","michalski",'2000-01-01'),
+ ("radek","sz",'2000-01-01');
+
+insert into klasy(klasa) values
+ ("2E"),
+ ("2A"),
+ ("1F");
+
+mysqldump -u root nazwaBazyDanych > nazwaPliku.sql
+
+
+
+
+
+
+
+
+
+show tables;
+describe nazwaTabeli;
