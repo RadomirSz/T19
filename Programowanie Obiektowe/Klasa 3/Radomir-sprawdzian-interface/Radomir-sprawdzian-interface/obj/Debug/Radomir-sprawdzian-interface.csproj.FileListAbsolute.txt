@@ -1,0 +1,7 @@
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\bin\Debug\Radomir-sprawdzian-interface.exe.config
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\bin\Debug\Radomir-sprawdzian-interface.exe
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\bin\Debug\Radomir-sprawdzian-interface.pdb
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\obj\Debug\Radomir-sprawdzian-interface.csproj.AssemblyReference.cache
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\obj\Debug\Radomir-sprawdzian-interface.csproj.CoreCompileInputs.cache
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\obj\Debug\Radomir-sprawdzian-interface.exe
+C:\Users\egzamin\Desktop\Radomir-sprawdzian-interface\Radomir-sprawdzian-interface\obj\Debug\Radomir-sprawdzian-interface.pdb
