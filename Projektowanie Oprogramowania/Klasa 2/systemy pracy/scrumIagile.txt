@@ -1,0 +1,23 @@
+1. Ludzie i interakcje ponad procesy i narzędzia
+2. Działające oprogramowanie ponad szczegółową dokumentację
+3. Współpracę z klientem ponad negocjację umów
+4. Reagowanie na zmiany ponad realizacje założonego planu.
+
+scrum team: product owner, scrum master, zespół developerów, interesariusz
+
+1.backlog produktu - co potrzeba do ukończenia produktu - product owner
+2.backlog sprintu - lista rzeczy do wykonania by osiągnąć cel sprintu - zespół developerów
+3.przyrost - increment - praca wykonana przez developerów w 1 sprincie - Suma wszystkich Przyrostów tworzy Produkt.
+4.Definition of Done - opis oczekiwanego stanu Produktu po ukończeniu przyrostu - product owner
+5.User Story - opis cząstkowej funkcjonalności Produktu
+
+wydarzenia: Sprint, Sprint Planning, Daily Scrum, Sprint Review
+1. Sprint - nawet nie bede tlumaczyl zbyt proste - 2-4 tygodnie
+2. Sprint Planning - wybiera się na nim elementy z backlogu produktu do zrobienia w następnym sprincie - 8h
+3. Daily Scrum - codzienne spotkanie Zespołu Developerów, omawianie planu zadań na dzień - 15 min
+4. Sprint Review - podsumowanie ukończonego sprintu dla Scrum Teamu i Interesarjuszy - 4h lub mniej
+5. Sprint Retrospective - podsumowuje ukończony Sprint pod kątem sposobu pracy Scrum Team by go poprawić - 3h
+6. Cel Produktu - opis przyszłego Produktu
+7. Cel Sprintu - praca do wykonania w 1 Sprint
+8. Wykres Spalania (Burndown Chart) - pokazuje ilość zrobionej pracy względem czasu jaki minął i jaki został
+9. Prędkość Zespołu (Velocity) - pokazuje jaka część Backlogu Produktu stała się Przyrostem w trakcie jednego Sprintu

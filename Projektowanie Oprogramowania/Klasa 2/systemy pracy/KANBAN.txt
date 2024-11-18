@@ -1,0 +1,15 @@
+1. Definicja Kanban
+
+2. Geneza Kanban (kan bahn)
+
+3. Zasady Kanban - zasady zarządzania zmianą - wypisać i krótko opisać
+
+4. Zasady Kanban - zasady dostarczania usług - wypisać i krótko opisać
+
+5. Kadencje w Kanban (pętle zwrotne)
+
+6. Role (4-5 ról)
+
+7. Metryki
+
+8. Wizualizacja (tablica i karta, WIP)

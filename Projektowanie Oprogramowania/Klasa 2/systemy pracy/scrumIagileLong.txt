@@ -1,0 +1,74 @@
+1. Ludzi i interakcje bardziej od procesów i narzędzi
+2. Działające oprogramowanie bardziej od szczegółowej dokumentacji
+3. Współpracę z klientem bardziej od negocjacji umów
+4. Reagowanie na zmiany bardziej realizacji założonego planu.
+lewa > prawa
+
+
+Role w Scrum:
+
+scrum team: product owner, scrum master, zespół developerów, interesariusz
+
+1. Scrum Team samozarządzający zespół składający się ze Scrum Mastera, Product Ownera i Developerów, zwanych też Zespolem Developerskim
+
+2. Product Owner przedstawiciel klienta wewnątrz Scrum Team.
+
+3. Scrum Master coach i lider Zespołu Developerskiego. Osoba odpowiedzialna za właściwe rozumienie Scrum i działanie według jego zasad.
+
+4. Developer-każdy członek Zespołu Developerskiego. wsumie każdy pracownik - coder
+
+5. Zespół Developerski - grupa składająca się ze wszystkich Developerow
+
+6. Interesariusz osoba nienależąca do Scrum Team, w której interesie leży stworzenie jak najlepszego Produktu. W ramach Scrum Team reprezentowany przez Product Ownera. Bierze udział w Sprint Review
+
+
+Artefakty Scrum i ich składowe:
+
+
+!!!backlog produktu - co potrzeba do ukończenia produktu - product owner
+
+!!!backlog sprintu - lista rzeczy do wykonania by osiągnąć cel sprintu - zespół developerów
+
+!!!przyrost - increment - praca wykonana przez developerów w 1 sprincie - Suma wszystkich Przyrostów tworzy Produkt.
+
+!!!Definition of Done - opis oczekiwanego stanu Produktu po ukończeniu przyrostu - product owner
+
+!!!User Story - opis cząstkowej funkcjonalności Produktu
+
+
+1. Artefakty - Backlog Produktu, Backlog Sprintu, Przyrost i ich składowe. Stanowią odzwierciedlenie aktualnego stanu pracy nad Produktem w odniesieniu do Celu Produktu, Celu Sprintu i Definicji Ukończenia
+
+2. Backlog Produktu (Product Backlog)-uporządkowana lista prac potrzebnych do stworzenia określonego Produktu. Jest zarządzany przez Product Ownera.
+
+3 Backlog Sprintu (Sprint Backlog) lista prac do wykonania w danym okresie zdefiniowana przez Cel Sprintu. Jest zarządzany przez Zespół Developerów
+
+
+4. Przyrost (Increment) kompletna i wartościowa praca wykonana przez Developerów w jednym Sprincie. Suma wszystkich Przyrostów tworzy Produkt.
+
+5. Definicja Ukończenia (Definition of Done) zamieszczony w Backlogu Produktu jasny i przejrzysty opis oczekiwanego stanu Produktu po ukończeniu Przyrostu. Opisuje pracę, jaka została wykonana w ramach Przyrostu.
+
+6. User Story opis cząstkowej funkcjonalności Produktu z punktu widzenia Klienta. Przyjmuje formę schematu "Jako [typ użytkownika] chcę [co robić?], ponieważ [po co? dlaczego?]"
+
+
+
+Wydarzenia Scrum i ich składowe
+
+1 Wydarzenia dotyczą pracy Scrum Team, jej planowania lub refleksji nad nią. Są to: Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective i ich składowe
+
+2. Sprint cykliczne wydarzenie obejmujące pracę nad nową wersją Produktu. Trwa najczęściej dwa tygodnie, a najdłużej miesiąc. Służy jako "pojemnik" na inne wydarzenia i działania Scrum.
+
+3 Sprint Planning-spotkanie Scrum Team, w ramach którego wybierane są z Backlogu Produktu wszystkie prace do wykonania w kolejnym Sprincie. Trwa maksymalnie 8 godzin.
+
+4 Daily Scrum codzienne spotkanie Zespołu Developerów, na którym planowane są zadania na dany dzień trwa maksymalnie 15 minut, odbywa się zawsze w tym samym miejscu i czasie
+
+5. Sprint Review wydarzenie podsumowujące ukończony Sprint pod kątem Celu Produktu. Dla Scrum Team i Interesariuszy. Jego celem jest ocena Przyrostu i aktualizacja Backlogu Produktu. Trwa 4 godziny lub mniej.
+
+6. Sprint Retrospective wydarzenie podsumowujące ukończony Sprint pod kątem sposobu pracy Scrum Team. Jego celem jest poprawa funkcjonowania Scrum Team. Trwa maksymalnie 3 godziny.
+
+7. Cel Produktu- opis przyszłego Produktu, nad którego tworzeniem pracuje Scrum Team. Droga prowadząca do osiągnięcia Celu Produktu jest zapisana w Backlogu Produktu.
+
+8. Cel Sprintu praca do wykonania w ramach jednego Sprintu wyrażona w formie celu biznesowego. Zapewnia spójność pracy Zespołu Developerów.
+
+9. Wykres Spalania (Burndown Chart) pokazuje ilość pracy zaplanowanej w Backlogu Sprintu lub Produktu w odniesieniu do czasu, jaki pozostał na jej wykonanie.
+
+10. Prędkość Zespołu (Velocity) - wskaźnik pozwalający określić jaka część Backlogu Produktu stała się Przyrostem w trakcie jednego Sprintu.

@@ -1,0 +1,60 @@
+Agile - ang. zwinny, zręczny
+
+Model przyrostowy - technika tworzenia oprogramowania stosowana w przypadkach, w których dopuszczalna jest okrojona funkcjonalność systemu. Ogólnie chodzi o to, by tworząc przyrostu, postępować wg poniższych kroków:
+1. Na początku należy określić całość wymagań (na ile da się je sprecyzować) i sporządzić ogólny wstępny projekt całości systemu. 
+2. Później wybieramy pewien podzbiór funkcji systemu
+3. Sporządzenie szczegółowego projektu (np wg modelu kaskadowego) oraz implementacja części systemu realizującego wybrane w pkt 2 funkcje
+4. Testowanie tych funkcji i dostarczenie ich klientowi
+5. Powrót do punktu 2 i powtórzenie procesu do czasu zakończenia implementacji całego systemu
+
+Agile to grupa metod zarządzania procesem produkcji oprogramowania opartego na programowaniu iteracyjno-przyrostowym.
+
+Genezą powstania metodyk zwinnych jest obserwacja, że wymagania odbiorcy (klienta) często ewoluują podczas trwania procesu produkcyjnego. Pojęcie programowania zwinnego zostało zaproponowane w 2001 w tzw Manifeście Agile i uściślone w 12 Zadasach Agile.
+
+-----
+Manifest Agile - Manifest programowania zwinnego - 4 wartości
+
+Odkrywamy nowe metody programowania dzięki praktyce w programowaniu i wspieraniu w nim innych. W wyniku naszej pracy, zaczęliśmy bardziej cenić:
+
+1. Ludzi i interakcje od procesów i narzędzi
+2. Działające oprogramowanie od szczegółowej dokumentacji
+3. Współpracę z klientem od negocjacji umów
+4. Reagowanie na zmiany od realizacji założonego planu.
+
+Oznacza to, że elementy wypisane po prawej są wartościowe, ale większą wartość mają dla nas te, które wypisano po lewej.
+-----
+
+-----
+12 Zasad Agile:
+
+1. Najwyższy priorytet ma dla nas zadowolenie klienta dzięki wczesnemu i ciągłemu wdrażaniu wartościowego oprogramowania.
+
+2. Bądźcie gotowi na zmiany wymagań nawet na późnym etapie jego rozwoju. Procesy zwinne wykorzystują zmiany dla zapewnienia klientowi konkurencyjności.
+
+3. Dostarczajcie funkcjonujące oprogramowanie często, w kilkutygodniowych lub kilkumiesięcznych odstępach. Im częściej, tym lepiej.
+
+4. Zespoły biznesowe i deweloperskie muszą ściśle ze sobą współpracować w codziennej pracy przez cały czas trwania projektu.
+
+5. Twórzcie projekty wokół zmotywowanych ludzi. Zapewnijcie im potrzebne środowisko oraz wsparcie i zaufajcie, że wykonają powierzone zadanie.
+
+6. Najbardziej efektywnym i wydajnym sposobem przekazywania informacji zespołowi deweloperskiemu i wewnątrz niego jest rozmowa twarzą w twarz.
+
+7. Działające oprogramowanie jest podstawową miarą postępu.
+
+8. Procesy zwinne umożliwiają zrównoważony rozwój. Sponsorzy, deweloperzy oraz użytkownicy powinni być w stanie utrzymywać równe tempo pracy.
+
+9. Ciągłe skupienie na technicznej doskonałości i dobrym projektowaniu zwiększa zwinność.
+
+10. Prostota – sztuka minimalizowania ilości koniecznej pracy – jest kluczowa.
+
+11. Najlepsze rozwiązania architektoniczne, wymagania i projekty pochodzą od samoorganizujących się zespołów.
+
+12. W regularnych odstępach czasu zespół analizuje możliwości poprawy swojej wydajności, a następnie dostraja i dostosowuje swoje działania do wyciągniętych wniosków.
+-----
+
+Manifest i filozofia Agile dało początek powstawniu wielu ram postępowania opartych za zasadach Agile takich jak:
+- Scrum
+- Kanban
+- Lean
+- XP
+Wiele zespołów łączy też praktyki pochodzące z różnych ram postępowania i nawet wzbogaca je o sposoby unikatowe dla danego zespołu. Agile jest pojęciem szerszym. Jest to sposób myślenia
