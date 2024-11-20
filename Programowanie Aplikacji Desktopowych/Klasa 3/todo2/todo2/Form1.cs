@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace todo2
 {
@@ -17,7 +18,7 @@ namespace todo2
         public Form1()
         {
             InitializeComponent();
-            StreamWriter writer = new StreamWriter(path);
+            StreamWriter writer = new StreamWriter(path,false);
             writer.Write("");
             writer.Close();
         }
@@ -79,12 +80,18 @@ namespace todo2
                 reader.ReadLine();
                 persons.Add(p);
             }
-
-            foreach (Person person in persons)
+            string ListOut = "";
+            for (int i = 0; i < persons.Count; i++)
             {
-                MessageBox.Show("Name: " + person.name + " Sex: " + person.sex + " \nDescription: " + person.description);
+                ListOut += $"{i+1}. Name: {persons[i].name} Sex: {persons[i].sex} \nDescription:   {persons[i].description}\n";
             }
+            MessageBox.Show(ListOut);   
+            reader.Close();
 
+            //listview i datagridview
+
+            System.Windows.Forms.ListView listView1 = new ListView();
+            listView1.Items.AddRange(new ListViewItem[] { item1, item2, item3 });
         }
 
         private void label4_Click(object sender, EventArgs e)
