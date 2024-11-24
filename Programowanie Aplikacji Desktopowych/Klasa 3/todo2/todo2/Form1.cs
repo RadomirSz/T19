@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace todo2
 {
@@ -58,7 +57,7 @@ namespace todo2
             writer.WriteLine(description);
             writer.WriteLine();
             writer.Close();
-            MessageBox.Show("Person saved: " + name);
+            //MessageBox.Show("Person saved: " + name);
             clearFields();
         }
 
@@ -67,11 +66,13 @@ namespace todo2
             Close();
         }
 
-        
 
+        public List<Person> persons = new List<Person>();
         private void button3_Click(object sender, EventArgs e)
         {
-            List<Person> persons = new List<Person>();
+            listView1.Items.Clear();
+            dataGridView1.Rows.Clear();
+
             StreamReader reader = new StreamReader(path);
 
             while (!reader.EndOfStream)
@@ -80,24 +81,27 @@ namespace todo2
                 reader.ReadLine();
                 persons.Add(p);
             }
+
             string ListOut = "";
             for (int i = 0; i < persons.Count; i++)
             {
-                ListOut += $"{i+1}. Name: {persons[i].name} Sex: {persons[i].sex} \nDescription:   {persons[i].description}\n";
+                ListOut += $"{i+1}. Name: {persons[i].name} Sex: {persons[i].sex} \nDescription: {persons[i].description}\n";
+                
+                ListViewItem item = new ListViewItem(persons[i].name);
+                item.SubItems.Add(persons[i].sex);
+                item.SubItems.Add(persons[i].description);
+                listView1.Items.Add(item);
+
+
+                dataGridView1.Rows.Add(persons[i].name, persons[i].sex, persons[i].description);
+
             }
-            MessageBox.Show(ListOut);   
+            //MessageBox.Show(ListOut);   
+
             reader.Close();
-
-            //listview i datagridview
-
-            System.Windows.Forms.ListView listView1 = new ListView();
-            listView1.Items.AddRange(new ListViewItem[] { item1, item2, item3 });
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         public void clearFields() 
         {
@@ -105,6 +109,22 @@ namespace todo2
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             richTextBox1.Text = string.Empty;
+            radioButton1.Checked = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     public class Person
