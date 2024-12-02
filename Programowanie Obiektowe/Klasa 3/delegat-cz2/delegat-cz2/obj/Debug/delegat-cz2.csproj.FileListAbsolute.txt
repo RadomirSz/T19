@@ -1,0 +1,7 @@
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\bin\Debug\delegat-cz2.exe.config
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\bin\Debug\delegat-cz2.exe
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\bin\Debug\delegat-cz2.pdb
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\obj\Debug\delegat-cz2.csproj.AssemblyReference.cache
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\obj\Debug\delegat-cz2.csproj.CoreCompileInputs.cache
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\obj\Debug\delegat-cz2.exe
+C:\Users\egzamin\source\repos\delegat-cz2\delegat-cz2\obj\Debug\delegat-cz2.pdb
