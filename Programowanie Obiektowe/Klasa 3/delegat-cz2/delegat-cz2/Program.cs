@@ -1,39 +1,62 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace Delegat
+namespace _4_1_delegaty_menu
 {
     internal class Program
     {
-
         public delegate void NotificationHandler(string message);
 
-        public class EmailNotifier
+        public interface INotifier
         {
-            public void SendEmail(string message)
+            void Notify(string message);
+
+        }
+
+        public class EmailNotifier : INotifier
+        {
+            public void Notify(string message)
             {
-                Console.WriteLine($"email wyslany: {message}");
+                try
+                {
+                    Console.WriteLine($"Email wysłany: {message}");
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine($"Błąd podczas wysyłania emaila: {ex.Message}");
+                }
             }
         }
 
-        public class SMSNotifier
+        public class SMSNotifier : INotifier
         {
-            public void SendSMS(string message)
+            public void Notify(string message)
             {
-                Console.WriteLine($"sms wyslany: {message}");
+                try
+                {
+                    Console.WriteLine($"SMS wysłany: {message}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Błąd podczas wysyłania SMS: {ex.Message}");
+                }
             }
         }
 
-        public class PushNotifier
+        public class PushNotifier : INotifier
         {
-            public void SendPushNotifier(string message)
+            public void Notify(string message)
             {
-                Console.WriteLine($"powiadomienie wysłane: {message}");
+                try
+                {
+                    Console.WriteLine($"Powiadomienie PUSH wysłane: {message}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Błąd podczas wysyłania powiadomienia push:{ex.Message}");
+                }
             }
         }
 
@@ -43,115 +66,148 @@ namespace Delegat
 
             public void AddNotificationMethod(NotificationHandler handler)
             {
+                if (Notify != null && Notify.GetInvocationList().Contains(handler))
+                {
+                    Console.WriteLine("ta metoda powiadomienia jest już dodana");
+                    return;
+                }
                 Notify += handler;
+                Console.WriteLine("dodano metodę powiadomienia");
             }
 
             public void RemoveNotificationMethod(NotificationHandler handler)
             {
-                Notify -= handler;
+                if (Notify != null && Notify.GetInvocationList().Contains(handler))
+                {
+                    Notify -= handler;
+                    Console.WriteLine("usunięto metodę powiadomienia");
+                }
             }
-
             public void SendNotification(string message)
             {
                 if (Notify == null)
                 {
-                    Console.WriteLine("brak dostępnych metod powiadomien");
+                    Console.WriteLine("Brak dostępnych metod powiadomień");
+                    return;
                 }
-                Notify?.Invoke(message);
-
-
+                foreach (var handler in Notify.GetInvocationList())
+                {
+                    try
+                    {
+                        handler.DynamicInvoke(message);
+                        string logEntry = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Wysłano: {handler.Method.Name}, wiadomość: {message}{Environment.NewLine}";
+                        File.AppendAllText("log.txt", logEntry);
+                        
+                    }
+                    catch(Exception ex)
+                    {
+                        Console.WriteLine($"blad podczas wysylania powiadomienia: {ex.Message}");
+                    }
+                }
             }
 
+            public void ListNotificationMethods()
+            {
+                if (Notify == null)
+                {
+                    Console.WriteLine("Brak dostępnych metod powiadomień");
+                    return;
+                }
 
+                Console.WriteLine("zarejestrowane metody powiadomien:");
+
+                var displayHandlers = new HashSet<string>();
+                foreach (var handler in Notify.GetInvocationList())
+                {
+                    var target = handler.Target;
+                    var methodName = handler.Method.Name;
+                    var className = target?.GetType().Name ?? "nieznany";
+
+                    var uniqueKey = $"{className}.{methodName}";
+                    if (!displayHandlers.Contains(uniqueKey))
+                    {
+                        displayHandlers.Add(uniqueKey);
+                        Console.WriteLine($" - Klasa: {className}, metoda: {methodName}");
+                    }
+                }
+            }
         }
 
         public static void ShowMenu()
         {
-            Console.WriteLine("menu");
-            Console.WriteLine("1.dodaj powiadomienie email " +
-                "\n2.dodaj powiadomienie sms " +
-                "\n3.dodaj powiadomienie push" +
-                "\n4.usun powiadomienie email" +
-                "\n5.usun powiadomienie sms" +
-                "\n6.usun powiadomienie push" +
-                "\n7.wyslij powiadomienie" +
-                "\n8.wyjdz");
-                Console.Write("Wybierz opcję: ");
-
+            Console.WriteLine("Menu");
+            Console.WriteLine("1. Dodaj powiadomienie Email");
+            Console.WriteLine("2. Dodaj powiadomienie SMS");
+            Console.WriteLine("3. Dodaj powiadomienie Push");
+            Console.WriteLine("4. Usuń powiadomienie Email");
+            Console.WriteLine("5. Usuń powiadomienie SMS");
+            Console.WriteLine("6. Usuń powiadomienie Push");
+            Console.WriteLine("7. Wyślij powiadomienie");
+            Console.WriteLine("8. Wyjdź");
+            Console.Write("Wybierz opcję: ");
         }
+
         static void Main(string[] args)
         {
+
+            //tworzenie instancji klas powiadomień
             var emailNotifier = new EmailNotifier();
-            //emailNotifier.SendEmail("siema");
             var smsNotifier = new SMSNotifier();
-            //smsNotifier.SendSMS("siema");
             var pushNotifier = new PushNotifier();
-            //pushNotifier.SendPushNotifier("siema");
 
-            var notificationMenager = new NotificationManager();
-
-            //notificationMenager.AddNotificationMethod(emailNotifier.SendEmail);
-
-
-            //notificationMenager.SendNotification("aa");
-
+            //tworzenie instancji klasy NotificationManager
+            var notificationManager = new NotificationManager();
 
             while (true)
             {
                 try
                 {
                     ShowMenu();
-                    var choice = int.Parse(Console.ReadLine());
-                    switch(choice)
+                    var choice = Console.ReadLine();
+
+                    switch (choice)
                     {
-                        case 1:
-                            notificationMenager.AddNotificationMethod(emailNotifier.SendEmail);
-                            Console.WriteLine("dodano powiadomienie email");
+                        case "1":
+                            notificationManager.AddNotificationMethod(emailNotifier.Notify);
+                            //Console.WriteLine("Dodano powiadomienie Email");
                             break;
-                        case 2:
-                            notificationMenager.AddNotificationMethod(smsNotifier.SendSMS);
-                            Console.WriteLine("dodano powiadomienie sms");
+                        case "2":
+                            notificationManager.AddNotificationMethod(smsNotifier.Notify);
+                            //Console.WriteLine("Dodano powiadomienie SMS");
                             break;
-                        case 3:
-                            notificationMenager.AddNotificationMethod(pushNotifier.SendPushNotifier);
-                            Console.WriteLine("dodano powiadomienie push");
+                        case "3":
+                            notificationManager.AddNotificationMethod(pushNotifier.Notify);
+                            //Console.WriteLine("Dodano powiadomienie Push");
                             break;
-                        case 4:
-                            notificationMenager.RemoveNotificationMethod(emailNotifier.SendEmail);
-                            Console.WriteLine("usunieto powiadomienie email");
+                        case "4":
+                            notificationManager.RemoveNotificationMethod(emailNotifier.Notify);
+                            Console.WriteLine("Usunięto powiadomienie Email");
                             break;
-                        case 5:
-                            notificationMenager.RemoveNotificationMethod(smsNotifier.SendSMS);
-                            Console.WriteLine("usunieto powiadomienie sms");
+                        case "5":
+                            notificationManager.RemoveNotificationMethod(smsNotifier.Notify);
+                            Console.WriteLine("Usunięto powiadomienie SMS");
                             break;
-                        case 6:
-                            notificationMenager.RemoveNotificationMethod(pushNotifier.SendPushNotifier);
-                            Console.WriteLine("usunieto powiadomienie push");
+                        case "6":
+                            notificationManager.RemoveNotificationMethod(pushNotifier.Notify);
+                            Console.WriteLine("Usunięto powiadomienie Push");
                             break;
-                        case 7:
-                            Console.WriteLine("podaj wiadomość:");
-                            string message = Console.ReadLine();
-                            notificationMenager.SendNotification(message);
+                        case "7":
+                            Console.Write("Wpisz wiadomość do wysłania: ");
+                            var message = Console.ReadLine();
+                            notificationManager.SendNotification(message);
                             break;
-                        case 8:
+                        case "8":
                             return;
                         default:
-                            Console.WriteLine("nieprawidłowa opcja, spróbuj ponownie");
+                            Console.WriteLine("Nieprawidłowa opcja. Spróbuj ponownie");
                             break;
                     }
-                    Thread.Sleep(1000);
-                    Console.Clear();
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
-                    Console.WriteLine(e.Message);
+                    Console.WriteLine($"Wystąpił błąd: {e.Message}");
                 }
             }
-
-
-
-            Console.ReadKey();
         }
-
     }
 }
