@@ -92,3 +92,24 @@ for i in range(len(T)-1):
                 break
 
 print(tempindex, tempMaks)
+
+
+
+m = 4
+Maks = []
+Index = 0
+for i in range(0,len(T)-1):
+    temp = T[i:i+m]
+    if(czyRosnacoMalejaca(temp) or czyrosnie(temp)):
+        while (True):
+            m += 1
+            temp = T[i:i + m]
+            if czyRosnacoMalejaca(temp) or czyrosnie(temp):
+                if (len(Maks) < len(temp)):
+                    Index = i + 1
+                    Maks = temp
+            else:
+                m = 4
+                break
+
+print(Index, Maks)
