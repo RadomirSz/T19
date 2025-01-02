@@ -64,52 +64,38 @@ print("z3:")
 print("z4:")
 
 def czyRosnacoMalejaca(T):
-
     srodek = T.index(max(T))
     T1 = T[0:srodek]
     T2 = T[srodek+1:len(T)]
     if T[0] >= T[1] or T[len(T)-2] <= T[len(T)-1]: return False
     for i in range(len(T1)-1):
         if T1[i] >= T1[i+1]: return False
-    for i in range(len(T2) - 1):
-        if T2[i] <= T2[i + 1]: return False
+    for j in range(len(T2)-1):
+        if T2[j] <= T2[j + 1]: return False
     return True
 
-m = 4
-tempMaks = []
-tempindex = 0
-for i in range(len(T)-1):
-    temp = T[i:i+m]
-    if(czyRosnacoMalejaca(temp)):
-        while (True):
-            m+=1
-            temp = T[i:i + m]
-            if not czyRosnacoMalejaca(temp):
-                if (len(tempMaks) < len(temp)):
-                    tempindex = i-1
-                    tempMaks = temp
-                m = 4
-                break
+def czyrosnie(T):
+    for i in range(len(T)-1):
+        if T[i] >= T[i+1]:
+            return False
+    return True
 
-print(tempindex, tempMaks)
-
-
-
-m = 4
+b = 4
 Maks = []
 Index = 0
-for i in range(0,len(T)-1):
-    temp = T[i:i+m]
+
+for i in range(len(T)-6):
+    flag = True
+    temp = T[i:i + b]
     if(czyRosnacoMalejaca(temp) or czyrosnie(temp)):
-        while (True):
-            m += 1
-            temp = T[i:i + m]
+        while (flag):
+            b += 1
+            temp = T[i:i + b]
             if czyRosnacoMalejaca(temp) or czyrosnie(temp):
                 if (len(Maks) < len(temp)):
                     Index = i + 1
                     Maks = temp
             else:
-                m = 4
-                break
-
+                b = 4
+                flag = False
 print(Index, Maks)
