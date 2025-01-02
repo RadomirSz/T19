@@ -28,3 +28,25 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+
+
+
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$conn = mysqli_connect($servername, $username, $password);
+if (!$conn) {
+    die("Połączenie nieudane: " .mysqli_connect_error());
+}
+$sql = "CREATE DATABASE testDB; create table klasy (id int primary key auto_increment, klasa varchar(10));";
+if (mysqli_query($conn, $sql)) {
+    echo "Baza danych została pomyślnie utworzona pod nazwą testDB";
+} else {
+    echo "Błąd podczas tworzenia bazy danych: " . mysqli_error($conn);
+}
+mysqli_close($conn);
+?>
+
