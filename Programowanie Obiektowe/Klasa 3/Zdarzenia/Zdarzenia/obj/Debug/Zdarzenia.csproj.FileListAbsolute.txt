@@ -1,0 +1,7 @@
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\obj\Debug\Zdarzenia.csproj.AssemblyReference.cache
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\obj\Debug\Zdarzenia.csproj.CoreCompileInputs.cache
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\bin\Debug\Zdarzenia.exe.config
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\bin\Debug\Zdarzenia.exe
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\bin\Debug\Zdarzenia.pdb
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\obj\Debug\Zdarzenia.exe
+C:\Users\egzamin\Desktop\Zdarzenia\Zdarzenia\obj\Debug\Zdarzenia.pdb
