@@ -44,7 +44,7 @@ class Program
 
         public void addUser(string name, int priority)
         {
-            if (users.ContainsKey(name))
+            if (!users.ContainsKey(name))
             {
                 users[name] = new User() { Name = name, Priority = priority };
                 Console.WriteLine($"Dodano użytkownika {name} z priozytetem {priority}");
@@ -60,6 +60,7 @@ class Program
         {
             if (users.ContainsKey(name))
             {
+                users.Remove(name);
                 Console.WriteLine($"Usunięto użytkownika {name}");
             }
             else
@@ -162,76 +163,125 @@ class Program
     }
     
     static void Main(string[] args)
-    {
-        var notificationManager = new NotificationManager();
+		{
+			var notificationManager = new NotificationManager();
 
         var emailNotifier = new emailNotifier();
         var smsNotifier = new smsNotifier();
         var pushNotifier = new pushNotifier();
 
-        while (true)
-        {
-            Console.WriteLine("\nMenu");
-            Console.WriteLine("1. Dodaj użytkownika");
-            Console.WriteLine("2. Usuń użytkownika");
-            Console.WriteLine("3. Wyślij powiadomienie do użytkownika");
-            Console.WriteLine("4. Wyświetl użytkowników");
-            Console.WriteLine("5. Dodaj metodę powiadamiania");
-            Console.WriteLine("6. Usuń metodę powiadamiania");
-            Console.WriteLine("7. Wyświetl metody powiadomień");
-            Console.WriteLine("8. Wyjdź");
-            
-            Console.WriteLine("\n Wybierz opcję:");
-            var choice = Console.ReadLine();
+			while (true)
+			{
+				Console.WriteLine("\nMenu");
+				Console.WriteLine("1. Dodaj użytkownika");
+				Console.WriteLine("2. Usuń użytkownika");
+				Console.WriteLine("3. Wyślij powiadomienie do użytkownika");
+				Console.WriteLine("4. Wyświetl użytkowników");
+				Console.WriteLine("5. Dodaj metodę powiadomień");
+				Console.WriteLine("6. Usuń metodę powiadomień");
+				Console.WriteLine("7. Wyświetl metody powiadomień");
+				Console.WriteLine("8. Wyjdź");
 
-            switch (choice)
-            {
-                case "1":
-                    Console.WriteLine("Podaj imię: ");
-                    string str = Console.ReadLine();
-                    Console.WriteLine("Podaj priorytet: ");
-                    int prio = int.Parse(Console.ReadLine());
-                    notificationManager.addUser(str,prio);
-                    str = "";
-                    prio = 0;
-                    break;
-                case "2":
-                    Console.WriteLine("Podaj imię: ");
-                    str = Console.ReadLine();
-                    notificationManager.removeUser(str);
-                    str = "";
-                    break;
-                case "3":
-                    Console.WriteLine("Podaj wiadomość:");
-                    str = Console.ReadLine();
-                    Console.WriteLine("Podaj priorytet: ");
-                    prio = int.Parse(Console.ReadLine());
-                    notificationManager.sendNotification(str, prio);
-                    str = "";
-                    prio = 0;
-                    break;
-                case "4":
-                    break;
-                case "5":
-                    break;
-                case "6":
-                    break;
-                case "7":
-                    break;
-                case "8":
-                    Console.Clear();
-                    Console.WriteLine("Zamykanie");
-                    Thread.Sleep(2000);
-                    Console.Clear();
-                    return;
-                
-                default:
-                    Console.Clear();
-                    Console.WriteLine("Niepoprawna opcja. Spróbuj ponownie.");
-                    Thread.Sleep(2000);
-                    Console.Clear();
-                    break;
+            Console.WriteLine("\n Wybierz opcję:");
+				var choice = Console.ReadLine();
+
+				switch (choice)
+				{
+					case "1":
+                        Console.Write("Podaj imię użytkownika: ");
+						string name = Console.ReadLine();
+
+						int priority = GetValidPriority("Podaj priorytet użytkownika (liczba całkowita od 1 do 3: ");
+                        notificationManager.AddUser(name, priority);
+						break;
+					case "2":
+                        Console.Write("Podaj imię użytkownika, którego chcesz usunąć: ");
+						notificationManager.RemoveUser(Console.ReadLine());
+                        break;
+					case "3":
+                        Console.Write("Wpisz swoją wiadomość: ");
+                        string message = Console.ReadLine();
+
+                        priority = GetValidPriority("Podaj priorytet użytkowników, do których będzie wysłana wiadomość (liczba całkowita od 1 do 3: ");
+						notificationManager.SendNotification(message, priority);
+						break;
+					case "4":
+						notificationManager.ListUsers();
+                        break;
+					case "5":
+                        Console.WriteLine("Wybierz metodę powiadamiania: ");
+                        Console.WriteLine("\t1. Email");
+                        Console.WriteLine("\t2. SMS");
+                        Console.WriteLine("\t3. Powiadomienie PUSH");
+
+                        Console.Write("\nWyberz opcję: ");
+						choice = Console.ReadLine();
+						switch (choice)
+						{
+							case "1":
+								notificationManager.AddNotifier(emailNotifier);
+								break;
+							case "2":
+								notificationManager.AddNotifier(smsNotifier);
+								break;
+							case "3":
+								notificationManager.AddNotifier(pushNotifier);
+								break;
+							default:
+                                Console.WriteLine("Nieprawidłowy wybór. Naciśnij dowolny klawisz");
+								Console.ReadKey();
+								break;
+                        }
+						break;
+					case "6":
+                        Console.WriteLine("Wybierz metodę powiadamiania do usunięcia: ");
+                        Console.WriteLine("\t1. Email");
+                        Console.WriteLine("\t2. SMS");
+                        Console.WriteLine("\t3. Powiadomienie PUSH");
+
+                        Console.Write("\nWyberz opcję: ");
+                        choice = Console.ReadLine();
+                        switch (choice)
+                        {
+                            case "1":
+                                notificationManager.RemoveNotifier(emailNotifier);
+                                break;
+                            case "2":
+                                notificationManager.RemoveNotifier(smsNotifier);
+                                break;
+                            case "3":
+                                notificationManager.RemoveNotifier(pushNotifier);
+                                break;
+                            default:
+                                Console.WriteLine("Nieprawidłowy wybór. Naciśnij dowolny klawisz");
+                                Console.ReadKey();
+                                break;
+                        }
+                        break;
+					case "7":
+						notificationManager.ListNotifiers();
+                        break;
+					case "8":
+						return;
+					default:
+                        Console.WriteLine("Błędne dane. Wybierz poprawną opcję");
+						break;
+                }
+			}
+		}
+        private static int GetValidPriority(string prompt)
+        {
+            while (true)
+			{
+                Console.Write(prompt);
+				if (int.TryParse(Console.ReadLine(), out int result) && result >= 1 && result <= 3)
+				{
+					return result;
+				}
+				else
+				{
+                    Console.WriteLine("Błędne dane. Spróbuj ponownie\n");
+                }
             }
         }
-    }
 }
