@@ -1,13 +1,13 @@
 def z5_1():
-	A = list(map(int,input("daj liczby (an - a0): ").split(" ")))
+	wsp = list(map(int,input("daj liczby (an - a0): ").split(" ")))
 	x = float(input("x: "))
-	n = len(A) - 1
-	y = A[n]
+	n = len(wsp) - 1
+	y = wsp[n]
 	potega = 1
 
 	for i in range(n,-1,-1):
 		potega *= x
-		y += A[i] * potega
+		y += wsp[i] * potega
 	print(y)
 
 
