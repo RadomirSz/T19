@@ -8,3 +8,13 @@ C:\Users\3Egr2\source\repos\test\test\obj\Debug\test.csproj.GenerateResource.cac
 C:\Users\3Egr2\source\repos\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
 C:\Users\3Egr2\source\repos\test\test\obj\Debug\test.exe
 C:\Users\3Egr2\source\repos\test\test\obj\Debug\test.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\bin\Debug\test.exe.config
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\bin\Debug\test.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\bin\Debug\test.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.Form1.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.Properties.Resources.resources
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\Klasa 3\test\test\obj\Debug\test.pdb
