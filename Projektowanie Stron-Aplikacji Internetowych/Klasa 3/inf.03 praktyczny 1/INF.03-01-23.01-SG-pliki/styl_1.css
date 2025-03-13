@@ -1,0 +1,24 @@
+/* 
+– Ustawione domyślne wartości dla wszystkich selektorów stylu CSS: krój czcionki Cambria
+
+– Wspólne dla banera i stopki: kolor tła: #829EB9, biały kolor czcionki, tekst wyśrodkowany, marginesy
+wewnętrzne: 10 px
+– Wspólne dla bloków lewego i prawego: kolor tła: #B3C6D9, wysokość 400 px, szerokość: 25%,
+margines wewnętrzny górny: 100 px
+– Dla bloku środkowego: kolor tła: #E0E9F1, wysokość 400 px, szerokość: 50%, tekst wyśrodkowany,
+margines wewnętrzny górny: 100 px
+– Dla selektora tabeli: obramowanie linią ciągłą o szerokości 1 px i kolorze DimGray, szerokość 80%,
+marginesy zewnętrzne automatycznie wyliczane przez przeglądarkę, obramowanie połączone
+w jedną linię
+– Dla selektora komórki tabeli i komórki nagłówkowej: obramowanie linią ciągłą o szerokości 1 pxi
+kolorze DimGray, obramowanie połączone w jedną linię
+– Gdy kursor myszy znajdzie się na komórce tabeli jej kolor tła zamienia się na SteelBlue a kolor czcionki
+na biały
+– Dla selektora obrazu: szerokość 100%, zaokrąglenie rogów 20 px */
+
+body{
+    font-family: Cambria;
+}
+header, footer{
+    background-color: #829eb9;
+}
