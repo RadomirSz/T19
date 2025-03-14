@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>malarz</title>
-    <style src="styl_1.css"></style>
+    <link rel="stylesheet" href="styl_1.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,14 +15,15 @@
         <section id="lewy">
             <h2>Menu</h2>
             <ul>
-                <li href="mieszamy.html">Mieszamy</li>
-                <li href="cena.html">Wyceniamy</li>
+                <li ><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
             </ul>
         </section>
         <section id="środkowy">
             <h2>Zapotrzebowanie na farbę</h2>
-            Powierzchnia malowania (m<sup>2</sup>): <input type="number">
-            <input type="button" onclick="rup()" value="Policz">
+            Powierzchnia malowania (m<sup>2</sup>): <input type="number" id="number">
+            <input type="button" onclick="func()" value="Policz">
+            <p id="output"></p>
         </section>
         <section id="prawy">
             <img src="obraz.png" alt="Próbki farb">
@@ -29,7 +31,7 @@
     </main>
     <footer>
         <h3>MALARZ</h3>
-        <p>Stronę opracował: nigga</p>
+        <p>Stronę opracował: xyz</p>
     </footer>
 </body>
 </html>
