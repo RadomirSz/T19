@@ -1,0 +1,34 @@
+*{
+    font-family: Verdana;
+}
+
+#motorpng{
+    position:absolute;
+    display: block;
+    left: 15%;
+    width: 70%;
+    z-index: -1;
+}
+/* 
+‒ Jedynie dla obrazu motor.png: wyświetlanie blokowe, pozycjonowanie na stronie: element
+przesunięty 15% od lewej strony względem swojego rodzica, szerokość 70%, element jest zakryty
+przez bloki strony (znajduje się za blokami strony)
+‒ Dla banera: kolor tła RGB z wartościami 60, 120, 160 i przezroczystością 0.9; biały kolor czcionki,
+rozmiar czcionki 150%, marginesy wewnętrzne 10 px
+‒ Dla bloku lewego: kolor tła RGB z wartościami 0, 100, 0 i przezroczystością 0.6; marginesy
+zewnętrzne 2%, szerokość 75%, wysokość 600 px, rozmiar czcionki 120%, paski przewijania
+widoczne tylko gdy zawartość nie mieści się w bloku, cień bloku o przesunięciu 10 px w obu osiach,
+rozmyciu 7 px i kolorze DimGray
+‒ Wspólne dla bloków prawych: kolor tła RGB z wartościami 0, 100, 0 i przezroczystością 0.6;
+marginesy zewnętrzne 1%, szerokość 15%, wysokość 300 px, cień bloku o przesunięciu 10 px w obu
+osiach, rozmyciu 7 px i kolorze DimGray
+‒ Dla stopki: kolor tła RGB z wartościami 60, 120, 160 i przezroczystością 0.9; biały kolor czcionki,
+marginesy wewnętrzne 10 px
+‒ Dla selektora nagłówka pierwszego i drugiego stopnia: wyrównanie tekstu do środka, czcionka
+pochylona
+‒ Wspólne dla odnośnika i terminu w liście definicji: biały kolor czcionki
+‒ Dla elementu definicji w liście: marginesy wewnętrzne 1%
+‒ Gdy kursor znajdzie się na elemencie definicji w liście, jego kolor tła zmienia się na LightGreen
+(widoczne na obrazie 2)
+Uwaga: styl CSS nagłówka pierwszego i drugiego stopnia należy zdefiniować wyłącznie przy pomocy
+selektora dla danego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny. */
