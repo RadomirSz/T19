@@ -1,0 +1,7 @@
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\bin\Debug\SprawdzianRS.exe.config
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\bin\Debug\SprawdzianRS.exe
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\bin\Debug\SprawdzianRS.pdb
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\obj\Debug\SprawdzianRS.csproj.AssemblyReference.cache
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\obj\Debug\SprawdzianRS.csproj.CoreCompileInputs.cache
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\obj\Debug\SprawdzianRS.exe
+C:\Users\egzamin\source\repos\SprawdzianRS\SprawdzianRS\obj\Debug\SprawdzianRS.pdb
