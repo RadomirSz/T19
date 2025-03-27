@@ -24,10 +24,12 @@ header{
     overflow-y: auto;
     box-shadow: 10px 10px 7px DimGray;
 }
+#right{
+    width: 15%;
+}
 #topright, #bottomright{
     background-color: rgb(0,100,0,0.6);
     margin: 1%;
-    width: 15%;
     height: 300px;
     box-shadow: 10px 10px 7px DimGray;
 }
@@ -46,6 +48,9 @@ a, dt{
 dt{
     margin: 1%;
 }
-dt:hover{
+dd:hover{
     background-color: LightGreen;
+}
+main{
+    display: flex;
 }
