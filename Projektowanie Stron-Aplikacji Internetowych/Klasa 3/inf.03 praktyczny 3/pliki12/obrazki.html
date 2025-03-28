@@ -3,37 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Efekty obrazu</title>
-    <link rel="stylesheet" src="styl.css">
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
 </head>
 <body>
     <header>
         <h2>Efekty na obrazach</h2>
     </header>
-    <section id="">
-        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku">
-        
-        
-        <input type="radio" >Blur<br>
-        <input type="radio">Sepia<br>
-        <input type="radio">Negatyw<br>
-
-        Obraz pszczola.jpg z tekstem alternatywnym o treści „pszczoła na fioletowym kwiatku” 
-‒ Poniżej trzy pola opcji: „Blur”, „Sepia” i „Negatyw”, zgrupowane tak, że jednocześnie może być 
-Strona 4 z 7 
-wybrane tylko jedno pole 
-‒ Poniżej przycisk „Zastosuj”, którego kliknięcie powoduje transformacje obrazu 1
-    </section>
-    <section id="">
-
-    </section>
-    <section id="">
-
-    </section>
-    <section id="">
-
-    </section>
+    <main>
+        <section id="topleft">
+            <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="img1"><br>
+            
+            <input type="radio" name="radio" id="blur">Blur<br>
+            <input type="radio" name="radio" id="sepia">Sepia<br>
+            <input type="radio" name="radio" id="negatyw">Negatyw<br>
+    
+            <input type="button" value="Zastosuj" onclick="transform1()">
+        </section>
+        <section id="topright">
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="img2"><br>
+            <input type="button" value="Kolorowy" onclick="transform2(1)">
+            <input type="button" value="Czarno-biały" onclick="transform2(2)">
+        </section>
+        </main>
+        <main>
+        <section id="bottomleft">
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="img3">
+            <input type="range" min="0" max="100" value="100" id="range1"><br>
+            <input type="button" value="Zastosuj" onclick="transform3()">
+        </section>
+        <section id="bottomright">
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="img4">
+            <input type="range" min="0" max="250" id="range2"><br>
+            <input type="button" value="Zastosuj" onclick="transform4()">
+        </section>
+    </main>
     <footer>
-
+        <p><a href="http://www.css.com/" target="_blank">Zobacz  inne  efekty obrazu</a></p>
+        <p>Stronę wykonał: </p>
     </footer>
 </body>
 </html>
