@@ -1,0 +1,11 @@
+kw1
+SELECT swinki.imie, swinki.miot FROM swinki WHERE month(swinki.data_ur) = 7;
+
+kw2
+SELECT DISTINCT swinki.data_ur, swinki.miot, rasy.rasa FROM swinki INNER JOIN rasy ON swinki.rasy_id = rasy.id WHERE swinki.rasy_id = 1;
+
+kw3 
+SELECT swinki.imie, swinki.cena, swinki.opis FROM swinki WHERE swinki.rasy_id = 1;
+
+kw4
+SELECT rasy.rasa FROM rasy;
