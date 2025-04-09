@@ -1,0 +1,14 @@
+Co to jest obiekt?
+Obiekt to instancja klasy
+Co to jest klasa?
+Klasa to szablon do tworzenia obiektów
+Jak nazywają się dane zawarte w obiekcie, określające jego stan?
+Atrybuty
+Jak nazywają się funkcje zawarte w obiekcie określające jego zachowanie?
+Metody
+Co to jest konstruktor obiektu?
+Specjalna funkcja tworząca obiekt
+Jaki operator umożliwia dostęp do atrybutów i metod obiektu?
+kropka
+Co oznacza skrót OOP?
+object oriented programming
