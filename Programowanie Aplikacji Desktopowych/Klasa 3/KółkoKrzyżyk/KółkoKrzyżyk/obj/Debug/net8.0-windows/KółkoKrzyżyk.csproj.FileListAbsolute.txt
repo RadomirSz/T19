@@ -1,0 +1,16 @@
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\bin\Debug\net8.0-windows\KółkoKrzyżyk.exe
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\bin\Debug\net8.0-windows\KółkoKrzyżyk.deps.json
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\bin\Debug\net8.0-windows\KółkoKrzyżyk.runtimeconfig.json
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\bin\Debug\net8.0-windows\KółkoKrzyżyk.dll
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\bin\Debug\net8.0-windows\KółkoKrzyżyk.pdb
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.Form1.resources
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.AssemblyInfoInputs.cache
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.AssemblyInfo.cs
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.dll
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\refint\KółkoKrzyżyk.dll
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.pdb
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\KółkoKrzyżyk.genruntimeconfig.cache
+C:\Users\3Egr2\source\repos\KółkoKrzyżyk\KółkoKrzyżyk\obj\Debug\net8.0-windows\ref\KółkoKrzyżyk.dll
