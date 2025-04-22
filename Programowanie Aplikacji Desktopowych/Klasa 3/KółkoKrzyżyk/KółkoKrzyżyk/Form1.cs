@@ -11,7 +11,6 @@ namespace KółkoKrzyżyk
         {
             int[] losy = new int[9];
             Random random = new Random();
-            string oute = string.Empty;
             losy[0] = random.Next(0, 9);
             for (int i = 1; i < 8; i++)
             {
@@ -29,11 +28,12 @@ namespace KółkoKrzyżyk
                 if (i < 5) kolkaikrzyzyki[losy[i]] = 1;
                 else kolkaikrzyzyki[losy[i]] = 0;
             }
-            foreach (var item in kolkaikrzyzyki)
-            {
-                oute += item;
-                //MessageBox.Show(item.ToString());
-            }
+            // string oute = string.Empty;
+            // foreach (var item in kolkaikrzyzyki)
+            // {
+            //     oute += item;
+            //     //MessageBox.Show(item.ToString());
+            // }
             //MessageBox.Show(oute);
             for (int i = 0; i < 9; i++)
             {
