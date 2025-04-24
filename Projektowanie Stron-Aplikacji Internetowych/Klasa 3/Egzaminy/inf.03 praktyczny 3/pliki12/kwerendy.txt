@@ -1,0 +1,8 @@
+kw1:
+SELECT pracownicy.imie, pracownicy.pensja FROM pracownicy WHERE pracownicy.staz < 5;
+kw2:
+SELECT AVG(pracownicy.pensja), stanowiska.nazwa FROM pracownicy INNER JOIN stanowiska ON pracownicy.stanowiska_id = stanowiska.id GROUP BY pracownicy.stanowiska_id;
+kw3:
+SELECT pracownicy.imie, pracownicy.nazwisko, pracownicy.pensja FROM pracownicy WHERE pensja = (SELECT pensja FROM pracownicy ORDER BY pensja DESC LIMIT 1);
+kw4:
+UPDATE pracownicy SET pracownicy.staz = pracownicy.staz + 1
