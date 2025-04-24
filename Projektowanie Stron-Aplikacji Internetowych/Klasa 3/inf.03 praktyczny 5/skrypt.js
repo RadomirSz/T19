@@ -20,5 +20,5 @@ function funkcja() {
             }
         }
     }   
-    document.getElementById("wynik").innerHTML = "Cena zabiegów:" + wynik;
+    document.getElementById("wynik").innerHTML = "Cena zabiegów: " + wynik;
 }
