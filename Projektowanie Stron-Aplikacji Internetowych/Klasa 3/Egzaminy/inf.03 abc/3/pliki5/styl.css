@@ -1,0 +1,81 @@
+* {
+    font-family: 'Roboto', 'Serif';
+}
+
+header {
+    background-color: Crimson;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 30px;
+    padding: 10px;
+}
+
+#glowny1 {
+    background-color: MistyRose;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 50px;
+    border: 1px solid Crimson;
+}
+
+#glowny1 img {
+    float: left;
+    height: 100%;
+}
+
+#glowny2 div,
+#glowny3 div {
+    background-color: Snow;
+    height: 450px;
+    width: 21%;
+    margin: 1%;
+    text-align: center;
+    border: 1px solid crimson;
+    float: left;
+}
+
+#glowny3 {
+    clear: both;
+}
+
+footer {
+    background-color: Crimson;
+    color: white;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+h4 {
+    font-size: 180%;
+    text-align: center;
+    color: crimson;
+}
+
+a {
+    color: white;
+}
+
+/* 
+Styl CSS witryny internetowej
+‒ Domyślne formatowanie wszystkich selektorów: krój czcionki Roboto, w przypadku jej braku - Serif
+‒ Dla banera: kolor tła Crimson, biały kolor czcionki, wyrównanie tekstu do środka, odległości pomiędzy
+literami 5 px, odległości pomiędzy słowami 30 px, marginesy wewnętrzne 10 px
+‒ Dla pierwszego bloku głównego: kolor tła MistyRose, wysokość 300 px, marginesy wewnętrzne 10 px,
+zewnętrzne górny i dolny 10 px, lewy i prawy 50 px, obramowanie linią ciągłą o szerokości 1 px
+i kolorze Crimson
+‒ Dla obrazu jedynie z pierwszego bloku głównego: oblewanie tekstem po prawej stronie (obraz jest po
+lewej stronie) wysokość 100%
+‒ Dla bloków z ofertami generowanych skryptem w drugim i trzecim bloku głównym: kolor tła Snow,
+wysokość 450 px, szerokość 21%, marginesy zewnętrzne 1%, wyrównanie tekstu do środka,
+obramowanie linią ciągłą o szerokości 1 px i kolorze Crimson
+‒ Dla stopki: kolor tła Crimson, biały kolor czcionki
+‒ Dla selektora obrazu: maksymalna szerokość 100%
+‒ Dla selektora nagłówka czwartego stopnia: rozmiar czcionki 180%, wyrównanie tekstu do środka,
+kolor czcionki Crimson
+‒ Dla odnośnika: biały kolor czcionki
+Uwaga: styl CSS obrazu i nagłówka czwartego stopnia należy zdefiniować wyłącznie przy pomocy selektora
+tego znacznika. Jest to uwarunkowane projektem późniejszej rozbudowy witryny. */
