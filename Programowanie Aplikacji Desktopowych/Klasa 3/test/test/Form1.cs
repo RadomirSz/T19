@@ -37,30 +37,26 @@ namespace test
             }
             
             
-            if(dziwneModulo7(number))
-            {
-                label1.Text = "Sigma";
-            }
-            else
-            {
-                label1.Text = "Beta";
-            }
+
+            label1.Text = czysiedzieliprzez7(number).ToString();
         }
-        public bool dziwneModulo7(int number)
+        public bool czysiedzieliprzez7(int number)
         {
-            int sum = 0;
+            string sr = "";
             while (number > 0)
             {
                 int kon = number % 100;
-                sum += mod7(kon);
+                sr = sr + kon % 7;
                 number = number / 100;
             }
-            return mod7(sum) == 0;
-        }
-        public int mod7(int number)
-        {
-            int quotient = number / 7;
-            return number - (quotient * 7);
+            int sum = 0;
+            foreach (var item in sr)
+            {
+                sum += item;
+            }
+            if(sum %7 == 0) return true;
+            return false;
+
         }
         private void label1_Click(object sender, EventArgs e)
         {

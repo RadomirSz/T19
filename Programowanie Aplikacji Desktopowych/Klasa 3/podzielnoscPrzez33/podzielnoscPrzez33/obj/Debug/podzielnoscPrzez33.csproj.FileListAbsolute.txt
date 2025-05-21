@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\bin\Debug\podzielnoscPrzez33.exe.config
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\bin\Debug\podzielnoscPrzez33.exe
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\bin\Debug\podzielnoscPrzez33.pdb
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.Form1.resources
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.exe
+C:\Users\3Egr2\source\repos\podzielnoscPrzez33\podzielnoscPrzez33\obj\Debug\podzielnoscPrzez33.pdb
