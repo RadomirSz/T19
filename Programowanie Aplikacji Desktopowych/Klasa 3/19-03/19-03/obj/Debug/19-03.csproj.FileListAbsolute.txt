@@ -1,0 +1,10 @@
+C:\Users\3Egr2\source\repos\19-03\19-03\bin\Debug\19-03.exe.config
+C:\Users\3Egr2\source\repos\19-03\19-03\bin\Debug\19-03.exe
+C:\Users\3Egr2\source\repos\19-03\19-03\bin\Debug\19-03.pdb
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\19-03.csproj.AssemblyReference.cache
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\_19_03.Form1.resources
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\_19_03.Properties.Resources.resources
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\19-03.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\19-03.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\19-03.exe
+C:\Users\3Egr2\source\repos\19-03\19-03\obj\Debug\19-03.pdb
