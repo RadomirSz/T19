@@ -1,0 +1,16 @@
+C:\Users\3Egr2\source\repos\2105\2105\bin\Debug\net8.0-windows\2105.exe
+C:\Users\3Egr2\source\repos\2105\2105\bin\Debug\net8.0-windows\2105.deps.json
+C:\Users\3Egr2\source\repos\2105\2105\bin\Debug\net8.0-windows\2105.runtimeconfig.json
+C:\Users\3Egr2\source\repos\2105\2105\bin\Debug\net8.0-windows\2105.dll
+C:\Users\3Egr2\source\repos\2105\2105\bin\Debug\net8.0-windows\2105.pdb
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\_2105.Form1.resources
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.AssemblyInfoInputs.cache
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.AssemblyInfo.cs
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.dll
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\refint\2105.dll
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.pdb
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\2105.genruntimeconfig.cache
+C:\Users\3Egr2\source\repos\2105\2105\obj\Debug\net8.0-windows\ref\2105.dll

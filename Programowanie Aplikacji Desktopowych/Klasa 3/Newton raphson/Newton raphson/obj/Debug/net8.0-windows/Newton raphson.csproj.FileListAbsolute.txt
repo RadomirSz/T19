@@ -1,0 +1,16 @@
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\bin\Debug\net8.0-windows\Newton raphson.exe
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\bin\Debug\net8.0-windows\Newton raphson.deps.json
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\bin\Debug\net8.0-windows\Newton raphson.runtimeconfig.json
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\bin\Debug\net8.0-windows\Newton raphson.dll
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\bin\Debug\net8.0-windows\Newton raphson.pdb
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton_raphson.Form1.resources
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.csproj.GenerateResource.cache
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.AssemblyInfoInputs.cache
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.AssemblyInfo.cs
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.dll
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\refint\Newton raphson.dll
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.pdb
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\Newton raphson.genruntimeconfig.cache
+C:\Users\3Egr2\source\repos\Newton raphson\Newton raphson\obj\Debug\net8.0-windows\ref\Newton raphson.dll
