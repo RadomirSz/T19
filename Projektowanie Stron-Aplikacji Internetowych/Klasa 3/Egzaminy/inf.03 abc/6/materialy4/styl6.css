@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+*{
+    font-family: Verdana;
+}
+header{
+    background-color: #6F79A8;
+    color: white;
+    height: 140px;
+    float: left;
+}
+#baner1{
+    width: 30%;
+}
+#baner2{
+    width: 70%;
+}
+#blokKalendarza{
+    background-color: #9FA8DA;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: solid 1px #6F79A8;
+    overflow: hidden;
+    float: left;
+}
+#blokKalendarza:hover{
+    background-color: #6F79A8;
+    color: white;
+}
+footer{
+    background-color: #6F79A8;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    clear: both;
+}
+h6{
+    text-align: center;
+}
+main{
+    clear: both;
+}
