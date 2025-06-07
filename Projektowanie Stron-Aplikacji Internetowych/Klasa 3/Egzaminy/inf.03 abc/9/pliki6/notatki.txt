@@ -1,0 +1,28 @@
+Fraza „Nasze Kwiaty” jest zapisana w znaczniku semantycznym, //który jest pochylony i oznacza tekst uwypuklony//
+tu <em>
+
+//przycisk odświeża stronę//
+Strona odświeża się po kliknięciu przycisku, ponieważ przyciski w formularzu domyślnie są typu submit, co powoduje wysłanie formularza i odświeżenie strony.
+
+🔧 Rozwiązanie:
+Aby temu zapobiec, masz kilka opcji. Najprostsze to:
+
+✅ Opcja 1: Dodaj type="button" do każdego przycisku
+Zmień kod HTML tak, by każdy przycisk miał określony typ button, np.:
+
+html
+Kopiuj
+Edytuj
+<button type="button" onclick="funkcja(1)">Następna karta</button>
+
+//bloki wyświetlają się w jednym miejscu//
+nie używać display none i block tylko opacity 0 i 1
+
+
+//Film motyl.mp4, z kontrolkami umożliwiającymi sterowanie filmem. W przypadku problemów
+z odtworzeniem filmu pojawia się tekst: „Przeglądarka nie obsługuje tego formatu” //
+żeby tekst się pojawił w razie problemu trzeba dac taką strukturę:
+<video atrybut(np. controls)>
+<source src="źródło">
+TEKST KTÓRY SIĘ WYŚWIETLI W RAZIE PROBLEMU
+</video>

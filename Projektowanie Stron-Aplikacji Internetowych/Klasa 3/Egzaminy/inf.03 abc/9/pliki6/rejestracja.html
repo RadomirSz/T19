@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+    <main>
+        <form>
+            <section id="blok1">
+                <h2>Dane osobowe</h2>
+                <input type="text"  id="imie" placeholder="Wpisz imię..." required>
+                <input type="text"  id="nazwisko" placeholder="Wpisz nazwisko..." required>
+                <button type="button" onclick="funkcja(1)">Następna karta</button>
+            </section>
+            <section id="blok2">
+                <h2>Dane kontaktowe</h2>
+                <input type="email"  id="email" placeholder="Twój e-mail...">
+                <input type="tel"  id="tel" placeholder="Twój numer telefonu...">
+                <button type="button" onclick="funkcja(2)">Następna karta</button>
+            </section>
+            <section id="blok3">
+                <h2>Hasło do logowania</h2>
+                <input type="password"  id="haslo" placeholder="Podaj hasło">
+                <input type="password"  id="haslo2" placeholder="Powtórz hasło">
+                <button type="button" onclick="funkcja(3)">Zatwierdź</button>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <video controls><source src="motyl.mp4">Przeglądarka nie obsługuje tego formatu</video>
+    </footer>
+    <footer>
+        <h3>Plan konferencji</h3>
+        <table>
+            <tr>
+                <td>9:00 - 12:00</td>
+                <td>Pielęgnacja roślin</td>
+            </tr>
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td>Targi kwiatowe</td>
+            </tr>
+        </table>
+    </footer>
+    <footer>
+        <p><a href="http://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+    </footer>
+    <footer>
+        <p>Formularz wykonał: 200</p>
+    </footer>
+</body>
+</html>
