@@ -1,0 +1,3 @@
+jak chcesz zmienić src obrazka to poprostu dajesz document.getelementbyid('id').src = 'nowySrc';
+
+animacje w css
