@@ -13,7 +13,7 @@ function wyslij() {
     julkaDiv.appendChild(julkaP);
     chat.appendChild(julkaDiv);
     
-    chat.scrollTop = chat.scrollHeight;
+    chat.scrollIntoView();
 }
 
 var tablica = [
@@ -44,5 +44,5 @@ function losuj() {
     
     let chat = document.getElementById('chat');
     chat.appendChild(krzysztofDiv);
-    chat.scrollTop = chat.scrollHeight;
+    chat.scrollIntoView();
 }
