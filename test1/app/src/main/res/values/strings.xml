@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">test1</string>
+    <string name="imie">Imię</string>
+    <string name="opcjaA">Opcja A</string>
+    <string name="opcjaB">Opcja B</string>
+    <string name="klik">Zatwierdź</string>
+    <string name="send">Wyślij</string>
+
+</resources>
