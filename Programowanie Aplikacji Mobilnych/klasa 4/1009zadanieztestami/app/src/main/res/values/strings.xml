@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">10-09 zadanie z testami</string>
+    <string name="daj_liczbe">daj liczbę</string>
+    <string name="send">Oblicz</string>
+</resources>
