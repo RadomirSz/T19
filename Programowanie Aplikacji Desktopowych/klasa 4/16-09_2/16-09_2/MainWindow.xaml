@@ -1,0 +1,40 @@
+﻿<Window x:Class="_16_09_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_16_09_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <Grid>
+        
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Button Content="Button 1" Width="150" Height="25" Margin="6"/>
+                <Button Content="Button 2" Width="150" Height="25" Margin="6"/>
+                <Button Content="Button 3" Width="150" Height="25" Margin="6"/>
+                <Button Content="Button 4" Width="150" Height="25" Margin="6"/>
+            </StackPanel>
+
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">
+                <Label Content="Lista operacji:"/>
+                <Border BorderThickness="0.5" BorderBrush="Black">
+                <TextBlock TextWrapping="WrapWithOverflow" MaxWidth="250" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec adipiscing
+                    nulla quis libero egestas lobortis. Duis blandit imperdiet ornare. Nulla
+                    ac arcu ut purus placerat congue. Integer pretium fermentum gravida.
+                </TextBlock>
+                </Border>
+                <StackPanel Orientation="Horizontal">
+                        <Label Content="zmienna modyfikująca"/>
+                        <TextBox Width="120" Height="20" Margin="5"/>
+                    </StackPanel>
+                    <Button Content="Wykonaj" Width="250" Height="30" Margin="5"/>
+        </StackPanel>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10">
+                <Label Content="Wynik: " Margin="0,0,10,0"/>
+                <Label Content="Wynik: " />
+            </StackPanel>
+        
+    </Grid>
+</Window>
