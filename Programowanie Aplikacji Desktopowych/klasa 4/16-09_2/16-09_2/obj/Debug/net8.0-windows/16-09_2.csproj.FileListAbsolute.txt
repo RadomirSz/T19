@@ -18,3 +18,24 @@ C:\Users\3Egr2\source\repos\16-09_2\16-09_2\obj\Debug\net8.0-windows\refint\16-0
 C:\Users\3Egr2\source\repos\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.pdb
 C:\Users\3Egr2\source\repos\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.genruntimeconfig.cache
 C:\Users\3Egr2\source\repos\16-09_2\16-09_2\obj\Debug\net8.0-windows\ref\16-09_2.dll
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\bin\Debug\net8.0-windows\16-09_2.exe
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\bin\Debug\net8.0-windows\16-09_2.deps.json
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\bin\Debug\net8.0-windows\16-09_2.runtimeconfig.json
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\bin\Debug\net8.0-windows\16-09_2.dll
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\bin\Debug\net8.0-windows\16-09_2.pdb
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2_MarkupCompile.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2_MarkupCompile.lref
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.g.resources
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.AssemblyInfoInputs.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.AssemblyInfo.cs
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.csproj.CoreCompileInputs.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.sourcelink.json
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.dll
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\refint\16-09_2.dll
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.pdb
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\16-09_2.genruntimeconfig.cache
+C:\Users\3Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\16-09_2\16-09_2\obj\Debug\net8.0-windows\ref\16-09_2.dll
