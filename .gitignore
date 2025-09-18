@@ -4,3 +4,4 @@
 *.csproj
 .idea
 .vs
+node_modules
