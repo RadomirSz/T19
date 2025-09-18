@@ -1,36 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import obrazekFib from './fibonacci.jpg';
+function CiagFib() {
+  let n = prompt("iloczyn ilu wyrazów powinien obliczyć porgram?");
 
-function Witaj() {
-  let osoba = prompt("jak masz na imie?");
-  let naziwsko = prompt("jak masz na naziwsko?");
-  return <p className='App-p'>witaj {osoba} {naziwsko}</p>;
-}
-
-function SumaFu() {
-  let start = parseInt(prompt("pierwszy"));
-  let stop = parseInt(prompt("ostatni"));
-  let step = parseInt(prompt("krok"));
-  
-  let elem = ""
-  let suma = 0
-
-  for (let i = start; i <= stop; i += step) {
-    elem += i+"+"
-    suma += i
+  let iloczyn = 1;
+  let liczbaA = 1;
+  let liczbaB = 1;
+  let ciag = "";
+  for (let i = 1; i <= n; i++) {
+    iloczyn *= liczbaA;
+    ciag += i!=n ? liczbaA + " * " : liczbaA;
+    let liczba = liczbaA + liczbaB;
+    liczbaA = liczbaB;
+    liczbaB = liczba;
   }
-
-  elem = elem+0+"="+suma;
-
-  return <p className='App-p'>Suma ciągu: {elem}</p>
+  return <div><p>Iloczyn {n} pierwszych wyrazów ciągu Fibonacciego to:</p><p>{ciag} = {iloczyn}</p></div>
 }
 function App() {
   return (
     <div>
-      <h2>Hemlo word!</h2>
-      <Witaj />
-      <SumaFu />
+      <h1>Obliczanie iloczynu n elementów ciągu Fibonacciego</h1>
+      <img src={obrazekFib}/>
+      <CiagFib />
     </div>
+    
   );
 }
 
