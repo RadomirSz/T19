@@ -1,0 +1,94 @@
+﻿<Window x:Class="_18_09.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18_09"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Margin="20 20 40 0">
+                <Image Source="/1144760.png" Height="60" Width="60"/>
+                <Image Source="/1144760.png" Height="60" Width="60"/>
+                <Image Source="/1144760.png" Height="60" Width="60"/>
+                <Image Source="/1144760.png" Height="60" Width="60"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+
+                <Label Content="Interactive Board" HorizontalAlignment="Center"/>
+                <TextBlock Margin="0 70" 
+               TextWrapping="Wrap" 
+               Text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+               MaxWidth="400"/>
+                <TabPanel>
+                    <TabControl>
+                        <TabItem Header="konsola">
+                            <TextBlock Text="Content of Tab 1" Width="400" Height="100"/>
+                        </TabItem>
+                        <TabItem Header="problemy">
+                            <TextBlock Text="Content of Tab 2" Width="400" Height="100"/>
+                        </TabItem>
+                        <TabItem Header="tipy">
+                            <TextBlock Text="Content of Tab 3" Width="400" Height="100"/>
+                        </TabItem>
+                    </TabControl>
+                </TabPanel>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Content="Tools"/>
+                <Grid>
+                    <Border>
+                        <Label Content="wynik"/>
+                    </Border>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.Resources>
+                            <Style TargetType="Button">
+                                <Setter Property="Height" Value="40"/>
+                                <Setter Property="Width" Value="40"/>
+                                <Setter Property="Margin" Value="2"/>
+                            </Style>
+                        </Grid.Resources>
+                        
+                        <Button Content="1" Grid.Column="0" Grid.Row="0"/>
+                        <Button Content="2" Grid.Column="1" Grid.Row="0"/>
+                        <Button Content="3" Grid.Column="2" Grid.Row="0"/>
+                        
+                        <Button Content="4" Grid.Column="0" Grid.Row="1"/>
+                        <Button Content="5" Grid.Column="1" Grid.Row="1"/>
+                        <Button Content="6" Grid.Column="2" Grid.Row="1"/>
+
+                        <Button Content="7" Grid.Column="0" Grid.Row="2"/>
+                        <Button Content="8" Grid.Column="1" Grid.Row="2"/>
+                        <Button Content="9" Grid.Column="2" Grid.Row="2"/>
+
+                        <Button Content="0" Grid.Column="1" Grid.Row="3"/>
+                    </Grid>
+                </Grid>
+
+                <StackPanel>
+                    <Label/>
+                    <StackPanel></StackPanel>
+                    <StackPanel></StackPanel>
+                    <Button></Button>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+       
+    </Grid>
+</Window>
