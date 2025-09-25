@@ -1,0 +1,8 @@
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\bin\Debug\lekcja3.exe.config
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\bin\Debug\lekcja3.exe
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\bin\Debug\lekcja3.pdb
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\obj\Debug\lekcja3.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\obj\Debug\lekcja3.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\obj\Debug\lekcja3.exe
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\obj\Debug\lekcja3.pdb
+C:\Users\HP\Desktop\T19\Programowanie Obiektowe\Klasa 4\lekcja3\lekcja3\obj\Debug\lekcja3.exe.config
