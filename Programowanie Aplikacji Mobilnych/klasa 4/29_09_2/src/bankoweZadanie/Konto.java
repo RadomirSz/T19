@@ -10,7 +10,7 @@ public class Konto {
     public void setSaldo(int saldo) {
         Saldo = saldo;
     }
-    public void dodaj(){
+    public synchronized void dodaj(){
         Saldo += 10;
     }
 }
