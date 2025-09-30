@@ -3,19 +3,19 @@ import data from './tabela.json';
 
 const round2 = x => Math.round(x * 100) / 100;
 
-function obliczWyniki(nazwa, w) {
-  if (!w) return { pole: '-', objetosc: '-' };
+function obliczWyniki(nazwa, wartosci) {
+  if (!wartosci) return { pole: '-', objetosc: '-' };
   switch (nazwa) {
     case 'Sześcian': {
-      const a = Number(w.a);
+      const a = Number(wartosci.a);
       return { pole: 6 * a * a, objetosc: a ** 3 };
     }
     case 'Prostopadłościan': {
-      const a = Number(w.a), b = Number(w.b), h = Number(w.h);
+      const a = Number(wartosci.a), b = Number(wartosci.b), h = Number(wartosci.h);
       return { pole: 2 * (a*b + a*h + b*h), objetosc: a*b*h };
     }
     case 'Kula': {
-      const r = Number(w.r);
+      const r = Number(wartosci.r);
       return {
         pole: round2(4 * Math.PI * r * r),
         objetosc: round2((4/3) * Math.PI * r ** 3)
