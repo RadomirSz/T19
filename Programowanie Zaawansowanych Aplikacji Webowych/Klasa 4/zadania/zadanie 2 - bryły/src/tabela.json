@@ -1,0 +1,47 @@
+[
+    {
+        "nazwa": "Sześcian",
+        "ilustracja": "szescian.png",
+        "wzory": {
+            "pole": "S = 6a^2",
+            "objetosc": "V = a^3"
+        },
+        "przyklad": {
+            "wymiary": { "a": 3 },
+            "wyniki": {
+                "pole": 54,
+                "objetosc": 27
+            }
+        }
+    },
+    {
+        "nazwa": "Prostopadłościan",
+        "ilustracja": "prostopadloscian.png",
+        "wzory": {
+            "pole": "S = 2(ab + ah + bh)",
+            "objetosc": "V = abh"
+        },
+        "przyklad": {
+            "wymiary": { "a": 2, "b": 3, "h": 4 },
+            "wyniki": {
+                "pole": 52,
+                "objetosc": 24
+            }
+        }
+    },
+    {
+        "nazwa": "Kula",
+        "ilustracja": "kula.png",
+        "wzory": {
+            "pole": "S = 4πr^2",
+            "objetosc": "V = (4/3)πr^3"
+        },
+        "przyklad": {
+            "wymiary": { "r": 5 },
+            "wyniki": {
+                "pole": 314.1592653589793,
+                "objetosc": 523.5987755982989
+            }
+        }
+    }
+]
