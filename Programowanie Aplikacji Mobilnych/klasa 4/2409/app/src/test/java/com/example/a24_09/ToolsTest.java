@@ -1,10 +1,12 @@
 package com.example.a24_09;
 
+import static org.junit.Assert.assertEquals;
+
 import junit.framework.TestCase;
 
 import org.junit.Test;
 
-public class ToolsTest extends TestCase {
+public class ToolsTest {
 
     Tools t;
     public void setUp() throws Exception{
