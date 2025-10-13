@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Footer = ({ openingHours, companyName, year }) => {
+function Footer(props){
   return (
     <footer className="footer">
-      <p>{openingHours}</p>
-      <p>© {year} {companyName} - Twój partner w motoryzacji</p>
+      <p>Zapraszamy codziennie od {props.companyInfo.openingHour} do {props.companyInfo.closingHour}</p>
+      <p>© {props.companyInfo.established} {props.companyInfo.name} - Twój partner w motoryzacji</p>
     </footer>
   );
 };

@@ -2,28 +2,33 @@ import './App.css';
 import Header from './Header';
 import CarCard from './CarCard';
 import Footer from './Footer';
-import { carsData, companyInfo } from './data';
+import { oldCarsData, newCarsData, companyInfo, rodzajeAut } from './data';
 
 function App() {
   return (
     <div className="App">
+      
       <Header 
-        companyName={companyInfo.name} 
-        slogan={companyInfo.slogan} 
+        companyInfo={companyInfo}
       />
 
       <main className="main-content">
-        <div className="cars-grid">
-          {carsData.map(car => (
-            <CarCard key={car.id} car={car} />
+        <div className="left">
+          <h3>Polecamy {rodzajeAut.pierwszy} samochody w najlepszej cenie</h3>
+          {oldCarsData.map(car => (
+            <CarCard key={"old-" + car.id} car={car} />
+          ))}
+        </div>
+        <div className="right">
+          <h3>Polecamy {rodzajeAut.drugi} samochody w najlepszej cenie</h3>
+          {newCarsData.map(car => (
+            <CarCard key={"new-" + car.id} car={car} />
           ))}
         </div>
       </main>
 
       <Footer 
-        openingHours={companyInfo.openingHours}
-        companyName={companyInfo.name}
-        year={companyInfo.established}
+        companyInfo={companyInfo}
       />
     </div>
   );

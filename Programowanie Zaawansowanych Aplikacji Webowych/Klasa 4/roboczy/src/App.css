@@ -7,7 +7,7 @@
 
 /* Header Styles */
 .header {
-  background: linear-gradient(135deg, #d4a574, #b8935a);
+  background-color: #21d0eb;
   color: #2c1810;
   padding: 2rem 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -30,26 +30,10 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.subtitle {
-  font-size: 1.8rem;
-  margin: 0.5rem 0;
-  font-weight: 300;
-  color: #1a0f08;
-}
 
 /* Main Content */
 .main-content {
-  flex: 1;
-  padding: 2rem 1rem;
-  background-color: #f8f6f3;
-}
-
-.cars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
 }
 
 .car-card {
@@ -59,16 +43,21 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #e0d5c7;
+  width: 40vw;
+  margin: 20px;
 }
 
-.car-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+.left, .right{
+  width: 50vw;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  background-image: linear-gradient(to bottom, pink, white ,pink);
 }
 
 .car-image {
   width: 100%;
-  height: 200px;
+  height: 350px;
   object-fit: cover;
   border-bottom: 3px solid #d4a574;
 }
@@ -81,7 +70,6 @@
   font-size: 1.4rem;
   font-weight: bold;
   color: #2c1810;
-  margin-bottom: 0.5rem;
 }
 
 .car-year {
@@ -90,37 +78,10 @@
   font-size: 0.95rem;
 }
 
-.car-price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #d4a574;
-  margin-bottom: 1rem;
-}
-
-.contact-btn {
-  background: linear-gradient(135deg, #d4a574, #b8935a);
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.contact-btn:hover {
-  background: linear-gradient(135deg, #b8935a, #9d7a47);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
 
 /* Footer */
 .footer {
-  background-color: #2c1810;
-  color: #d4a574;
+  background-color: #21d0eb;
   padding: 2rem 1rem;
   margin-top: auto;
 }
@@ -133,44 +94,4 @@
 .footer p:first-child {
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .company-title {
-    font-size: 2rem;
-  }
-  
-  .subtitle {
-    font-size: 1.4rem;
-  }
-  
-  .cars-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
-  
-  .car-card {
-    margin: 0 auto;
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .company-title {
-    font-size: 1.6rem;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .header {
-    padding: 1.5rem 0.5rem;
-  }
-  
-  .main-content {
-    padding: 1.5rem 0.5rem;
-  }
 }
