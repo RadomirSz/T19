@@ -22,15 +22,6 @@ def wypisz_macierz(macierz):
             print(liczba, end=" ")
         print()  # Nowa linia po każdym wierszu
 
-def main():
-    try:
-        macierz = wczytaj_macierz("macierz.txt")
-        macierz = zamien_kolumny(macierz, 2, 4)
-        wypisz_macierz(macierz)
-    except FileNotFoundError:
-        print("Nie znaleziono pliku macierz.txt")
-    except Exception as e:
-        print(f"Wystąpił błąd: {e}")
-
-if __name__ == "__main__":
-    main()
+macierz = wczytaj_macierz("macierz.txt")
+macierz = zamien_kolumny(macierz, 2, 4)
+wypisz_macierz(macierz)

@@ -21,8 +21,8 @@ for kwota in kwoty:
     if(x<min):
         min = x
 
-for i in range(len(liczbyNominalow)):
-    if(liczbyNominalow[i] == min):
+for i in liczbyNominalow:
+    if i == min:
         print(kwoty[i])
 
 
