@@ -45,17 +45,9 @@ def znajdz_maksymalna_sciezke(macierz):
 
     return suma, sciezka
 
-def main():
-    try:
-        macierz = wczytaj_macierz("macierz.txt")
-        suma, sciezka = znajdz_maksymalna_sciezke(macierz)
 
-        print(suma)
-        print(sciezka)
-    except FileNotFoundError:
-        print("Nie znaleziono pliku macierz.txt")
-    except Exception as e:
-        print(f"Wystąpił błąd: {e}")
+macierz = wczytaj_macierz("macierz.txt")
+suma, sciezka = znajdz_maksymalna_sciezke(macierz)
+print(suma)
+print(sciezka)
 
-if __name__ == "__main__":
-    main()
