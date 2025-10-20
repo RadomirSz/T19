@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/zad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 1"/>
+    <Button
+        android:id="@+id/zad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 2"/>
+    <Button
+        android:id="@+id/zad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 3"/>
+    <Button
+        android:id="@+id/zad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 4"/>
+    <Button
+        android:id="@+id/zad5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 5"/>
+    <Button
+        android:id="@+id/zad6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 6"/>
+    <Button
+        android:id="@+id/zad7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 7"/>
+    <Button
+        android:id="@+id/zad8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zadanie 8"/>
+
+
+</LinearLayout>
