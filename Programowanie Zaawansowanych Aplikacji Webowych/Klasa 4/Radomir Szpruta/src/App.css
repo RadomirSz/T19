@@ -1,0 +1,27 @@
+body {
+  background-color: yellow;
+}
+
+
+.App-header {
+  color: blue;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  color: red;
+  background-color: rgb(212, 212, 212);
+  border-collapse: collapse;
+  width: 50vw;
+  margin: auto;
+  
+}
+
+th, td {
+  border: 2px solid brown;
+}
+.obraz{
+  width: 150px;
+  height: 150px;
+}
