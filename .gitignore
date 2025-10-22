@@ -3,6 +3,7 @@
 *.user
 *.csproj
 .idea
+.venv
 .vs
 node_modules
 package-lock.json
