@@ -1,0 +1,10 @@
+﻿1. Podaj liczbę zawodników z Austrii lub Australii.
+2. Ile zawodów rozegrano w Zakopanem?
+3. Ile razy Adam Małysz (wpisany w pliku jako MALYSZ Adam) zdobył pierwsze miejsce na skoczni w Zakopanem?
+4. Który zawodnik wygrał najwięcej konkursów?
+5. Którzy zawodnicy co najmniej w jednych zawodach uzyskali notę powyżej 450 punktów? Podaj ich nazwiska i imiona.
+6. Podaj średnią długość skoków Adama Małysza w konkursach w Zakopanem w pierwszej serii.
+7. Który zawodnik i kiedy najbardziej się zbłaźnił i oddał najkrószy skok w pierwszej serii?
+8. Podaj którzy z zawodników oddali o przynajmniej 30 metrów dłuższy skok w drugiej serii niż w pierwszej.
+9. Podaj te kraje, których zawodnicy nigdy nie wygrali żadnego konkursu.
+10. Podaj imiona, nazwiska i kraj zawodników, którzy nigdy w 2 serii nie skoczyli więcej niż nasz Orzeł z Wisły Adam Król Małysz w tym samym konkursie.
