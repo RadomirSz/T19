@@ -1,0 +1,13 @@
+SELECT CONCAT(klienci.ImieKlienta," ",klienci.NazwiskoKlienta) as "NAZWA", "KLIENT" AS TYP
+FROM style_muzyczne 
+INNER JOIN (klienci INNER JOIN gusty_muzyczne ON (klienci.IDKlienta = gusty_muzyczne.IDKlienta))
+ON (style_muzyczne.IDStylu = gusty_muzyczne.IDStylu)
+WHERE style_muzyczne.NazwaStylu='współczesna'
+
+UNION
+
+SELECT wykonawcy.NazwaScenicznaWykonawcy, 'wykonawca' as TYP 
+FROM style_muzyczne 
+INNER JOIN (wykonawcy inner JOIN style_wykonawcow on (wykonawcy.IDWykonawcy=style_wykonawcow.IDWykonawcy))
+ON (style_muzyczne.IDStylu=style_wykonawcow.IDStylu)
+WHERE style_muzyczne.NazwaStylu="współczesna";

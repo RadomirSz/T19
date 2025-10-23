@@ -1,0 +1,20 @@
+SELECT klienci.ImieKlienta, klienci.NazwiskoKlienta, style_muzyczne.NazwaStylu, wykonawcy.NazwaScenicznaWykonawcy, gusty_muzyczne.KolejnoscPreferencji
+from klienci, style_muzyczne, wykonawcy, gusty_muzyczne, style_wykonawcow
+WHERE klienci.IDKlienta = gusty_muzyczne.IDKlienta
+AND gusty_muzyczne.IDStylu = style_muzyczne.IDStylu
+AND style_wykonawcow.IDStylu = style_muzyczne.IDStylu
+AND style_wykonawcow.IDWykonawcy = wykonawcy.IDWykonawcy
+AND style_muzyczne.IDStylu LIKE "10"
+AND style_wykonawcow.IDStylu LIKE "10"
+#AND gusty_muzyczne.KolejnoscPreferencji LIKE "1" 
+order by wykonawcy.NazwaScenicznaWykonawcy desc;
+
+
+
+
+SELECT agenci.NazwiskoAgenta, agenci.ImieAgenta, imprezy.WartoscKontraktu, imprezy.DzienRozpoczecia
+from agenci, imprezy
+WHERE
+agenci.IDAgenta = imprezy.IDAgenta
+AND imprezy.DzienRozpoczecia LIKE "2017%"
+and imprezy.DzienRozpoczecia LIKE "%12";
