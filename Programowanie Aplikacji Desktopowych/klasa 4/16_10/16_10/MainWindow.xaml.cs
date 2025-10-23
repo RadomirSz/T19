@@ -25,18 +25,22 @@ namespace _16_10
 
             if(currentProduct == 0 ) btnPrev.IsEnabled = false;
             if (currentProduct == koszyk.Produkty.Count - 1) btnNext.IsEnabled = false;
+            else btnNext.isEnbled = true;
         }
 
         private void btnPrev_Click(object sender, RoutedEventArgs e)
         {
+            currentProduct--;
             btnNext.IsEnabled = true;
             if (currentProduct == 0) btnPrev.IsEnabled = false;
 
         }
         private void btnNext_Click(object sender, RoutedEventArgs e)
         {
+            currentProduct++;
             btnPrev.IsEnabled = true;
             if (currentProduct == koszyk.Produkty.Count - 1) btnNext.IsEnabled = false;
+            InitializeProductViewer();
         }
     }
 }
