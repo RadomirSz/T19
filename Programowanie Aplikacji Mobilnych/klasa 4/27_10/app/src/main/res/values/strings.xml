@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">27_10</string>
+    <string name="naglowek">Gra w kości. Autor 123123123</string>
+    <string name="btn1_txt">RZUĆ KOŚĆMI</string>
+    <string name="btn2_txt">RESETUJ WYNIK</string>
+    <string name="wynik_gry">Wynik gry:</string>
+    <string name="wynik_losowania">Wynik tego losowania:</string>
+</resources>
