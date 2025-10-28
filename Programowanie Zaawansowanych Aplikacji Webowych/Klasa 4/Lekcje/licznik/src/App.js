@@ -1,10 +1,11 @@
 import './App.css';
-import Props from './WalidacjaDuzy.js';
+import Licznik from './Licznik.js';
 
 function App() {
+
   return (
     <div className="App">
-      <Props propArray={[2,4,6]} propBool={false}/>
+      <Licznik />
     </div>
   );
 }
