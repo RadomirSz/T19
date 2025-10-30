@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+h1{
+  color: red;
+}
+
+.menus{
+  display: flex;
+  justify-content: center;
+}
+
+.Menu-item{
+  width: 15vw;
+  text-align: center;
+  
+}
+.Menu-item h3{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Menu-item ol {
+    list-style-position: inside;
+    direction: rtl;
+    align-self: center;
+}
+.Menu-item ol li {
+    direction: ltr;
+}
+
+
+h5{
+  text-align: center;
+  color: green;
+}
