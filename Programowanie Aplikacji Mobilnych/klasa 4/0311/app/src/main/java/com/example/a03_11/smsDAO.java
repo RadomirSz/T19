@@ -31,19 +31,30 @@ public class smsDAO {
         String q = "SELECT * FROM Smsy";
         Cursor c = db.rawQuery(q,null);
         String tit, msg;
-        int t,m;
+        int t,m,i, id;
         List<Sms> smsy = new ArrayList<>();
         while (c.moveToNext()){
+            i = c.getColumnIndex("_id");
             t = c.getColumnIndex("title");
             m = c.getColumnIndex("message");
+            id = c.getInt(i);
             tit = c.getString(t);
             msg = c.getString(m);
-            smsy.add(new Sms(tit,msg));
+            smsy.add(new Sms(id,tit,msg));
         }
-
         c.close();
-        db.close();
         return smsy;
+    }
+
+    public Boolean usunSms(int position) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        long did = db.delete("Smsy","_id = ?",
+                new String[]{
+                    String.valueOf(position)
+                }
+        );
+        if (did<0) return false;
+        return true;
     }
 }
 

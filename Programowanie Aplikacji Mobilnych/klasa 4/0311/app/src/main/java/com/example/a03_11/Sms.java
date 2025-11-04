@@ -10,6 +10,12 @@ public class Sms {
         this.message = message;
     }
 
+    public Sms(int id, String title, String message) {
+        this.id = id;
+        this.title = title;
+        this.message = message;
+    }
+
     public String getMessage() {
         return message;
     }
@@ -32,5 +38,10 @@ public class Sms {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return id + ": " + title + " " + message;
     }
 }

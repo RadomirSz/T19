@@ -13,7 +13,8 @@ public class DBhelper  extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String q = "CREATE TABLE Smsy (_id INTEGER PRIMARY KEY AUTOINCREMENT, title VARCHAR(50),4   message TEXT);";
+        String q =
+"CREATE TABLE Smsy (_id INTEGER PRIMARY KEY AUTOINCREMENT, title VARCHAR(50), message TEXT);";
         db.execSQL(q);
     }
 
