@@ -15,7 +15,8 @@
             android:name=".AddSmsActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:label="Dodawanie smsa"/>
+            android:label="Dodawanie smsa"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true"

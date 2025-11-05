@@ -29,14 +29,14 @@ public class AddSmsActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.submitbtn);
         e1 = findViewById(R.id.et1);
-        e1 = findViewById(R.id.et2);
+        e2 = findViewById(R.id.et2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 smsDAO dao = new smsDAO(getApplicationContext());
                 String tit = e1.getText().toString();
-                String msg = e1.getText().toString();
+                String msg = e2.getText().toString();
 
                 Sms sms = new Sms(tit,msg);
                 long id = dao.dodajSms(sms);
