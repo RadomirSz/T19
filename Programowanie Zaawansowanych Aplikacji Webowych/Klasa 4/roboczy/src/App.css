@@ -10,27 +10,14 @@
   font-family: Arial, sans-serif;
 }
 
-.header {
-  background-color: #6b9e78;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 2rem;
-}
-
-/* Recommended Section */
 .recommended-section {
   background-color: #a8d5ba;
   padding: 40px 20px;
 }
 
-.recommended-section h2 {
+.recommended-section h1 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.5rem;
+  font-size: 3  vw;
   color: #2d5a3d;
 }
 
@@ -83,10 +70,12 @@
   font-size: 1.1rem;
 }
 
-/* My Shoes Section */
 .my-shoes-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
-  max-width: 1400px;
+  max-width: 30vw;
   margin: 0 auto;
 }
 
@@ -128,26 +117,7 @@
   color: white;
 }
 
-/* Offers Container */
-.offers-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  margin-top: 30px;
-}
 
-/* Offers List */
-.offers-list {
-  background-color: #a8d5ba;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.offers-list h3 {
-  color: #2d5a3d;
-  margin-bottom: 20px;
-  font-size: 1.3rem;
-}
 
 .offer-item {
   background-color: #c8e6d0;
@@ -183,15 +153,14 @@
   background-color: #5a9670;
 }
 
-/* Current Offers */
-.current-offers {
+.offers {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.current-offers h3 {
+.offers h3 {
   color: #2d5a3d;
   margin-bottom: 20px;
   font-size: 1.3rem;
@@ -199,6 +168,8 @@
 }
 
 .current-offer-card {
+  display: flex;
+  width: 25vw;
   background-color: #a8d5ba;
   border-radius: 10px;
   padding: 20px;
@@ -207,56 +178,36 @@
 }
 
 .current-offer-image {
-  font-size: 60px;
-  margin-bottom: 15px;
+  height: 250px;
+  min-width: 250px;
 }
 
-.current-offer-card h4 {
+.current-offer-card h2, h4 {
   color: #2d5a3d;
   margin-bottom: 15px;
-  font-size: 1.1rem;
 }
 
-.current-buy-button {
+.current-offer-card button {
   background-color: #7ab68d;
   color: white;
   border: none;
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
   margin-bottom: 10px;
   transition: background-color 0.3s;
+  margin: 2px;
 }
 
-.current-buy-button:hover {
+.current-offer-card button:hover {
   background-color: #5a9670;
 }
 
 .current-price {
   font-weight: bold;
   color: #2d5a3d;
-  font-size: 1.1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
-  .offers-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .shoes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .filter-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .filter-btn {
-    width: 100%;
-  }
+footer{
+  text-align: center;
 }
