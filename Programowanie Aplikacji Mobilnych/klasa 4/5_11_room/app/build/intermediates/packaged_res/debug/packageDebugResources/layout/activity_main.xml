@@ -8,10 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/lv1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
 
     <EditText
         android:id="@+id/et1"
@@ -25,5 +22,9 @@
         android:text="klik"
         />
 
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
