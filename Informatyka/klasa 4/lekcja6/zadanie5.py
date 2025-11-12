@@ -1,38 +1,33 @@
-# Zadanie 5: Program wyświetlający najdłuższy wspólny podciąg dla dwóch słów
+# Zadanie 3: Program wyświetlający najdłuższy wspólny podciąg jako liczby rozdzielone spacjami
 
-slowo1 = input("Podaj pierwsze słowo: ")
-slowo2 = input("Podaj drugie słowo: ")
+def najdluzszy_wspolny_podciag(X, Y, n, m):
+    # D = [[0] * (m + 1) for _ in range(n + 1)]
+    D = [[0 for j in range(m + 1)] for i in range(n + 1)]
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            if X[i - 1] == Y[j - 1]:
+                D[i][j] = D[i - 1][j - 1] + 1
+            else:
+                D[i][j] = max(D[i - 1][j], D[i][j - 1])
 
-n = len(slowo1)
-m = len(slowo2)
-
-# Tworzenie tablicy dynamicznej
-dp = [[0] * (m + 1) for _ in range(n + 1)]
-
-# Wypełnianie tablicy
-for i in range(1, n + 1):
-    for j in range(1, m + 1):
-        if slowo1[i - 1] == slowo2[j - 1]:
-            dp[i][j] = dp[i - 1][j - 1] + 1
+    i = n
+    j = m
+    k = D[n][m]
+    N = ""
+    while i > 0 and j > 0:
+        if X[i - 1] == Y[j - 1]:
+            N = X[i - 1] + N
+            k = k - 1
+            i -= 1
+            j -= 1
+        elif D[i - 1][j] >= D[i][j - 1]:
+            i -= 1
         else:
-            dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+            j -= 1
+    return N
 
-# Odtwarzanie najdłuższego wspólnego podciągu
-lcs = []
-i, j = n, m
 
-while i > 0 and j > 0:
-    if slowo1[i - 1] == slowo2[j - 1]:
-        lcs.append(slowo1[i - 1])
-        i -= 1
-        j -= 1
-    elif dp[i - 1][j] > dp[i][j - 1]:
-        i -= 1
-    else:
-        j -= 1
-
-# Odwracamy listę, bo budowaliśmy od końca
-lcs.reverse()
-
-print("Najdłuższy wspólny podciąg:", ''.join(lcs))
-
+ciag1 = input("Podaj pierwszy ciąg: ")
+ciag2 = input("Podaj drugi ciąg: ")
+wynik = najdluzszy_wspolny_podciag(ciag1, ciag2, len(ciag1), len(ciag2))
+print(wynik)
