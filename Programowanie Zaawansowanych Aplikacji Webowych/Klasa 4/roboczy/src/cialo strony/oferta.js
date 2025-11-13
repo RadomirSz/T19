@@ -1,7 +1,4 @@
 export default function Oferta(props){
-//     Opis oferowanego obuwia będzie składał się z fotografii, nazwy, dostępnej ilości oraz 2 przycisków pozwalających
-// wykonać operacje na danym rodzaju obuwia:
-
     return(
         <div key={props.shoe.id} className="current-offer-card">
             <img src={props.shoe.image} alt={props.shoe.name} className="current-offer-image"/>

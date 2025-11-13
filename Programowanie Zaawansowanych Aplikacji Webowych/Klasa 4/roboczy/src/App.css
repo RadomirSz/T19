@@ -21,13 +21,7 @@
   color: #2d5a3d;
 }
 
-.shoes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .shoe-card {
   background-color: #c8e6d0;
@@ -168,13 +162,7 @@
 }
 
 .current-offer-card {
-  display: flex;
-  width: 25vw;
-  background-color: #a8d5ba;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+  
 }
 
 .current-offer-image {
@@ -210,4 +198,30 @@
 
 footer{
   text-align: center;
+  padding-bottom: 2vh;
+}
+
+.header-buttons{
+  display: flex;
+  width: 25vw;
+  background-color: #a8d5ba;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: auto;
+}
+.header-buttons button{
+  background-color: #7ab68d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+  margin: 2px;
+}
+.header-buttons button:hover{
+  background-color: #5a9670;
 }
