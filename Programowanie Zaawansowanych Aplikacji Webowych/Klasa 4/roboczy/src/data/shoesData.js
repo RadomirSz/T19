@@ -1,72 +1,36 @@
 export const summerShoes = [
   {
-    id: 1,
-    name: 'Nike ari froce',
-    image: './resources/nike-shoes.png',
+    name: 'Buty Nike',
+    image: './resources/letnie/nike-shoes.png',
     price: 399.99,
     category: 'sportowe',
-    stock: 14
+    stock: 14,
+    season: 'letnie'
   },
   {
-    id: 2,
-    name: 'Buty eleganckie czarne',
-    image: './resources/wojas-shoes.png',
+    name: 'Buty wojas',
+    image: './resources/letnie/wojas-shoes.png',
     price: 499.99,
     category: 'eleganckie',
-    stock: 7
+    stock: 7,
+    season: 'letnie'
   },
-  {
-    id: 3,
-    name: 'Buty trekkingowe',
-    image: './resources/regatta-shoes.png',
-    price: 349.99,
-    category: 'sportowe',
-    stock: 21
-  }
+  
 ];
 
 export const winterShoes = [
   {
-    id: 1,
-    name: 'Buty trekkingowe',
-    image: './resources/regatta-shoes.png',
+    name: 'Buty regatta',
+    image: './resources/zimowe/regatta-shoes.png',
     price: 349.99,
-    category: 'sportowe',
-    stock: 21
+    stock: 21,
+    season: 'zimowe'
+  },
+  {
+    name: 'Buty fairbanks',
+    image: './resources/zimowe/fairbanks.png',
+    price: 249.99,
+    stock: 3,
+    season: 'zimowe'
   }
 ];
-
-
-
-// {
-    //   id: 4,
-    //   name: 'Buty casual Adidas',
-    //   image: '👟',
-    //   price: 279.99,
-    //   category: 'sportowe',
-    //   recommended: false
-    // },
-    // {
-    //   id: 5,
-    //   name: 'Buty wizytowe brązowe',
-    //   image: '👞',
-    //   price: 449.99,
-    //   category: 'eleganckie',
-    //   recommended: false
-    // },
-    // {
-    //   id: 6,
-    //   name: 'Kozaki zimowe',
-    //   image: '🥾',
-    //   price: 499.99,
-    //   category: 'zimowe',
-    //   recommended: false
-    // },
-    // {
-    //   id: 7,
-    //   name: 'Sandały letnie',
-    //   image: '🩴',
-    //   price: 149.99,
-    //   category: 'letnie',
-    //   recommended: false
-    // }
