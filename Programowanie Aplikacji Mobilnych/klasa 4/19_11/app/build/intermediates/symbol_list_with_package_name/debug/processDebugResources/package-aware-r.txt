@@ -3156,7 +3156,9 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkcream
 id checked
+id checksugar
 id chronometer
 id circle_center
 id clear_text
@@ -3177,7 +3179,6 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
-id cream
 id currentState
 id custom
 id customPanel
@@ -3476,7 +3477,6 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
-id sugar
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3782,8 +3782,12 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string colombian
+string cream
+string decaf
 string error_a11y_label
 string error_icon_content_description
+string espresso
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3895,6 +3899,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pay
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -3902,6 +3907,9 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string sugar
+string what_else_do_you_like_in_you_coffee
+string what_kind_of_coffee
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

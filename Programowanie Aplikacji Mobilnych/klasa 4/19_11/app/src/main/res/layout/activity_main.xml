@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What kind of Coffee?"
+        android:text="@string/what_kind_of_coffee"
         android:background="@color/orange"/>
     <RadioGroup
         android:id="@+id/radioGroup1"
@@ -35,46 +35,48 @@
             android:id="@+id/radbtn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Decaf"/>
+            android:text="@string/decaf"/>
         <RadioButton
             android:id="@+id/radbtn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="expresso"/>
+            android:text="@string/espresso"/>
         <RadioButton
             android:id="@+id/radbtn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="colombian"/>
+            android:text="@string/colombian"/>
     </RadioGroup>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/orange"
-        android:text="What else do you like in you coffee?"/>
+        android:text="@string/what_else_do_you_like_in_you_coffee"/>
 
     <CheckBox
-        android:id="@+id/cream"
+        android:id="@+id/checkcream"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cream"/>
+        android:text="@string/cream"/>
     <CheckBox
-        android:id="@+id/sugar"
+        android:id="@+id/checksugar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sugar"/>
+        android:text="@string/sugar"/>
 
     <Button
         android:id="@+id/paybtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pay"/>
+        android:text="@string/pay"/>
 
     <TextView
         android:id="@+id/output"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-<!--    tu wynik tego co wybral-->
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#CCCCCC"
+        />
 
 </LinearLayout>
