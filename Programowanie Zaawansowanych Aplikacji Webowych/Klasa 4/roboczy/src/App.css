@@ -162,17 +162,43 @@
 }
 
 .current-offer-card {
-  
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #c8e6d0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .current-offer-image {
   height: 250px;
   min-width: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.offer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer-info {
+  flex: 1;
 }
 
 .current-offer-card h2, h4 {
   color: #2d5a3d;
   margin-bottom: 15px;
+}
+
+.offer-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 .current-offer-card button {
@@ -182,9 +208,7 @@
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
   transition: background-color 0.3s;
-  margin: 2px;
 }
 
 .current-offer-card button:hover {
@@ -194,6 +218,7 @@
 .current-price {
   font-weight: bold;
   color: #2d5a3d;
+  font-size: 1.2rem;
 }
 
 footer{
