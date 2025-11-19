@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <Toolbar
+        android:title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/black"
+        android:layout_marginBottom="30dp"
+        android:titleTextColor="@color/orange">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ikonka"/>
+    </Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What kind of Coffee?"
+        android:background="@color/orange"/>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decaf"/>
+        <RadioButton
+            android:id="@+id/radbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="expresso"/>
+        <RadioButton
+            android:id="@+id/radbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="colombian"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="What else do you like in you coffee?"/>
+
+    <CheckBox
+        android:id="@+id/cream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cream"/>
+    <CheckBox
+        android:id="@+id/sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sugar"/>
+
+    <Button
+        android:id="@+id/paybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"/>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    tu wynik tego co wybral-->
+
+</LinearLayout>
