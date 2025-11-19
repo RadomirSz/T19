@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color orange
+color red
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ikonka
+id cream
+id main
+id output
+id paybtn
+id radbtn1
+id radbtn2
+id radbtn3
+id radioGroup1
+id sugar
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme._19_11
+style Theme._19_11
+xml backup_rules
+xml data_extraction_rules
