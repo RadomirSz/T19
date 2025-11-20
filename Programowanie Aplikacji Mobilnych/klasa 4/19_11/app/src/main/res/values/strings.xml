@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">GuiDemo</string>
+    <string name="sugar">Sugar</string>
+    <string name="pay">Pay</string>
+    <string name="cream">Cream</string>
+    <string name="what_else_do_you_like_in_you_coffee">What else do you like in you coffee?</string>
+    <string name="colombian">Colombian</string>
+    <string name="espresso">Espresso</string>
+    <string name="decaf">Decaf</string>
+    <string name="what_kind_of_coffee">What kind of Coffee?</string>
 </resources>

@@ -1,12 +1,13 @@
 # Zadanie 6: Program wyświetlający pary słów z pliku, gdzie LCS jest najdłuższy
 # Jeżeli jest kilka takich par, wyświetlić wszystkie z nich
 
-# Wczytanie par słów z pliku
-with open('pary.txt', 'r', encoding='utf-8') as plik:
-    pary = [linia.strip().split() for linia in plik if linia.strip()]
+
+
+plik = open("pary.txt","r")
+pary = [linia.strip().split() for linia in plik]
+plik.close()
 
 def lcs_length(slowo1, slowo2):
-    """Funkcja zwracająca długość najdłuższego wspólnego podciągu"""
     n = len(slowo1)
     m = len(slowo2)
 
@@ -21,7 +22,8 @@ def lcs_length(slowo1, slowo2):
 
     return dp[n][m]
 
-# Znajdowanie maksymalnej długości LCS
+
+
 max_lcs = 0
 wyniki = []
 
@@ -33,10 +35,9 @@ for para in pary:
         if dlugosc > max_lcs:
             max_lcs = dlugosc
 
-# Wyświetlanie par z maksymalną długością LCS
+
 print(f"Najdłuższy wspólny podciąg ma długość: {max_lcs}")
 print("Pary słów z najdłuższym wspólnym podciągiem:")
 for slowo1, slowo2, dlugosc in wyniki:
     if dlugosc == max_lcs:
         print(f"{slowo1} {slowo2}")
-

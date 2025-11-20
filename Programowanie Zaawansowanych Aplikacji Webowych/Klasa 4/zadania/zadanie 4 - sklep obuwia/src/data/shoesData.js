@@ -15,6 +15,14 @@ export const summerShoes = [
     stock: 7,
     season: 'letnie'
   },
+  {
+    name: 'Buty wojas v2',
+    image: './resources/letnie/wojas-shoes.png',
+    price: 399.99,
+    category: 'eleganckie',
+    stock: 4,
+    season: 'letnie'
+  },
   
 ];
 
