@@ -1,0 +1,25 @@
+﻿<Window x:Class="_20_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <RadioButton GroupName="kolory" Content="Red" Width="100px" FontSize="20" VerticalContentAlignment="Center" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="kolory" Content="Green" Width="100px" FontSize="20" VerticalContentAlignment="Center" Checked="RadioButton_Checked_1"/>
+            <RadioButton GroupName="kolory" Content="Blue" Width="100px" FontSize="20" VerticalContentAlignment="Center" Checked="RadioButton_Checked_2"/>
+        </StackPanel>
+        <Border x:Name="ramka" Grid.Row="1" BorderThickness="10px" BorderBrush="Yellow" Width="100px" Height="100px" >
+            <TextBlock x:Name="label" Background="Black" />
+        </Border>
+        <ListView Grid.Row="2" x:Name="lista" HorizontalAlignment="Center" VerticalAlignment="Center" Width="194" Height="200" />
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "chqyTy2JOD0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\4Egr2\\source\\repos\\20_11\\20_11\\20_11.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.11\\microsoft.data.sqlite.core.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.11\\microsoft.entityframeworkcore.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.11\\microsoft.entityframeworkcore.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.11\\microsoft.entityframeworkcore.analyzers.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.11\\microsoft.entityframeworkcore.relational.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\9.0.11\\microsoft.entityframeworkcore.sqlite.core.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.11\\microsoft.extensions.caching.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.11\\microsoft.extensions.caching.memory.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.11\\microsoft.extensions.configuration.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.11\\microsoft.extensions.dependencyinjection.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.11\\microsoft.extensions.dependencyinjection.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.11\\microsoft.extensions.dependencymodel.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.logging\\9.0.11\\microsoft.extensions.logging.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.11\\microsoft.extensions.logging.abstractions.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.options\\9.0.11\\microsoft.extensions.options.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.11\\microsoft.extensions.primitives.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.11\\system.diagnostics.diagnosticsource.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\system.io.pipelines\\9.0.11\\system.io.pipelines.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\system.text.encodings.web\\9.0.11\\system.text.encodings.web.9.0.11.nupkg.sha512",
+    "C:\\Users\\4Egr2\\.nuget\\packages\\system.text.json\\9.0.11\\system.text.json.9.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
