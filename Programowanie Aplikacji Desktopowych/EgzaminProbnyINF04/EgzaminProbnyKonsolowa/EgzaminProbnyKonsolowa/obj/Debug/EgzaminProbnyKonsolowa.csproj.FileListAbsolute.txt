@@ -1,0 +1,8 @@
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\obj\Debug\EgzaminProbnyKonsolowa.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\obj\Debug\EgzaminProbnyKonsolowa.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\bin\Debug\EgzaminProbnyKonsolowa.exe.config
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\bin\Debug\EgzaminProbnyKonsolowa.exe
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\bin\Debug\EgzaminProbnyKonsolowa.pdb
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\obj\Debug\EgzaminProbnyKonsolowa.exe
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\obj\Debug\EgzaminProbnyKonsolowa.pdb
+C:\Users\Radomir\Desktop\EgzaminProbnyINF04\EgzaminProbnyKonsolowa\EgzaminProbnyKonsolowa\obj\Debug\EgzaminProbnyKonsolowa.exe.config

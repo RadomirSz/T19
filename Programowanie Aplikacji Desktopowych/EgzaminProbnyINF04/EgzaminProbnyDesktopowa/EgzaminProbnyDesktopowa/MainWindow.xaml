@@ -1,0 +1,64 @@
+﻿<Window x:Class="EgzaminProbnyDesktopowa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EgzaminProbnyDesktopowa"
+        mc:Ignorable="d"
+        Title="Konwerter jednostek. Wykonał: 30" Height="450" Width="600"
+        Background="LightGray">
+    <Grid>
+        <TabControl Margin="10 10 10 10">
+            <TabItem Header="Długość">
+                <StackPanel Margin="5 5 5 5">
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="ComboBox1" SelectedIndex="0">
+                            <ComboBoxItem Content="Żródłowa wartość" Visibility="Hidden"></ComboBoxItem>
+                            <ComboBoxItem Content="Centymetr"/>
+                            <ComboBoxItem Content="Metry"/>
+                            <ComboBoxItem Content="Kilometry"/>
+                            <ComboBoxItem Content="Cal"/>
+                            <ComboBoxItem Content="Stopa"/>
+                            <ComboBoxItem Content="Mila"/>
+                        </ComboBox>
+                        <ComboBox Name="ComboBox2" SelectedIndex="0" Margin="10 0">
+                            <ComboBoxItem Content="Docelowa wartość" Visibility="Hidden"></ComboBoxItem>
+                            <ComboBoxItem Content="Centymetr"/>
+                            <ComboBoxItem Content="Metry"/>
+                            <ComboBoxItem Content="Kilometry"/>
+                            <ComboBoxItem Content="Cal"/>
+                            <ComboBoxItem Content="Stopa"/>
+                            <ComboBoxItem Content="Mila"/>
+                        </ComboBox>
+
+                        <Button Content="Wyczyść" Background="Salmon" Click="Button_Click_1"></Button>
+                    </StackPanel>
+
+                    <Grid Margin="0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="TextBox1" Text="0" TextAlignment="Right" Grid.Column="0" VerticalAlignment="Center"/>
+
+                        <Button Content="Konwertuj" Background="CornflowerBlue" Grid.Column="1" HorizontalAlignment="Center" Click="Button_Click"/>
+
+                        <Label Name="Label1" Content="0" Background="White" Grid.Column="2"/>
+                    </Grid>
+
+                    <ListBox Name="ListBoxHistory" Margin="0 10 0 0">
+                    </ListBox>
+                </StackPanel>
+            </TabItem>
+            <TabItem Content="bam" Header="Masa">
+
+            </TabItem>
+            <TabItem Content="bom" Header="Temperatura">
+
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
