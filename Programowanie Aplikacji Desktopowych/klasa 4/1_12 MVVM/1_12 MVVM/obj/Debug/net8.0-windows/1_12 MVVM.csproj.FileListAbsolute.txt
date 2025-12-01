@@ -1,0 +1,25 @@
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\1_12 MVVM.exe
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\1_12 MVVM.deps.json
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\1_12 MVVM.runtimeconfig.json
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\1_12 MVVM.dll
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\1_12 MVVM.pdb
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\bin\Debug\net8.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.csproj.AssemblyReference.cache
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM_MarkupCompile.cache
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM_MarkupCompile.lref
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.g.resources
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.AssemblyInfoInputs.cache
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.AssemblyInfo.cs
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.csproj.CoreCompileInputs.cache
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.sourcelink.json
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.csproj.Up2Date
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.dll
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\refint\1_12 MVVM.dll
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.pdb
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\1_12 MVVM.genruntimeconfig.cache
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\ref\1_12 MVVM.dll
+C:\Users\4Egr2\Desktop\T19\Programowanie Aplikacji Desktopowych\klasa 4\1_12 MVVM\1_12 MVVM\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
