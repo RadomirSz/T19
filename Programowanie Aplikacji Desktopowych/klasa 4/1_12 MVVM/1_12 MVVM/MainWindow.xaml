@@ -45,11 +45,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="{Binding Title}" Width="200"/>
                         <Button 
-                            Content="Usuń" 
-                            Command="{
-                                Binding DataContext.RemoveToDoItemCommand, 
-                                RelativeSource={RelativeSource AncestorType = ListBox}}" 
-                            CommandParameter="{Binding}" /> <!-- do dokończenia-->
+                            Content="Usuń" /> <!-- do dokończenia-->
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

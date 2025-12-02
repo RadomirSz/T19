@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("1_12 MVVM")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("2_12_mvvm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+351616fc8beb59d809a50580d6c10b858a0f09bc")]
-[assembly: System.Reflection.AssemblyProductAttribute("1_12 MVVM")]
-[assembly: System.Reflection.AssemblyTitleAttribute("1_12 MVVM")]
+[assembly: System.Reflection.AssemblyProductAttribute("2_12_mvvm")]
+[assembly: System.Reflection.AssemblyTitleAttribute("2_12_mvvm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
