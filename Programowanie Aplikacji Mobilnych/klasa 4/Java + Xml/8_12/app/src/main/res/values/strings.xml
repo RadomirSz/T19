@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">8_12</string>
+    <string-array name="preset_array">
+        <item>Normalny</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Klasyczny</item>
+    </string-array>
+</resources>

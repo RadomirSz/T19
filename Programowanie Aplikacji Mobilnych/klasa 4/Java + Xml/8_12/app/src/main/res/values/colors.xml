@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appBackground">#E3F2FD</color>
+    <color name="toolbar">#1976D2</color>
+    <color name="btnZas">#4CAF50</color>
+    <color name="btnreset">#F44336</color>
+    <color name="toggleon">#FF9800</color>
+    <color name="toggleoff">#9E9E9E</color>
+</resources>
