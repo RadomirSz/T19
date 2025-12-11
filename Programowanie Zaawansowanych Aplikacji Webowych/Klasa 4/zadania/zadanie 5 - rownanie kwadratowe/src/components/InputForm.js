@@ -8,10 +8,10 @@ function InputForm(props) {
         <div className="input-box">
           <h3>Przykładowe obliczenia</h3>
           <Row>
-            <Col sm={4} className="text-end">
+            <Col sm={6} className="text-end">
               <label>proszę podać: a: </label>
             </Col>
-            <Col sm={8}>
+            <Col sm={6} className='text-start'>
               <input 
                 type="number" 
                 value={props.a} 
@@ -21,10 +21,10 @@ function InputForm(props) {
             </Col>
           </Row>
           <Row>
-            <Col sm={4} className="text-end">
+            <Col sm={6} className="text-end">
               <label>proszę podać: b: </label>
             </Col>
-            <Col sm={8}>
+            <Col sm={6} className='text-start'>
               <input 
                 type="number" 
                 value={props.b} 
@@ -34,10 +34,10 @@ function InputForm(props) {
             </Col>
           </Row>
           <Row>
-            <Col sm={4} className="text-end">
+            <Col sm={6} className="text-end">
               <label>proszę podać: c: </label>
             </Col>
-            <Col sm={8}>
+            <Col sm={6} className='text-start'>
                 <input 
                 type="number" 
                 value={props.c} 
@@ -47,7 +47,7 @@ function InputForm(props) {
             </Col>
           </Row>
       
-          {props.serror && <p className="error">{props.error}</p>}
+          {props.error && <p className="error">{props.error}</p>}
       
           <div className="button-group">
             <button className="btn-calculate" onClick={props.handleCalculate}>
