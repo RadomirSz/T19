@@ -26,8 +26,7 @@ namespace EgzaminProbnyKonsolowa
                         AddStudent();
                         break;
                     case "2":
-                        int id = GetValidId();
-                        RemoveStudent(id);
+                        RemoveStudent();
                         break;
                     case "3":
                         DisplayStudents();
@@ -52,26 +51,6 @@ namespace EgzaminProbnyKonsolowa
             }
         }
 
-        private static void DisplayChosenStudent()
-        {
-            Console.WriteLine("Podaj nazwisko");
-            string Surname = GetValidString();
-            var foundStudents = Students.FindAll(s => s.Surname == Surname);
-            foreach (var student in foundStudents)
-            {
-                Console.WriteLine($"Id: {student.Id}, Imię: {student.Name}, Nazwisko: {student.Surname}, Średnia: {student.Grade}");
-            }
-            PressToContinue();
-        }
-
-        private static void AverageOfGrades()
-        {
-            float suma = Students.Sum(s => s.Grade);
-            Console.Clear();
-            Console.WriteLine("Srednia srednich: " + suma/Students.Count);
-            PressToContinue();
-        }
-
         private static void DisplayMenu()
         {
             Console.Clear();
@@ -87,7 +66,6 @@ namespace EgzaminProbnyKonsolowa
             Console.WriteLine("  0. Wyjście");
             Console.Write("\nWybierz opcję: ");
         }
-
         private static void AddStudent()
         {
             Console.WriteLine("Podaj Id:");
@@ -104,9 +82,9 @@ namespace EgzaminProbnyKonsolowa
 
             Students.Add(new Student(id, name, surname, grade));
         }
-
-        private static void RemoveStudent(int Id)
+        private static void RemoveStudent()
         {
+            int Id = GetValidId();
             var student = Students.Find(s => s.Id == Id);
             if (student != null)
             {
@@ -120,7 +98,6 @@ namespace EgzaminProbnyKonsolowa
                 PressToContinue();
             }
         }
-
         private static void DisplayStudents()
         {
             Console.Clear();
@@ -143,13 +120,29 @@ namespace EgzaminProbnyKonsolowa
             Console.WriteLine(new string('-', 67));
             PressToContinue();
         }
-
         private static void SortStudentsDesc()
         {
             Students = Students.OrderByDescending(s => s.Grade).ToList();
             DisplayStudents();
         }
-
+        private static void AverageOfGrades()
+        {
+            float suma = Students.Sum(s => s.Grade);
+            Console.Clear();
+            Console.WriteLine("Srednia srednich: " + suma / Students.Count);
+            PressToContinue();
+        }
+        private static void DisplayChosenStudent()
+        {
+            Console.WriteLine("Podaj nazwisko");
+            string Surname = GetValidString();
+            var foundStudents = Students.FindAll(s => s.Surname == Surname);
+            foreach (var student in foundStudents)
+            {
+                Console.WriteLine($"Id: {student.Id}, Imię: {student.Name}, Nazwisko: {student.Surname}, Średnia: {student.Grade}");
+            }
+            PressToContinue();
+        }
         private static float GetValidGrade()
         {
             while (true)
@@ -161,7 +154,6 @@ namespace EgzaminProbnyKonsolowa
                 Console.WriteLine("Podaj poprawną srednią");
             }
         }
-
         private static string GetValidString()
         {
             Regex r = new Regex(@"^[A-ZĄĆĘŁŃÓŚŹŻ][a-ząćęłńóśźż]+$");
@@ -171,7 +163,6 @@ namespace EgzaminProbnyKonsolowa
             
             return input;
         }
-
         private static int GetValidId()
         {
             while (true)
@@ -185,7 +176,6 @@ namespace EgzaminProbnyKonsolowa
                 Console.WriteLine("Podaj inne Id");
             }
         }
-
         private static void PressToContinue()
         {
             Console.WriteLine("Naciśnij guzik aby kontynuować...");
