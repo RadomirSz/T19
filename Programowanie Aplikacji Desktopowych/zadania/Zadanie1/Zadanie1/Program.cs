@@ -6,25 +6,55 @@ namespace Zadanie1
     {
         static void Main(string[] args)
         {
-            int n = getValidInt(3, 20);
-
-            int[] liczby = new int[n];
-            for (int i = 0; i < n; i++)
+            bool run = true;
+            while (run)
             {
-                liczby[i] = getValidInt(1, 9999);
-            }
 
-            int[] sumy = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                sumy[i] = sumaCyfr(liczby[i]);
-            }
 
-            foreach (var item in sumy)
-            {
-                Console.Write(item + " ");
-            }
+                int n = getValidInt(3, 20);
 
+                int[] liczby = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                    liczby[i] = getValidInt(1, 9999);
+                }
+
+                Console.Write("Przed sortowaniem: ");
+                foreach (var item in liczby) Console.Write(item + " ");
+
+                int[] sumy = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                    sumy[i] = sumaCyfr(liczby[i]);
+                }
+
+                Console.Write("\nLiczby i sumy ich cyfr: ");
+                for (int i = 0; i < n; i++) Console.Write($"{liczby[i]}: {sumy[i]}, ");
+
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = i + 1; j < n; j++)
+                    {
+                        if (sumy[i] > sumy[j])
+                        {
+                            int temp = sumy[i];
+                            sumy[i] = sumy[j];
+                            sumy[j] = temp;
+
+                            temp = liczby[i];
+                            liczby[i] = liczby[j];
+                            liczby[j] = temp;
+                        }
+                    }
+                }
+
+                Console.Write("\nPo sortowaniu: ");
+                foreach (var item in liczby) Console.Write(item + " ");
+
+                Console.WriteLine("\nCzy chcesz posortowa¢ kolejną tablicę? (t/n): ");
+                string input = Console.ReadLine();
+                if (input == "n") run = false;
+            }
         }
 
         private static int sumaCyfr(int v)
@@ -40,11 +70,11 @@ namespace Zadanie1
 
         private static int getValidInt(int v1, int v2)
         {
-            int number;
             while (true)
             {
-                if(int.TryParse(Console.ReadLine(), out number) && number >= v1 && number <= v2) return number;
-                else Console.WriteLine($"Podaj liczbę z zakresu {v1}-{v2}");
+                Console.WriteLine($"Podaj liczbę z zakresu {v1}-{v2}");
+                if (int.TryParse(Console.ReadLine(), out int number) && number >= v1 && number <= v2) return number;
+                Console.Write("Błąd! ");
             }
         }
     }

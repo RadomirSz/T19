@@ -12,3 +12,18 @@ C:\Users\4Egr2\source\repos\Zadanie1\Zadanie1\obj\Debug\net10.0\refint\Zadanie1.
 C:\Users\4Egr2\source\repos\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.pdb
 C:\Users\4Egr2\source\repos\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.genruntimeconfig.cache
 C:\Users\4Egr2\source\repos\Zadanie1\Zadanie1\obj\Debug\net10.0\ref\Zadanie1.dll
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\bin\Debug\net10.0\Zadanie1.exe
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\bin\Debug\net10.0\Zadanie1.deps.json
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\bin\Debug\net10.0\Zadanie1.runtimeconfig.json
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\bin\Debug\net10.0\Zadanie1.dll
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\bin\Debug\net10.0\Zadanie1.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.AssemblyInfoInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.AssemblyInfo.cs
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.sourcelink.json
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.dll
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\refint\Zadanie1.dll
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.pdb
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\Zadanie1.genruntimeconfig.cache
+C:\Users\Radomir\Desktop\T19\Programowanie Aplikacji Desktopowych\zadania\Zadanie1\Zadanie1\obj\Debug\net10.0\ref\Zadanie1.dll
