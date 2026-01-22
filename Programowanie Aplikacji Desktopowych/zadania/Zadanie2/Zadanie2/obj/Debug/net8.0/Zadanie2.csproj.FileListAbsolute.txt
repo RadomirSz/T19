@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.AssemblyInfo.cs
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\bin\Debug\net8.0\Zadanie2.exe
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\bin\Debug\net8.0\Zadanie2.deps.json
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\bin\Debug\net8.0\Zadanie2.runtimeconfig.json
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\bin\Debug\net8.0\Zadanie2.dll
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\bin\Debug\net8.0\Zadanie2.pdb
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.dll
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\refint\Zadanie2.dll
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.pdb
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\Zadanie2.genruntimeconfig.cache
+C:\Users\HP\Desktop\Zadanie2\Zadanie2\obj\Debug\net8.0\ref\Zadanie2.dll
