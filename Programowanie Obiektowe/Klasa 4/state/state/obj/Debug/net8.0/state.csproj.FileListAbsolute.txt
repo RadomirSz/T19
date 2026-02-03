@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\state\state\bin\Debug\net8.0\state.exe
+C:\Users\HP\Desktop\state\state\bin\Debug\net8.0\state.deps.json
+C:\Users\HP\Desktop\state\state\bin\Debug\net8.0\state.runtimeconfig.json
+C:\Users\HP\Desktop\state\state\bin\Debug\net8.0\state.dll
+C:\Users\HP\Desktop\state\state\bin\Debug\net8.0\state.pdb
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.AssemblyInfo.cs
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.dll
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\refint\state.dll
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.pdb
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\state.genruntimeconfig.cache
+C:\Users\HP\Desktop\state\state\obj\Debug\net8.0\ref\state.dll

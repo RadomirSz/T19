@@ -1,0 +1,113 @@
+wzorce na których się skupiłem: łańcuch zobowiązań/chain of responsibility, mediator, stan/state
+
+1.
+Co robi ten kod?
+
+abstract class Handler {
+    protected Handler next;
+
+    void setNext(Handler next) {
+        this.next = next;
+    }
+
+    abstract void handle(int value);
+}
+
+
+A. Implementuje wzorzec Singleton
+B. Definiuje element łańcucha odpowiedzialności
+C. Tworzy mediator
+D. Reprezentuje stan obiektu
+
+Odpowiedź: B
+Uzasadnienie: Klasa posiada referencję do następnego handlera – to typowe dla Chain of Responsibility.
+
+2.
+Jaki problem rozwiązuje wzorzec Mediator?
+
+A. Zbyt dużą liczbę klas
+B. Zbyt wolne działanie programu
+C. Brak dziedziczenia
+D. Zbyt silne powiązania między obiektami
+
+Odpowiedź: D
+Uzasadnienie: Mediator centralizuje komunikację, dzięki czemu obiekty nie muszą znać się bezpośrednio.
+
+3.
+W systemie obsługi reklamacji zgłoszenie przechodzi kolejno przez:
+pracownika → kierownika → dyrektora.
+Każdy może je rozpatrzyć albo przekazać dalej.
+
+Która cecha najlepiej opisuje użyty wzorzec?
+
+A. Przekazywanie odpowiedzialności między obiektami
+B. Centralny obiekt decyzyjny
+C. Dynamiczna zmiana algorytmu
+D. Ukrycie złożoności systemu
+
+Odpowiedź: A
+Uzasadnienie: Odpowiedzialność jest przekazywana wzdłuż łańcucha aż ktoś ją przejmie.
+
+4.
+Co sugeruje zastosowany wzorzec projektowy w poniższym kodzie?
+
+class ChatRoom
+{
+    public void Send(string message, User sender)
+    {
+        foreach (var user in users)
+        {
+            if (user != sender)
+                user.Receive(message);
+        }
+    }
+}
+
+
+A. Chain of Responsibility
+B. Mediator
+C. State
+D. Proxy
+
+Odpowiedź: B
+Uzasadnienie:
+Jeden obiekt (ChatRoom) pośredniczy w przekazywaniu informacji pomiędzy innymi obiektami, które nie komunikują się bezpośrednio ze sobą.
+
+5.
+Które zdanie jest prawdziwe?
+
+A. Mediator przekazuje żądanie dalej
+B. Chain of Responsibility centralizuje komunikację
+C. State zmienia zachowanie obiektu w czasie
+D. Mediator i State rozwiązują ten sam problem
+
+Odpowiedź: C
+Uzasadnienie: To kluczowa cecha wzorca State.
+
+
+
+zadanie praktyczne:
+(State)
+
+Zaprojektuj prosty automat do drzwi, który może być w trzech stanach:
+Open
+Closed
+Locked
+
+Automat posiada metodę PressButton().
+
+Zachowanie
+Open → po naciśnięciu: zamyka drzwi
+Closed → po naciśnięciu: otwiera drzwi
+Locked → po naciśnięciu: brak reakcji
+
+Wymagania
+Każdy stan to osobna klasa
+Klasa Door przechowuje aktualny stan
+Brak instrukcji if sprawdzających stan
+
+Wskazówka
+Każdy stan implementuje wspólny interfejs, np. IDoorState.
+
+Efekt (co ma działać)
+Zmiana obiektu stanu powoduje zmianę zachowania metody PressButton().
