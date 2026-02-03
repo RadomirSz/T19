@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System Rezerwacji Żaglówek Online", "System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online.csproj", "{4407FA87-CCB9-45D7-B40D-389564B16E64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReservationApiServer", "ReservationApiServer\ReservationApiServer.csproj", "{6081665A-8E9C-1329-2DDD-04E0F13A14C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4407FA87-CCB9-45D7-B40D-389564B16E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4407FA87-CCB9-45D7-B40D-389564B16E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4407FA87-CCB9-45D7-B40D-389564B16E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4407FA87-CCB9-45D7-B40D-389564B16E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6081665A-8E9C-1329-2DDD-04E0F13A14C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6081665A-8E9C-1329-2DDD-04E0F13A14C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6081665A-8E9C-1329-2DDD-04E0F13A14C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6081665A-8E9C-1329-2DDD-04E0F13A14C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47E76F72-FAFE-4FD3-ACE2-7CD572888316}
+	EndGlobalSection
+EndGlobal

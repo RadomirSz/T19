@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "K481z0HQg00=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Radomir\\Desktop\\Projekt-POB\\ReservationApiServer\\ReservationApiServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Radomir\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

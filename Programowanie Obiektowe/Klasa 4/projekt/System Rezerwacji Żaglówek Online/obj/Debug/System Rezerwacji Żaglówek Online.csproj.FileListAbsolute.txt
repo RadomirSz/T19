@@ -1,0 +1,19 @@
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.exe.config
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.exe
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.pdb
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.exe
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.pdb
+C:\Users\Radomir\Desktop\System Rezerwacji Żaglówek Online\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.exe.config
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.exe.config
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.exe
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\bin\Debug\System Rezerwacji Żaglówek Online.pdb
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.exe.config
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System R.373FE1AE.Up2Date
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.exe
+C:\Users\Radomir\Desktop\Projekt-POB\System Rezerwacji Żaglówek Online\obj\Debug\System Rezerwacji Żaglówek Online.pdb

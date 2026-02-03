@@ -1,0 +1,14 @@
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\bin\Debug\net48\ReservationApiServer.exe.config
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\bin\Debug\net48\ReservationApiServer.exe
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\bin\Debug\net48\ReservationApiServer.pdb
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.csproj.AssemblyReference.cache
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.AssemblyInfoInputs.cache
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.AssemblyInfo.cs
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.csproj.CoreCompileInputs.cache
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.sourcelink.json
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\Reservat.FF4DD484.Up2Date
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.exe
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.pdb
+C:\Users\Radomir\Desktop\Projekt-POB\ReservationApiServer\obj\Debug\net48\ReservationApiServer.exe.config

@@ -1,0 +1,257 @@
+[2025-11-10 21:59:38] System logowania zainicjowany
+[2025-11-10 21:59:38] Stan aplikacji zainicjowany
+[2025-11-10 21:59:38] Aplikacja została uruchomiona
+[2025-11-10 21:59:53] Zarejestrowano użytkownika: r s
+[2025-11-10 22:00:00] Zalogowano użytkownika: r s
+[2025-11-10 22:00:11] Tworzenie jachtu typu: Sportowy
+[2025-11-10 22:00:11] Tworzenie jachtu typu: Turystyczny
+[2025-11-10 22:00:11] Tworzenie jachtu typu: Katamaran
+[2025-11-10 22:00:11] Tworzenie jachtu typu: Trimaran
+[2025-11-10 22:01:00] Użytkownik r został wylogowany
+[2025-11-10 22:01:09] Zalogowano użytkownika: r s
+[2025-11-10 22:01:37] Tworzenie jachtu typu: Katamaran
+[2025-11-10 22:02:48] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-10 22:02:48] Dodano użytkownika: r s
+[2025-11-10 22:02:48] Wybrano jacht: Twin Wave 450 (Katamaran)
+[2025-11-10 22:02:48] Lokalizacja: horenburg
+[2025-11-10 22:02:48] Data rozpoczęcia: 05.05.2015
+[2025-11-10 22:02:48] Data zakończenia: 05.05.2014
+[2025-11-10 22:02:48] ?? Walidacja rezerwacji nie powiodła się
+[2025-11-10 22:03:11] Tworzenie jachtu typu: Katamaran
+[2025-11-10 22:03:30] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-10 22:03:30] Dodano użytkownika: r s
+[2025-11-10 22:03:30] Wybrano jacht: Twin Wave 450 (Katamaran)
+[2025-11-10 22:03:30] Lokalizacja: posen
+[2025-11-10 22:03:30] Data rozpoczęcia: 21.12.2005
+[2025-11-10 22:03:30] Data zakończenia: 21.12.2025
+[2025-11-10 22:03:30] ?? Walidacja rezerwacji nie powiodła się
+[2025-11-10 22:03:39] Tworzenie jachtu typu: Katamaran
+[2025-11-10 22:04:00] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-10 22:04:00] Dodano użytkownika: r s
+[2025-11-10 22:04:00] Wybrano jacht: Twin Wave 450 (Katamaran)
+[2025-11-10 22:04:00] Lokalizacja: posenburg
+[2025-11-10 22:04:00] Data rozpoczęcia: 11.11.2025
+[2025-11-10 22:04:00] Data zakończenia: 11.11.2026
+[2025-11-10 22:04:00] ? Rezerwacja utworzona pomyślnie. ID: 68D3CFAD, Koszt: 665 000,00 zł
+[2025-11-10 22:04:00] Dodano rezerwację: 68D3CFAD
+[2025-11-10 22:08:32] Użytkownik r został wylogowany
+[2025-11-10 22:08:35] Aplikacja została zamknięta
+[2025-11-10 22:08:51] System logowania zainicjowany
+[2025-11-10 22:08:51] Stan aplikacji zainicjowany
+[2025-11-10 22:08:52] Aplikacja została uruchomiona
+[2025-11-10 22:09:07] Zarejestrowano użytkownika: r s
+[2025-11-10 22:09:13] Zalogowano użytkownika: r s
+[2025-11-10 22:09:21] Tworzenie jachtu typu: Sportowy
+[2025-11-10 22:09:35] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-10 22:09:35] Dodano użytkownika: r s
+[2025-11-10 22:09:35] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-10 22:09:35] Lokalizacja: asfed
+[2025-11-10 22:09:35] Data rozpoczęcia: 22.11.2222
+[2025-11-10 22:09:35] Data zakończenia: 27.11.2222
+[2025-11-10 22:09:35] ? Rezerwacja utworzona pomyślnie. ID: E8751CE4, Koszt: 7 000,00 zł
+[2025-11-10 22:09:35] Dodano rezerwację: E8751CE4
+[2025-11-10 22:09:48] Tworzenie jachtu typu: Sportowy
+[2025-11-10 22:09:48] Tworzenie jachtu typu: Turystyczny
+[2025-11-10 22:09:48] Tworzenie jachtu typu: Katamaran
+[2025-11-10 22:09:48] Tworzenie jachtu typu: Trimaran
+[2025-11-10 22:28:19] System logowania zainicjowany
+[2025-11-10 22:28:19] Stan aplikacji zainicjowany
+[2025-11-10 22:28:19] Aplikacja została uruchomiona
+[2025-11-10 22:33:47] Aplikacja została zamknięta
+[2025-11-10 22:33:51] System logowania zainicjowany
+[2025-11-10 22:33:51] Stan aplikacji zainicjowany
+[2025-11-10 22:33:51] Aplikacja została uruchomiona
+[2025-11-10 22:35:25] Zarejestrowano użytkownika: r s
+[2025-11-10 22:35:41] Aplikacja została zamknięta
+[2025-11-10 22:37:07] System logowania zainicjowany
+[2025-11-10 22:37:07] Stan aplikacji zainicjowany
+[2025-11-10 22:37:07] Aplikacja została uruchomiona
+[2025-11-10 22:37:34] Aplikacja została zamknięta
+[2025-11-10 23:16:54] System logowania zainicjowany
+[2025-11-10 23:16:54] Stan aplikacji zainicjowany
+[2025-11-10 23:16:54] Aplikacja została uruchomiona
+[2025-11-10 23:17:02] Zarejestrowano użytkownika: r s
+[2025-11-10 23:17:07] Zalogowano użytkownika: r s
+[2025-11-10 23:17:12] Tworzenie jachtu typu: Sportowy
+[2025-11-10 23:17:26] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-10 23:17:26] Dodano użytkownika: r s
+[2025-11-10 23:17:26] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-10 23:17:26] Lokalizacja: horenburg
+[2025-11-10 23:17:26] Data rozpoczęcia: 21.11.2025
+[2025-11-10 23:17:26] Data zakończenia: 21.11.2026
+[2025-11-10 23:17:26] ? Rezerwacja utworzona pomyślnie. ID: 60FF7BBF, Koszt: 295 000,00 zł
+[2025-11-10 23:17:26] Dodano rezerwację: 60FF7BBF
+[2025-11-10 23:17:30] Tworzenie jachtu typu: Sportowy
+[2025-11-10 23:17:30] Tworzenie jachtu typu: Turystyczny
+[2025-11-10 23:17:30] Tworzenie jachtu typu: Katamaran
+[2025-11-10 23:17:30] Tworzenie jachtu typu: Trimaran
+[2025-11-10 23:18:10] Użytkownik r został wylogowany
+[2025-11-10 23:18:12] Aplikacja została zamknięta
+[2025-11-10 23:31:34] System logowania zainicjowany
+[2025-11-10 23:31:34] Stan aplikacji zainicjowany
+[2025-11-10 23:31:34] Aplikacja została uruchomiona
+[2025-11-10 23:34:23] Aplikacja została zamknięta
+[2025-11-10 23:48:49] System logowania zainicjowany
+[2025-11-10 23:48:49] Stan aplikacji zainicjowany
+[2025-11-10 23:48:49] Aplikacja została uruchomiona
+[2025-11-10 23:48:51] Aplikacja została zamknięta
+[2025-11-16 23:18:37] System logowania zainicjowany
+[2025-11-16 23:18:37] Stan aplikacji zainicjowany
+[2025-11-16 23:18:37] Aplikacja została uruchomiona
+[2025-11-16 23:18:49] Zarejestrowano użytkownika: r s
+[2025-11-16 23:19:03] Zalogowano użytkownika: r s
+[2025-11-16 23:19:10] Tworzenie jachtu typu: Sportowy
+[2025-11-16 23:19:26] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-16 23:19:26] Dodano użytkownika: r s
+[2025-11-16 23:19:26] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-16 23:19:26] Lokalizacja: poznan
+[2025-11-16 23:19:26] Data rozpoczęcia: 17.11.2025
+[2025-11-16 23:19:26] Data zakończenia: 18.11.2025
+[2025-11-16 23:19:26] ? Rezerwacja utworzona pomyślnie. ID: F537BF8D, Koszt: 3 800,00 zł
+[2025-11-16 23:19:26] Dodano rezerwację: F537BF8D
+[2025-11-16 23:19:27] Błąd wysyłania: Forbidden
+[2025-11-16 23:23:43] Aplikacja została zamknięta
+[2025-11-16 23:47:16] System logowania zainicjowany
+[2025-11-16 23:47:16] Stan aplikacji zainicjowany
+[2025-11-16 23:47:16] Aplikacja została uruchomiona
+[2025-11-16 23:47:23] Zarejestrowano użytkownika: r s
+[2025-11-16 23:47:27] Zalogowano użytkownika: r s
+[2025-11-16 23:47:32] Tworzenie jachtu typu: Sportowy
+[2025-11-16 23:47:48] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-16 23:47:48] Dodano użytkownika: r s
+[2025-11-16 23:47:48] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-16 23:47:48] Lokalizacja: poznan
+[2025-11-16 23:47:48] Data rozpoczęcia: 17.11.2025
+[2025-11-16 23:47:48] Data zakończenia: 19.11.2025
+[2025-11-16 23:47:48] ? Rezerwacja utworzona pomyślnie. ID: 03612634, Koszt: 4 600,00 zł
+[2025-11-16 23:47:48] Dodano rezerwację: 03612634
+[2025-11-16 23:47:48] Rezerwacja 03612634 wysłana do serwera
+[2025-11-17 00:04:00] System logowania zainicjowany
+[2025-11-17 00:04:00] Stan aplikacji zainicjowany
+[2025-11-17 00:04:00] Aplikacja została uruchomiona
+[2025-11-17 00:04:09] Zarejestrowano użytkownika: r s
+[2025-11-17 00:04:11] Zalogowano użytkownika: r s
+[2025-11-17 00:04:14] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:04:25] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:04:25] Dodano użytkownika: r s
+[2025-11-17 00:04:25] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:04:25] Lokalizacja: poznan
+[2025-11-17 00:04:25] Data rozpoczęcia: 17.11.2025
+[2025-11-17 00:04:25] Data zakończenia: 18.11.2025
+[2025-11-17 00:04:25] ? Rezerwacja utworzona pomyślnie. ID: FAAA772F, Koszt: 3 800,00 zł
+[2025-11-17 00:04:25] Dodano rezerwację: FAAA772F
+[2025-11-17 00:04:25] Rezerwacja FAAA772F wysłana do serwera
+[2025-11-17 00:12:54] System logowania zainicjowany
+[2025-11-17 00:12:54] Stan aplikacji zainicjowany
+[2025-11-17 00:12:54] Aplikacja została uruchomiona
+[2025-11-17 00:12:59] Zarejestrowano użytkownika: r s
+[2025-11-17 00:13:03] Zalogowano użytkownika: r s
+[2025-11-17 00:13:05] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:13:20] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:13:20] Dodano użytkownika: r s
+[2025-11-17 00:13:20] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:13:20] Lokalizacja: poznan
+[2025-11-17 00:13:20] Data rozpoczęcia: 17.11.2025
+[2025-11-17 00:13:20] Data zakończenia: 18.11.2025
+[2025-11-17 00:13:20] ? Rezerwacja utworzona pomyślnie. ID: 21E946B4, Koszt: 3 800,00 zł
+[2025-11-17 00:13:20] Dodano rezerwację: 21E946B4
+[2025-11-17 00:13:20] Rezerwacja 21E946B4 wysłana do serwera
+[2025-11-17 00:14:35] Aplikacja została zamknięta
+[2025-11-17 00:14:38] System logowania zainicjowany
+[2025-11-17 00:14:38] Stan aplikacji zainicjowany
+[2025-11-17 00:14:38] Aplikacja została uruchomiona
+[2025-11-17 00:14:51] Zarejestrowano użytkownika: r s
+[2025-11-17 00:14:53] Zalogowano użytkownika: r s
+[2025-11-17 00:15:08] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:15:21] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:15:21] Dodano użytkownika: r s
+[2025-11-17 00:15:21] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:15:21] Lokalizacja: poza
+[2025-11-17 00:15:21] Data rozpoczęcia: 17.11.2025
+[2025-11-17 00:15:21] Data zakończenia: 18.11.2025
+[2025-11-17 00:15:21] ? Rezerwacja utworzona pomyślnie. ID: 858D0662, Koszt: 3 800,00 zł
+[2025-11-17 00:15:21] Dodano rezerwację: 858D0662
+[2025-11-17 00:15:22] Rezerwacja 858D0662 wysłana do serwera
+[2025-11-17 00:16:09] System logowania zainicjowany
+[2025-11-17 00:16:09] Stan aplikacji zainicjowany
+[2025-11-17 00:16:09] Aplikacja została uruchomiona
+[2025-11-17 00:16:15] Zarejestrowano użytkownika: r s
+[2025-11-17 00:16:17] Zalogowano użytkownika: r s
+[2025-11-17 00:16:38] Zalogowano użytkownika: r s
+[2025-11-17 00:16:43] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:16:59] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:16:59] Dodano użytkownika: r s
+[2025-11-17 00:16:59] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:16:59] Lokalizacja: s
+[2025-11-17 00:16:59] Data rozpoczęcia: 11.12.2025
+[2025-11-17 00:16:59] Data zakończenia: 21.12.2025
+[2025-11-17 00:16:59] ? Rezerwacja utworzona pomyślnie. ID: DBDD316A, Koszt: 11 000,00 zł
+[2025-11-17 00:16:59] Dodano rezerwację: DBDD316A
+[2025-11-17 00:16:59] Rezerwacja DBDD316A wysłana do serwera
+[2025-11-17 00:20:52] System logowania zainicjowany
+[2025-11-17 00:20:52] Stan aplikacji zainicjowany
+[2025-11-17 00:20:52] Aplikacja została uruchomiona
+[2025-11-17 00:20:59] Zarejestrowano użytkownika: r s
+[2025-11-17 00:21:04] Zalogowano użytkownika: r s
+[2025-11-17 00:21:07] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:21:41] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:21:41] Dodano użytkownika: r s
+[2025-11-17 00:21:41] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:21:41] Lokalizacja: poznan
+[2025-11-17 00:21:41] Data rozpoczęcia: 21.12.2025
+[2025-11-17 00:21:41] Data zakończenia: 22.12.2025
+[2025-11-17 00:21:41] ? Rezerwacja utworzona pomyślnie. ID: 99987806, Koszt: 3 800,00 zł
+[2025-11-17 00:21:41] Dodano rezerwację: 99987806
+[2025-11-17 00:21:41] Rezerwacja 99987806 wysłana do serwera
+[2025-11-17 00:22:42] Tworzenie jachtu typu: Turystyczny
+[2025-11-17 00:22:53] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:22:53] Dodano użytkownika: r s
+[2025-11-17 00:22:53] Wybrano jacht: Ocean Cruiser (Turystyczny)
+[2025-11-17 00:22:53] Lokalizacja: pozen
+[2025-11-17 00:22:53] Data rozpoczęcia: 12.12.2025
+[2025-11-17 00:22:53] Data zakończenia: 15.12.2025
+[2025-11-17 00:22:53] ? Rezerwacja utworzona pomyślnie. ID: 0EBA69A6, Koszt: 8 600,00 zł
+[2025-11-17 00:22:53] Dodano rezerwację: 0EBA69A6
+[2025-11-17 00:22:53] Rezerwacja 0EBA69A6 wysłana do serwera
+[2025-11-17 00:25:51] Aplikacja została zamknięta
+[2025-11-17 00:26:23] System logowania zainicjowany
+[2025-11-17 00:26:23] Stan aplikacji zainicjowany
+[2025-11-17 00:26:23] Aplikacja została uruchomiona
+[2025-11-17 00:26:29] Zarejestrowano użytkownika: r s
+[2025-11-17 00:26:34] Zalogowano użytkownika: r s
+[2025-11-17 00:26:39] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:26:50] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:26:50] Dodano użytkownika: r s
+[2025-11-17 00:26:50] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:26:50] Lokalizacja: poiz
+[2025-11-17 00:26:50] Data rozpoczęcia: 12.12.2025
+[2025-11-17 00:26:50] Data zakończenia: 14.12.2025
+[2025-11-17 00:26:50] ? Rezerwacja utworzona pomyślnie. ID: F930B06C, Koszt: 4 600,00 zł
+[2025-11-17 00:26:50] Dodano rezerwację: F930B06C
+[2025-11-17 00:26:50] Rezerwacja F930B06C wysłana do serwera
+[2025-11-17 00:27:31] Wywołano DisplayUserReservations
+[2025-11-17 00:30:12] Aplikacja została zamknięta
+[2025-11-17 00:30:18] System logowania zainicjowany
+[2025-11-17 00:30:18] Stan aplikacji zainicjowany
+[2025-11-17 00:30:18] Aplikacja została uruchomiona
+[2025-11-17 00:30:24] Zarejestrowano użytkownika: r s
+[2025-11-17 00:30:27] Zalogowano użytkownika: r s
+[2025-11-17 00:30:32] Tworzenie jachtu typu: Sportowy
+[2025-11-17 00:30:41] Rozpoczęto tworzenie nowej rezerwacji
+[2025-11-17 00:30:41] Dodano użytkownika: r s
+[2025-11-17 00:30:41] Wybrano jacht: Sea Racer 3000 (Sportowy)
+[2025-11-17 00:30:41] Lokalizacja: poz
+[2025-11-17 00:30:41] Data rozpoczęcia: 12.12.2025
+[2025-11-17 00:30:41] Data zakończenia: 13.12.2025
+[2025-11-17 00:30:41] ? Rezerwacja utworzona pomyślnie. ID: 9E4BFAE7, Koszt: 3 800,00 zł
+[2025-11-17 00:30:41] Dodano rezerwację: 9E4BFAE7
+[2025-11-17 00:30:41] Rezerwacja 9E4BFAE7 wysłana do serwera
+[2025-11-17 00:30:46] Wywołano DisplayUserReservations
+[2025-11-17 00:31:08] Aplikacja została zamknięta
+[2025-11-20 00:47:00] System logowania zainicjowany
+[2025-11-20 00:47:00] Stan aplikacji zainicjowany
+[2025-11-20 00:47:00] Aplikacja została uruchomiona
+[2025-11-20 00:47:17] Aplikacja została zamknięta
+[2025-11-20 01:01:15] System logowania zainicjowany
+[2025-11-20 01:01:15] Stan aplikacji zainicjowany
+[2025-11-20 01:01:15] Aplikacja została uruchomiona

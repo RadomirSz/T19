@@ -1,0 +1,25 @@
+Celem projektu jest stworzenie prostej aplikacji konsolowej w C#, która umożliwia symulację rezerwacji usług w moim przypadku chodzi o czarter jachtow, w pliku plan.txt masz jak mniej wiecej chcialem zeby to wygladalo.
+
+w projekcie musza byc uzyte wzorce projektowe:
+Singleton – do logowania zdarzen i zarządzania konfiguracją,
+Factory Method – do tworzenia różnych typów usług (wypozyczania roznych jachtow (zwykle, katamarany, trimarany itp)),
+Builder – do budowania szczegółów rezerwacji krok po kroku.
+
+Wymagania projektu
+Program powinien umożliwiać:
+
+wybór rodzaju rezerwacji (sportowe, turystyczne, katamarany, trimarany),
+stworzenie obiektu rezerwacji z danymi użytkownika (imię, data, lokalizacja),
+wyświetlenie informacji o dokonanej rezerwacji np. w konsoli.
+
+Zastosowane wzorce kreacyjne:
+
+Singleton: Logger – zapewnia jeden punkt logowania w całej aplikacji.
+Factory Method: ReservationFactory – tworzy odpowiedni typ usługi.
+Builder: ReservationBuilder – tworzy szczegóły rezerwacji krok po kroku.
+Projekt powinien być czytelny, z klasami w osobnych plikach.
+
+
+
+
+(* na oceny 5 i 6) Dodatkowo uczniowie mogą rozszerzyć projekt o element sieciowy – wysyłanie danych rezerwacji do serwera HTTP.
