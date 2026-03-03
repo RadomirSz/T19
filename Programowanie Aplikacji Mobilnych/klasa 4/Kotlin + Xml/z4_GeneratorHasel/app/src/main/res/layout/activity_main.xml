@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Długość hasła:"
+            android:textColor="@color/textColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 znaków"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="6"
+            android:max="20"
+            android:progress="12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz znaki:"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbLower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a-z"/>
+
+            <CheckBox
+                android:id="@+id/cbUpper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-Z"/>
+
+            <CheckBox
+                android:id="@+id/cbDigits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0-9"/>
+
+            <CheckBox
+                android:id="@+id/cbSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!@#"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba haseł:"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/textColor"/>
+
+        <Spinner
+            android:id="@+id/spinnerCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/password_count"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tryb generowania:"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/textColor"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbBasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tryb podstawowy"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbMixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tryb mieszany"/>
+
+            <RadioButton
+                android:id="@+id/rbAdvanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tryb zaawansowany"/>
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/switchSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zapamiętaj ustawienia"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GENERUJ"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageStrength"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/tvPasswords"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="#DDDDDD"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textIsSelectable="true"/>
+
+</LinearLayout>
