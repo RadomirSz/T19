@@ -1,0 +1,17 @@
+body{
+  color:blue;
+  text-align: center;
+}
+
+header{
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+}
+
+footer{
+  color:green;
+  font-style: italic;
+  float:bottom;
+}
