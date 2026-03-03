@@ -1,0 +1,43 @@
+﻿<Window x:Class="Opisywacz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Opisywacz"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:OpisywaczViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Label Content="{Binding Autor}" />
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="{Binding Cecha1}" />
+                <TextBox Text="{Binding NowaCecha1}" Width="200"/>
+                <Button Command="{Binding AktualizujCecha1Command}" Content="✔️"/>
+                <Button Command="{Binding UsunCeche1Command}" Content="✖️"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="{Binding Cecha2}" />
+                <TextBox Text="{Binding NowaCecha2}" Width="200"/>
+                <Button Command="{Binding AktualizujCecha2Command}" Content="✔️"/>
+                <Button Command="{Binding UsunCeche2Command}" Content="✖️"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="{Binding Cecha3}" />
+                <TextBox Text="{Binding NowaCecha3}" Width="200"/>
+                <Button Command="{Binding AktualizujCecha3Command}" Content="✔️"/>
+                <Button Command="{Binding UsunCeche3Command}" Content="✖️"/>
+            </StackPanel>
+
+
+            <Button Command="{Binding WypiszCechyCommand}" Content="Wypisz"/>
+
+            <TextBlock Text="{Binding WypisaneCechy}" />
+
+        </StackPanel>
+    </Grid>
+</Window>
