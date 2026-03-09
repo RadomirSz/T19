@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ep8u1I+3GiA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\4Egr2\\source\\repos\\wpf\\wpf\\wpf.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\4Egr2\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
