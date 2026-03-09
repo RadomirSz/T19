@@ -1,0 +1,11 @@
+kw1
+INSERT INTO rezerwacje VALUES(NULL,1, '2017-07-04', 4, '111222333');
+
+kw2
+SELECT dania.nazwa, dania.cena FROM dania WHERE dania.typ = 2;
+
+kw3
+SELECT dania.nazwa FROM dania WHERE dania.cena < 15;
+
+kw4
+UPDATE pracownicy SET pracownicy.stanowisko = 4 WHERE pracownicy.stanowisko = 3;

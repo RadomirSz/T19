@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <aside>
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdź promocje</h2>
+        <table>
+            <th>
+                <td>co?</td>
+                <td>ile taniej?</td>
+            </th>
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </aside>
+    <header>
+        <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main>
+        <button onclick="aktywuj(1)">Klient</button>
+        <button onclick="aktywuj(2)">Adres</button>
+        <button onclick="aktywuj(3)">Kontakt</button>
+        <div id="blok1">
+            <p>Imię</p><input type="text" name="dane" id="imie" placeholder="Wpisz dane..." onblur="pasek(1)">
+            <p>Nazwisko</p><input type="text" name="dane" id="nazwisko" onblur="pasek(0)">
+            <p>Data urodzenia</p><input type="date" name="dane" id="dataur" onblur="pasek(0)">
+        </div>
+        <div id="blok2" style="display: none;">
+            <p>Ulica</p><input type="text" name="dane" id="ulica" onblur="pasek(0)">
+            <p>Numer</p><input type="number" name="dane" id="numer" onblur="pasek(0)">
+            <p>Miasto</p><input type="text" name="dane" id="miasto" onblur="pasek(0)">
+        </div>
+        <div id="blok3" style="display: none;">
+            <p>Numer komórkowy</p><input type="tel" name="dane" id="telefon" onblur="pasek(0)"><br>
+            <input type="checkbox" name="dane" id="rodo" onblur="pasek(0)">Akceptuję RODO<br>
+            <button onclick="zatwierdz()">Zatwierdź dane</button>
+        </div>
+    </main>
+    <div id="pasek">
+        <section id="progressbar"></section>
+    </div>
+    <footer>
+        <h4>Rejestrację do sklepu wykonał: 200</h4>
+    </footer>
+</body>
+</html>

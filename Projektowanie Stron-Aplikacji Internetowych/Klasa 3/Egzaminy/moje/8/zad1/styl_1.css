@@ -1,0 +1,44 @@
+body{
+    background-color: #F6E5DC;
+    font-family: Verdana;
+}
+header{
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+    margin-top:-22px;
+}
+#lewy{
+    width: 60%;
+}
+#prawy{
+    font-size: 150%;
+    padding: 70px;
+}
+#dolny{
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+}
+footer{
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+    margin-top:-16px;
+}
+img{
+    height: 350px;
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+}

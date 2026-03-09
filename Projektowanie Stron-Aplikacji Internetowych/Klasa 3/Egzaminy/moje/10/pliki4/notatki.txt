@@ -1,0 +1,20 @@
+//Napis o treści „Zobacz wszystkie nasze zdjęcia” zapisany w znaczniku semantycznym pisanym
+czcionką pogrubioną i oznaczającym tekst o dużym znaczeniu//
+<strong></strong>
+
+//‒ Dla bloku środkowego: szerokość 70%, wysokość 700 px, zawsze widoczne paski przewijania//
+
+
+//‒ ‒ Wspólne dla nagłówka trzeciego stopnia, paragrafu, odnośnika: pełna przezroczystość (0),
+pozycjonowanie pozwalające przesuwać element względem rodzica//
+
+position:absolute
+
+
+//‒ Dodatkowo dla nagłówka trzeciego stopnia: odległość od górnej krawędzi rodzica 5%
+‒ Dodatkowo dla paragrafu: odległość od górnej krawędzi rodzica 30%
+‒ Dodatkowo dla odnośnika: odległość od górnej krawędzi rodzica 70%, od lewej krawędzi 70%, kolor
+tła Sienna, marginesy wewnętrzne 15 px//
+
+bez margin albo padding; poprostu top lub left
+top: 5%;
