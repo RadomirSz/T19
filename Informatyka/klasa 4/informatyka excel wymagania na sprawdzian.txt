@@ -1,0 +1,26 @@
+IMPORT DANYCH z pliku
+
+select sum z group by
+
+
+wykresy zaznacz dane
+
+tabela przestawna CHYBA WAZNE
+
+rok 
+miesiac
+jezeli
+suma.jezeli
+cz.calk.dzielenia
+licz.jezeli
+
+filtrowanie zakladka dane filtruj i 
+
+jezeli w jezeli
+taki else if
+
+min max
+
+tekst(pole; "mmmm")
+
+oraz funkcja logiczna
