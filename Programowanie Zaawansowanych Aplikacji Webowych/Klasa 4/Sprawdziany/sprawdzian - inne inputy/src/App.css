@@ -1,0 +1,22 @@
+.App{
+  width: 50vw;
+  margin: auto;
+}
+
+.tytulstrony{
+  color:Red;
+  font-style: italic;
+  font-weight: bold;
+
+}
+.opispola{
+  color:blue;
+  font-weight: bold;
+}
+.center{
+  width: 25vw;
+  margin: auto;
+}
+.toright{
+  float: right;
+}
