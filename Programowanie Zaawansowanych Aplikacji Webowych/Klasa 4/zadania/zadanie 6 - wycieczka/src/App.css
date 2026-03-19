@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d4c688;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #d4c688;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.tytul {
+  font-style: italic;
+  color: #8B0000;
+  font-size: 2rem;
+  font-family: 'Comic Sans MS', Georgia, cursive;
+  margin-bottom: 0;
+}
+
+.podtytul {
+  color: #CC8800;
+  font-size: 1.3rem;
+  font-family: 'Comic Sans MS', Georgia, cursive;
+  margin-top: 5px;
+}
+
+.obrazek-wrapper {
+  margin: 15px auto;
+}
+
+.obrazek {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #777;
+}
+
+.wiersz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+  gap: 8px;
+}
+
+.wiersz strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.sekcja {
+  margin: 10px 0;
+}
+
+.radio-lista {
+  list-style: disc;
+  display: inline-block;
+  text-align: left;
+  padding-left: 30px;
+  margin: 5px 0;
+}
+
+.radio-lista li label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+input[type='number'],
+input[type='text'] {
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  padding: 2px 5px;
+  font-size: 0.9rem;
+}
+
+textarea {
+  background-color: #f0f0f0;
+  border: 1px solid #999;
+  resize: vertical;
+  display: block;
+  margin: 5px auto 0;
+}
+
+.btn-wysylaj {
+  display: inline-block;
+  margin: 15px auto;
+  background-color: #00CCCC;
+  color: #000;
+  border: 2px solid #009999;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-wysylaj:hover {
+  background-color: #00AAAA;
+}
+
+.podsumowanie {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.podsumowanie-tytul {
+  color: #6600CC;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  font-family: 'Comic Sans MS', Georgia, cursive;
+}
+
+.podsumowanie-lista {
+  display: inline-block;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.blad {
+  color: red;
+  font-weight: bold;
+}
