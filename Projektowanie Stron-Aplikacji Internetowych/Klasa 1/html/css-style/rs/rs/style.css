@@ -1,0 +1,28 @@
+p{
+background-color: rgba(0, 238, 255, 0.219);
+color: rgb(139, 0, 204);
+font-family: 'Courier New', Courier, monospace;
+font-size: x-large;
+font-variant: normal;
+text-transform: uppercase;
+text-align: right;
+text-indent: 30px;
+text-shadow: 10px 10px 3px black;
+}
+h1{
+color: blueviolet;
+text-shadow: 20px 20px 3px black;
+}
+body{
+    background-color: rgb(8, 248, 176);
+    background-image: url(piesek.jpeg);
+    background-attachment: fixed;
+}
+img{
+    border: 5px solid;
+    border-color: black blue blueviolet brown;
+    
+    width: 400px;
+    height: 250px;
+    border-radius: 50%;
+}

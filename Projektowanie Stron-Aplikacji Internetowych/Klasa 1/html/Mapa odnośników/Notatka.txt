@@ -1,0 +1,13 @@
+Temat: Mapa Odnoœników
+1. trzy kszta³ty mapowania linków:
+-ko³o (trzeba podaæ œrodek)
+-prostok¹t (trzeba podaæ wspó³rzêdne wierzcho³ków)
+-dowolny wielok¹t (trzeba podaæ wspó³rzêdne wierzcho³ków)
+
+x,y - kordynaty wiercho³ków
+
+<map name="test">
+<area shape="rectangle" coords="x,y,x,y"> - mo¿na skróciæ rectangle do "rect"
+<area shape="circle" coords="x,y,promieñ"> - x,y œrodka
+<area shape="polygon" coords="x,y,x,y,x,y">  - mo¿na skróciæ polygon do "poly"
+<map>

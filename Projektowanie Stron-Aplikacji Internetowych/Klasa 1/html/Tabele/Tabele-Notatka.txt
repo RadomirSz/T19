@@ -1,0 +1,15 @@
+<table border="1"> - border to gruboœæ ramki (w pikselach)
+<tr> - wiersz w tabeli
+<td> </td> - komórki w tabeli
+</tr>
+</table>
+
+<table width="50%"> - szerokoœæ tabeli (w % je¿eli chcemy, ¿eby
+ka¿dy user mia³ tak¹ sam¹ wielkoœæ)
+
+<td colspan="2"> - ³¹czenie komórek
+<td rowspan="2"> - ³¹czenie kolumn
+GDY £¥CZY SIÊ KOLUMNY TO TRZEBA ZROBIÆ MIEJSCE NA NIE!
+
+<img src="nazwa.png"> - trzeba podaæ ca³¹ œcie¿kê
+<a href="http://www.youtube.com"> - hiper ³¹cze

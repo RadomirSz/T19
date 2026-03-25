@@ -1,0 +1,15 @@
+Temat: Ramki.
+
+[<frameset> zamiast <body>]
+
+<frameset rows="20%,*"> - rows ile procent wysokoœci ca³ej strony ma mieæ ka¿dy wiersz (od góry do do³u)
+
+* - dopelnienie reszty procent
+
+<frame name="ramka1" src="strona html">
+
+<frameset cols="20%,*"> - kolumny
+
+</frameset> - trzeba zamkn¹æ ka¿dy frameset
+
+[dla ka¿dych kolumn albo wierszy, nowy frameset]

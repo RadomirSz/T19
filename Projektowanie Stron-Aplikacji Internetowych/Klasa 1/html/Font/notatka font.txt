@@ -1,0 +1,54 @@
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+
+¯EBY OTWORZYÆ INDEX PRAWYM I OTWÓRZ ZA POMOC¥
+
+RGB i CMYK
+rgb na ekranie cmyk np do drukowania
+
+Temat: Trzcionka
+<br> - breakline - przeniesienie do kolejnej linii
+&nbsp;  - doatkowa spacja
+font - trzcionka
+<font size="7" color="603nd3"   face="algerian"> - wielkoœæ trzcionki (max 7)
+               kolor trzcionki  wygl¹d trzcionki
+
+<b>abcd</b> tekst pogrubiony
+
+<i>adcb</i> kursywa
+
+<u>abcd</u> podkreœlenie
+
+<s>abcd</s> przekreœlenie
+
+<sub></sub> - indeks dolny np H<sub>2</sub>O
+
+<sup><sup> - indeks górny np 2<sup>4</sup> =16
+
+
+ol - numerowy
+<ol type=A> 
+<li> jeden "a"
+<li> dwa "I"
+</ol>  "i"
+
+<ul type="square"> mo¿e byæ circle np
+<li> jeden
+<li> dwa
+</ul>
+
+<center> tekst </center>
+
+<p align= "center">
+           right
+           left
+           justify
+
+link odniesienie
+<a href="http://www.onet.pl/">kliknij tu </a>
+
+DODAWANIE I ODEJMOWANIE BINARNE!!
