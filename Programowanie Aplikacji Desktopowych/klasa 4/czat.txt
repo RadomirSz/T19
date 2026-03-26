@@ -1,0 +1,381 @@
+
+Otrzymuj spersonalizowane odpowiedzi
+
+Zaloguj się, aby uzyskać odpowiedzi na podstawie zapisanych czatów oraz tworzyć obrazy i przesyłać pliki.
+
+
+Zaloguj się
+Krok 1  Dane
+Utworz klase Room:
+ nazwa
+ pojemnosc
+Repozytorium:
+ IRoomRepository
+ InMemoryRoomRepository (kilka sal na sztywno)
+jak najlepiej zrobić repository do modelu room i czy inmemoryroomrepo powinno dziedziczyc po iroomrepo czy byc oddzielne
+
+Najprościej: repozytorium powinno być oparte o interfejs, a implementacje (np. in-memory) powinny go implementować.
+
+1. Model Room
+Na start prosta klasa:
+
+public class Room
+{
+    public string Name { get; set; }
+    public int Capacity { get; set; }
+}
+2. Interfejs IRoomRepository
+To jest kontrakt – określa co repozytorium potrafi:
+
+public interface IRoomRepository
+{
+    IEnumerable<Room> GetAll();
+    Room GetByName(string name);
+    void Add(Room room);
+}
+3. Implementacja InMemoryRoomRepository
+👉 Tak – powinno implementować IRoomRepository (nie „być oddzielne”).
+Dzięki temu możesz później podmienić np. na bazę danych bez zmiany reszty kodu.
+
+public class InMemoryRoomRepository : IRoomRepository
+{
+    private readonly List<Room> _rooms = new List<Room>
+    {
+        new Room { Name = "Sala A", Capacity = 10 },
+        new Room { Name = "Sala B", Capacity = 20 },
+        new Room { Name = "Sala C", Capacity = 30 }
+    };
+
+    public IEnumerable<Room> GetAll()
+    {
+        return _rooms;
+    }
+
+    public Room GetByName(string name)
+    {
+        return _rooms.FirstOrDefault(r => r.Name == name);
+    }
+
+    public void Add(Room room)
+    {
+        _rooms.Add(room);
+    }
+}
+Dlaczego tak?
+✔ Interfejs (IRoomRepository)
+
+oddziela logikę od implementacji
+
+umożliwia testy (mocki)
+
+pozwala łatwo zmienić źródło danych
+
+✔ InMemoryRoomRepository
+
+jedna z implementacji (np. do testów lub MVP)
+
+później możesz zrobić:
+
+DatabaseRoomRepository
+
+ApiRoomRepository
+
+Najważniejsza odpowiedź na Twoje pytanie
+👉 InMemoryRoomRepository powinno implementować (:) IRoomRepository, np.:
+
+public class InMemoryRoomRepository : IRoomRepository
+❌ Nie robisz go „oddzielnie bez interfejsu”, bo tracisz elastyczność.
+
+Jeśli chcesz, mogę pokazać wersję z dependency injection (np. w ASP.NET), bo to często jest kolejny krok w takich zadaniach.
+
+
+a co może być zamiast tego ienumerable? robie w mvvm wiec moze jakies observablecollection?
+
+Dobre pytanie — i tu właśnie wchodzi różnica między warstwą danych (repozytorium) a warstwą UI (MVVM).
+
+Krótka odpowiedź:
+👉 W repozytorium lepiej zostawić IEnumerable (albo IReadOnlyList)
+👉 ObservableCollection używaj w ViewModelu, nie w repozytorium
+
+🔹 Dlaczego NIE ObservableCollection w repo?
+ObservableCollection:
+
+służy do powiadamiania UI o zmianach
+
+jest częścią warstwy prezentacji (MVVM)
+
+Repozytorium:
+
+powinno być niezależne od UI
+
+ma tylko dostarczać dane
+
+👉 Gdy wrzucisz ObservableCollection do repo:
+
+mieszasz warstwy ❌
+
+trudniej testować ❌
+
+trudniej zmienić implementację (np. baza danych) ❌
+
+🔹 Lepsze opcje zamiast IEnumerable
+Możesz użyć:
+
+1. IEnumerable<Room> (najprostsze)
+IEnumerable<Room> GetAll();
+✔ leniwe
+✔ uniwersalne
+✔ standard
+
+2. IReadOnlyList<Room> (często najlepszy wybór)
+IReadOnlyList<Room> GetAll();
+✔ masz indeksy ([i])
+✔ jasno mówisz: "tylko do odczytu"
+✔ bardziej konkretne niż IEnumerable
+
+👉 To jest bardzo dobry wybór do repo.
+
+3. List<Room> (raczej NIE)
+List<Room> GetAll();
+❌ pozwala modyfikować dane z zewnątrz
+❌ łamie enkapsulację
+
+🔹 Gdzie używać ObservableCollection?
+👉 W ViewModelu:
+
+public class RoomViewModel
+{
+    private readonly IRoomRepository _repository;
+
+    public ObservableCollection<Room> Rooms { get; set; }
+
+    public RoomViewModel(IRoomRepository repository)
+    {
+        _repository = repository;
+        Rooms = new ObservableCollection<Room>(_repository.GetAll());
+    }
+}
+✔ UI dostaje powiadomienia
+✔ repo pozostaje czyste
+
+🔹 TL;DR
+👉 Repozytorium:
+
+IReadOnlyList<Room> GetAll();
+lub:
+
+IEnumerable<Room> GetAll();
+👉 ViewModel:
+
+ObservableCollection<Room>
+Jeśli chcesz zrobić to jeszcze bardziej „MVVM-pro”, mogę Ci pokazać:
+
+jak dodawać/usunąć pokoje i automatycznie aktualizować UI
+
+albo jak zrobić INotifyPropertyChanged w Room 👍
+
+
+czyli po prostu przechowujemy w implementacji repo (inmemory) liste pokoi naszych dobrze rozumiem? odpowiedz tak nie
+
+Tak.
+
+
+Krok 3  Rabat
+Interfejs: IDiscountPolicy
+Metoda: ApplyDiscount(decimal price, int hours)
+Zrob minimum 1 implementacje (np. rabat przy dlugiej rezerwacji).
+czy w ten sposób dobrze zrobiona jest logika? czy ma to sens applajować discount do każdej rezerwacji i potem dopiero sprawdzać czy spełnia warunki?
+public class LongReservationDiscountPolicy : IDiscountPolicy
+{
+    public decimal ApplyDiscount(decimal price, int hours)
+    {
+        if (hours >= 5)
+        {
+            return price * 0.9m;
+        }
+
+        return price;
+    }
+}
+
+Tak — to podejście ma sens i jest poprawne 👍
+
+To co zrobiłeś to klasyczny wzorzec:
+👉 polityka (strategy) sama decyduje, czy rabat się należy
+
+🔹 Czy „aplikować zawsze i sprawdzać w środku” to dobra logika?
+👉 Tak, to jest wręcz zalecane podejście
+
+Dlaczego?
+
+✔ upraszcza kod wyżej (np. w serwisie rezerwacji)
+✔ nie musisz robić:
+
+if (policy.ShouldApply(...))
+✔ każda polityka sama wie:
+
+kiedy działa
+
+jak działa
+
+🔹 Twój kod – ocena
+public class LongReservationDiscountPolicy : IDiscountPolicy
+{
+    public decimal ApplyDiscount(decimal price, int hours)
+    {
+        if (hours >= 5)
+        {
+            return price * 0.9m;
+        }
+
+        return price;
+    }
+}
+👉 Jest:
+
+poprawny ✔
+
+czytelny ✔
+
+zgodny z ideą interfejsu ✔
+
+🔹 Alternatywa (gorsza)
+Można by zrobić tak:
+
+bool IsApplicable(int hours);
+decimal ApplyDiscount(decimal price);
+Ale wtedy:
+❌ więcej kodu
+❌ łatwo zapomnieć sprawdzić IsApplicable
+❌ rozdzielasz logikę, która powinna być razem
+
+🔹 Lepszy kierunek (jeśli będzie więcej rabatów)
+Jeśli będziesz mieć kilka rabatów, możesz zrobić:
+
+public class DiscountService
+{
+    private readonly IEnumerable<IDiscountPolicy> _policies;
+
+    public DiscountService(IEnumerable<IDiscountPolicy> policies)
+    {
+        _policies = policies;
+    }
+
+    public decimal ApplyDiscounts(decimal price, int hours)
+    {
+        foreach (var policy in _policies)
+        {
+            price = policy.ApplyDiscount(price, hours);
+        }
+
+        return price;
+    }
+}
+👉 wtedy każda polityka „próbuje” się zastosować
+
+🔹 TL;DR
+👉 Tak — Twoje podejście jest poprawne
+👉 Tak — aplikowanie rabatu i sprawdzanie warunku w środku to dobra praktyka
+👉 Kod jest OK i zgodny z wzorcami
+
+Jeśli chcesz, mogę Ci pokazać jak:
+
+łączyć kilka rabatów (i np. NIE nakładać ich wszystkich naraz)
+
+albo zrobić „najlepszy rabat zamiast wszystkich” (częste wymaganie)
+
+
+zrób ui w xmlu do wpfa
+ lista sal
+ pole na liczbe godzin
+ przycisk Rezerwuj
+ wyswietlenie ceny
+
+Pewnie — poniżej masz prosty UI w XAML do WPF zgodny z MVVM 👇
+
+Zakładam, że masz w ViewModelu:
+
+ObservableCollection<Room> Rooms
+
+Room SelectedRoom
+
+int Hours
+
+decimal Price
+
+ICommand ReserveCommand
+
+🧩 XAML (MainWindow.xaml)
+<Window x:Class="RoomReservation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rezerwacja sal" Height="400" Width="400">
+
+    <StackPanel Margin="20">
+
+        <!-- Lista sal -->
+        <TextBlock Text="Wybierz salę:" FontWeight="Bold"/>
+        <ListBox ItemsSource="{Binding Rooms}"
+                 SelectedItem="{Binding SelectedRoom}"
+                 DisplayMemberPath="Name"
+                 Height="100"/>
+
+        <!-- Liczba godzin -->
+        <TextBlock Text="Liczba godzin:" Margin="0,10,0,0"/>
+        <TextBox Text="{Binding Hours, UpdateSourceTrigger=PropertyChanged}" />
+
+        <!-- Przycisk -->
+        <Button Content="Rezerwuj"
+                Command="{Binding ReserveCommand}"
+                Margin="0,10,0,0"
+                Height="30"/>
+
+        <!-- Cena -->
+        <TextBlock Text="Cena:" Margin="0,10,0,0" FontWeight="Bold"/>
+        <TextBlock Text="{Binding Price}" FontSize="16"/>
+
+    </StackPanel>
+</Window>
+🔹 Co tu się dzieje
+ItemsSource → lista sal z repo
+
+SelectedItem → wybrana sala
+
+TextBox → liczba godzin
+
+Button → wywołuje komendę
+
+Price → wynik po rabacie
+
+🔹 Małe ulepszenia (opcjonalnie)
+Formatowanie ceny:
+<TextBlock Text="{Binding Price, StringFormat=C}" />
+Walidacja liczby godzin (żeby nie wpisać tekstu)
+Można później dodać ValidationRules albo zmienić na int?
+
+🔹 Jeśli chcesz wyglądać bardziej „pro”
+Można dodać np. pojemność sali w liście:
+
+<ListBox ItemsSource="{Binding Rooms}"
+         SelectedItem="{Binding SelectedRoom}"
+         Height="120">
+    <ListBox.ItemTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Name}" Width="150"/>
+                <TextBlock Text="{Binding Capacity}"/>
+            </StackPanel>
+        </DataTemplate>
+    </ListBox.ItemTemplate>
+</ListBox>
+Jeśli chcesz, mogę dorzucić:
+
+gotowy ViewModel pod to UI
+
+komendę RelayCommand
+
+albo automatyczne przeliczanie ceny bez kliknięcia przycisku 👍
+
+
+
+Głos
