@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RezerwacjaSal
+﻿namespace RezerwacjaSal
 {
-    interface IRoomRepository
+    public interface IRoomRepository
     {
+        IReadOnlyList<Room> GetAll();
+
+        bool Exists(string roomName);
     }
 }

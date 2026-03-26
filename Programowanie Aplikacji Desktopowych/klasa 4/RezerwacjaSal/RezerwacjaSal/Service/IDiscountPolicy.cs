@@ -1,11 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RezerwacjaSal
+﻿namespace RezerwacjaSal
 {
-    interface IDiscountPolicy
+    public interface IDiscountPolicy
     {
-        void ApplyDiscount(decimal price, int hours);
+        decimal ApplyDiscount(decimal price, int hours);
+    }
+
+    public class LongReservationDiscountPolicy : IDiscountPolicy
+    {
+        public decimal ApplyDiscount(decimal price, int hours)
+        {
+            if (hours >= 5)
+            {
+                return price * 0.9m;
+            }
+
+            return price;
+        }
     }
 }

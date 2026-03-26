@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RezerwacjaSal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd4e4b1606282cc573a0fb2df8d6d8fc7e5fd57e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+199ad495c301c5166b8f15f9471a4ad539f86e51")]
 [assembly: System.Reflection.AssemblyProductAttribute("RezerwacjaSal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RezerwacjaSal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,11 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RezerwacjaSal
+﻿namespace RezerwacjaSal
 {
-    interface IPricingService
+    public interface IPricingService
     {
-        void CalculatePrice(int hours);
+        decimal CalculatePrice(int hours);
+    }
+
+    public class HourlyPricingService : IPricingService
+    {
+        private const decimal HourlyRate = 100m;
+
+        public decimal CalculatePrice(int hours)
+        {
+            if (hours <= 0)
+            {
+                return 0m;
+            }
+
+            return HourlyRate * hours;
+        }
     }
 }

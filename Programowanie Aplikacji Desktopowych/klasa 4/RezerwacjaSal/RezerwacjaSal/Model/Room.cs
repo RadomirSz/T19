@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RezerwacjaSal
+﻿namespace RezerwacjaSal
 {
-    class Room
+    public class Room
     {
-        public string name;
-        public int capacity;
+        public string Name { get; set; } = string.Empty;
+        public int Capacity { get; set; }
     }
 }
