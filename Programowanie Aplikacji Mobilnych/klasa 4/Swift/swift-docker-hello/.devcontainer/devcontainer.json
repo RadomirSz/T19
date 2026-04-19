@@ -1,0 +1,9 @@
+{
+  "name": "Swift Container",
+  "image": "swift:5.10",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "postCreateCommand": "swift --version"
+}
