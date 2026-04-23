@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: lightgray;
+  color: black;
+  font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  text-align: center;
+  padding: 26px 16px 10px;
+}
+
+.page-title {
+  margin: 0;
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  font-size: clamp(2.1rem, 6.8vw, 3.7rem);
+}
+
+.page-body {
+  flex: 1;
+  width: min(1020px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 16px 0 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.calculator-panel,
+.result-panel {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.field-group {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  color: green;
+  font-weight: bold;
+}
+
+.field-input,
+.field-select {
+  width: 100%;
+  border: 1px solid #9a9a9a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+.submit-button {
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background: blue;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.66;
+}
+
+.visual-heading {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.shape-graphic {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.result-box {
+  background: #dbeeff;
+  border-radius: 10px;
+  min-height: 64px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.result-text {
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.error-box {
+  margin: 12px 0 0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background: #ffd7d7;
+  color: #8e1d1d;
+  font-weight: bold;
+}
+
+.page-footer {
+  text-align: center;
+  padding: 10px 12px 18px;
+  font-weight: bold;
+}
+
+.page-footer p {
+  margin: 0;
+}
