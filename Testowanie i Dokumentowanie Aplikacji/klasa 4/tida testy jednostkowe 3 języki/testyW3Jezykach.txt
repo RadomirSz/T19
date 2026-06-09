@@ -1,0 +1,253 @@
+===============C#===============
+klasa:
+
+namespace konsolowa;
+
+public class Kosc
+{
+    public static int Instancje;
+
+    private static readonly Random _rng = new();
+
+    public List<string> NazwyPlikowObrazow { get; set; }
+    public int LiczbaOczek { get; set; }
+    public int IdentyfikatorPliku { get; set; }
+    public bool Dostepna { get; set; }
+
+    public Kosc(int wartosc)
+    {
+        NazwyPlikowObrazow = new List<string>();
+        for (var i = 0; i <= 6; i++)
+            NazwyPlikowObrazow.Add($"kosc{i}.png");
+
+        if (!(wartosc >= 1 && wartosc <= 6)) wartosc = 0;
+
+        LiczbaOczek = wartosc;
+        IdentyfikatorPliku = wartosc;
+        Dostepna = true;
+        Instancje++;
+    }
+
+    public Kosc()
+    {
+        NazwyPlikowObrazow = new List<string>();
+        for (var i = 0; i <= 6; i++)
+            NazwyPlikowObrazow.Add($"kosc{i}.png");
+
+        LiczbaOczek = _rng.Next(1, 7);
+        IdentyfikatorPliku = LiczbaOczek;
+        Dostepna = true;
+        Instancje++;
+    }
+
+    public void Rzut()
+    {
+        if (!Dostepna)
+            return;
+
+        LiczbaOczek = _rng.Next(1, 7);
+        IdentyfikatorPliku = LiczbaOczek;
+    }
+
+    public void Blokuj()
+    {
+        Dostepna = false;
+    }
+
+    public string PobierzRzutTekst()
+    {
+        if (!(LiczbaOczek >= 1 && LiczbaOczek <= 6)) return "nie ustawiono";
+        string[] liczbySłownie = { "jeden", "dwa", "trzy", "cztery", "pięć", "sześć" };
+        return liczbySłownie[LiczbaOczek - 1];
+    }
+
+    public string PobierzNazwePliku()
+    {
+        if (IdentyfikatorPliku >= 0 && IdentyfikatorPliku < NazwyPlikowObrazow.Count)
+            return NazwyPlikowObrazow[IdentyfikatorPliku];
+        return string.Empty;
+    }
+}
+
+testy:
+
+namespace konsolowa.Tests;
+class KoscTest
+{
+    [Test]
+    public void Rzut_GdyDostepna_ZwracaWartoscZPrzedzialu1Do6()
+    {
+        var kosc = new Kosc();
+
+        kosc.Rzut();
+
+        Assert.That(kosc.LiczbaOczek, Is.InRange(1, 6));
+    }
+
+    [Test]
+    public void Rzut_GdyNiedostepna_NieZmieniaWartosci()
+    {
+        var kosc = new Kosc(3);
+        kosc.Blokuj();
+
+        kosc.Rzut();
+
+        Assert.That(kosc.LiczbaOczek, Is.EqualTo(3));
+    }
+}
+
+===============Java===============
+klasa:
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Kosc {
+    public static int Instancje;
+    private static final Random _rng = new Random();
+
+    public List<String> NazwyPlikowObrazow;
+    public int LiczbaOczek;
+    public int IdentyfikatorPliku;
+    public boolean Dostepna;
+
+    public Kosc(int wartosc) {
+        NazwyPlikowObrazow = new ArrayList<>();
+        for (int i = 0; i <= 6; i++)
+            NazwyPlikowObrazow.add("kosc" + i + ".png");
+
+        if (!(wartosc >= 1 && wartosc <= 6)) wartosc = 0;
+
+        LiczbaOczek = wartosc;
+        IdentyfikatorPliku = wartosc;
+        Dostepna = true;
+        Instancje++;
+    }
+
+    public Kosc() {
+        NazwyPlikowObrazow = new ArrayList<>();
+        for (int i = 0; i <= 6; i++)
+            NazwyPlikowObrazow.add("kosc" + i + ".png");
+
+        LiczbaOczek = _rng.nextInt(6) + 1;
+        IdentyfikatorPliku = LiczbaOczek;
+        Dostepna = true;
+        Instancje++;
+    }
+
+    public void Rzut() {
+        if (!Dostepna) return;
+        LiczbaOczek = _rng.nextInt(6) + 1;
+        IdentyfikatorPliku = LiczbaOczek;
+    }
+
+    public void Blokuj() {
+        Dostepna = false;
+    }
+
+    public String PobierzRzutTekst() {
+        if (!(LiczbaOczek >= 1 && LiczbaOczek <= 6)) return "nie ustawiono";
+        String[] liczbySlownie = {"jeden", "dwa", "trzy", "cztery", "pięć", "sześć"};
+        return liczbySlownie[LiczbaOczek - 1];
+    }
+
+    public String PobierzNazwePliku() {
+        if (IdentyfikatorPliku >= 0 && IdentyfikatorPliku < NazwyPlikowObrazow.size())
+            return NazwyPlikowObrazow.get(IdentyfikatorPliku);
+        return "";
+    }
+}
+
+testy:
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class KoscTest {
+
+    @Test
+    public void Rzut_GdyDostepna_ZwracaWartoscZPrzedzialu1Do6() {
+        Kosc kosc = new Kosc();
+
+        kosc.Rzut();
+
+        assertTrue(kosc.LiczbaOczek >= 1 && kosc.LiczbaOczek <= 6);
+    }
+
+    @Test
+    public void Rzut_GdyNiedostepna_NieZmieniaWartosci() {
+        Kosc kosc = new Kosc(3);
+        kosc.Blokuj();
+
+        kosc.Rzut();
+
+        assertEquals(3, kosc.LiczbaOczek);
+    }
+}
+
+===============Python===============
+klasa:
+import random
+
+
+class Kosc:
+    Instancje = 0
+    _rng = random.Random()
+
+    def __init__(self, wartosc=None):
+        self.NazwyPlikowObrazow = [f"kosc{i}.png" for i in range(0, 7)]
+
+        if wartosc is None:
+            self.LiczbaOczek = Kosc._rng.randint(1, 6)
+        else:
+            if 1 <= wartosc <= 6:
+                self.LiczbaOczek = wartosc
+            else:
+                self.LiczbaOczek = 0
+
+        self.IdentyfikatorPliku = self.LiczbaOczek
+        self.Dostepna = True
+        Kosc.Instancje += 1
+
+    def Rzut(self):
+        if not self.Dostepna:
+            return
+        self.LiczbaOczek = Kosc._rng.randint(1, 6)
+        self.IdentyfikatorPliku = self.LiczbaOczek
+
+    def Blokuj(self):
+        self.Dostepna = False
+
+    def PobierzRzutTekst(self):
+        if not (1 <= self.LiczbaOczek <= 6):
+            return "nie ustawiono"
+        liczby_słownie = ["jeden", "dwa", "trzy", "cztery", "pięć", "sześć"]
+        return liczby_słownie[self.LiczbaOczek - 1]
+
+    def PobierzNazwePliku(self):
+        if 0 <= self.IdentyfikatorPliku < len(self.NazwyPlikowObrazow):
+            return self.NazwyPlikowObrazow[self.IdentyfikatorPliku]
+        return ""
+
+testy:
+
+import pytest
+
+from Kosc import Kosc
+
+
+def test_Rzut_GdyDostepna_ZwracaWartoscZPrzedzialu1Do6():
+    kosc = Kosc()
+
+    kosc.Rzut()
+
+    assert 1 <= kosc.LiczbaOczek <= 6
+
+
+def test_Rzut_GdyNiedostepna_NieZmieniaWartosci():
+    kosc = Kosc(3)
+    kosc.Blokuj()
+
+    kosc.Rzut()
+
+    assert kosc.LiczbaOczek == 3
