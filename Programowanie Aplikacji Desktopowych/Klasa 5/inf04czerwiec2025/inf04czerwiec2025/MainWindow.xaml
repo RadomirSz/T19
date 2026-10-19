@@ -1,0 +1,41 @@
+﻿<Window x:Class="inf04czerwiec2025.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inf04czerwiec2025"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="grid" Margin="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid x:Name="rectangular" Grid.Row="1"/>
+
+        <Label Content="Dobierz kolor suwakami i zapisz przyciskiem." Grid.Row="2"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Slider Name="SliderR" ValueChanged="onSliderRValueChanged" Minimum="0" Maximum="255" Width="650"/>
+            <Label Name="Rlabel" Content="0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal">
+            <Slider Name="SliderG" ValueChanged="onSliderRValueChanged" Minimum="0" Maximum="255" Width="650"/>
+            <Label Name="Glabel" Content="0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal">
+            <Slider Name="SliderB" ValueChanged="onSliderRValueChanged" Minimum="0" Maximum="255" Width="650"/>
+            <Label Name="Blabel" Content="0"/>
+        </StackPanel>
+        
+        <Button Click="ClickOnMyButton" Content="przyciśnij jak grzegorza floryde kolanem" Grid.Row="6"/>
+
+    </Grid>
+</Window>

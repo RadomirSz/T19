@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "inf04czerwiec2025/1.0.0": {
+        "runtime": {
+          "inf04czerwiec2025.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "inf04czerwiec2025/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
