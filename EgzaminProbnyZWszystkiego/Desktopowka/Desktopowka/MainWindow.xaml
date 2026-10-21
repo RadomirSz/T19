@@ -1,0 +1,31 @@
+﻿<Window x:Class="Desktopowka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktopowka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="50">
+            <StackPanel Orientation="Horizontal">
+                <Label>Ulica</Label>
+                <TextBox Name="TBulica" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Numer domu</Label>
+                <TextBox Name="TBnumerdomu" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Kod pocztowy</Label>
+                <TextBox Name="TBkodpocztowy" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Miasto</Label>
+                <TextBox Name="TBmiasto" Width="200"></TextBox>
+            </StackPanel>
+            <Button Content="Zatwierdź" Click="Button_Click"></Button>
+            <TextBlock Name="komunikat"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
