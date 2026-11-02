@@ -1,0 +1,24 @@
+
+//dodanie elementu w js
+
+let tekst = document.getElementById('wiadomosc').value;
+let chat = document.getElementById('chat');
+let julkaDiv = document.createElement('div');
+let julkaImg = document.createElement('img');
+julkaImg.src = 'Jolka.jpg';
+
+let julkaP = document.createElement('p');
+julkaP.textContent = tekst;
+julkaDiv.appendChild(julkaImg);
+julkaDiv.appendChild(julkaP);
+chat.appendChild(julkaDiv);
+
+chat.scrollTop = chat.scrollHeight;
+
+
+
+// losowanie liczby w javascripcie
+let losowaLiczba = Math.floor(Math.random()*tablica.length);
+
+
+css do przećwiczenia
