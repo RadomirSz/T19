@@ -1,0 +1,77 @@
+.page {
+  width: min(850px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 24px 0;
+  color: red;
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+section {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid #aaa;
+  background: #d3d3d3;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+label,
+section li,
+section p {
+  color: green;
+}
+
+label {
+  margin-right: 8px;
+}
+
+input {
+  max-width: 100%;
+  padding: 5px;
+}
+
+button {
+  margin-left: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+li {
+  margin: 8px 0;
+}
+
+li img {
+  width: 52px;
+  height: 72px;
+  margin-left: 10px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.site-footer {
+  padding: 12px 0 24px;
+  color: red;
+  font-style: italic;
+}
+
+@media (max-width: 520px) {
+  section form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  section form input {
+    width: calc(100% - 100px);
+  }
+}
