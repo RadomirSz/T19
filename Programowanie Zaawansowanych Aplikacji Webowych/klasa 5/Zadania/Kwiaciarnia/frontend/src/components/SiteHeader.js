@@ -1,10 +1,8 @@
-export default function SiteHeader({ compact, itemCount, onOpenCart, showCart }) {
+export default function SiteHeader({ compact, image }) {
   return <header className={`site-header${compact ? ' site-header--compact' : ''}`}>
     <a className="brand" href="/" aria-label="Hortensja, strona główna">
-      <span className="brand-mark" aria-hidden="true">h.</span>
-      <span className="brand-copy"><strong>hortensja</strong><small>kwiaty z dobrego miejsca</small></span>
+      {image ? <img className="brand-mark" src={image} alt="" /> : <span className="brand-mark" aria-hidden="true">H</span>}
+      <span className="brand-copy"><strong>Kwiaciarnia internetowa Hortensja<br />kwiaty dla Twoich bliskich,<br />gdziekolwiek są...</strong></span>
     </a>
-    <div className="header-note">Kwiaty, które mówią za Ciebie <span>✳</span></div>
-    {showCart && <button className="cart-link" onClick={onOpenCart}><span aria-hidden="true">♧</span> Koszyk <b>{itemCount}</b></button>}
   </header>;
 }
